@@ -1,0 +1,5 @@
+{
+  "channel": "stable",
+  "manifestUrl": "https://github.com/li-02/deepseek-harness-desktop/releases/download/kernel-stable/stable.json",
+  "checkIntervalHours": 6
+}

@@ -1,0 +1,31 @@
+name: Release desktop shell
+
+on:
+  push:
+    tags:
+      - 'desktop-v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    env:
+      ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+      ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.15.0'
+          cache: npm
+      - run: npm ci
+      - run: npm run runtime:prepare
+      - run: npm run kernel:bootstrap
+      - run: npm test
+      - run: npm run dist
+      - shell: pwsh
+        run: gh release create $env:GITHUB_REF_NAME dist/DeepSeek-Harness-Desktop-*.exe --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}

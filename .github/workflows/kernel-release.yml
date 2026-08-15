@@ -1,0 +1,68 @@
+name: Release Harness kernel
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '@deepseek-ai/dsh version; empty means npm latest'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kernel-stable-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: windows-latest
+    env:
+      ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.15.0'
+          cache: npm
+      - run: npm ci
+      - id: version
+        shell: pwsh
+        run: |
+          $requested = '${{ inputs.version }}'
+          $version = if ($requested) { $requested } else { npm view '@deepseek-ai/dsh' version }
+          "version=$version" >> $env:GITHUB_OUTPUT
+          gh release view "kernel-v$version" *> $null
+          "exists=$($LASTEXITCODE -eq 0)" >> $env:GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - if: steps.version.outputs.exists != 'true'
+        run: npm run kernel:release -- --version ${{ steps.version.outputs.version }}
+        env:
+          KERNEL_SIGNING_PRIVATE_KEY: ${{ secrets.KERNEL_SIGNING_PRIVATE_KEY }}
+      - if: steps.version.outputs.exists != 'true'
+        shell: pwsh
+        run: |
+          $version = '${{ steps.version.outputs.version }}'
+          gh release create "kernel-v$version" dist/kernel/* --title "Harness kernel $version" --notes "Managed desktop kernel built from @deepseek-ai/dsh@$version."
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - if: steps.version.outputs.exists == 'true'
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force dist/kernel | Out-Null
+          gh release download "kernel-v${{ steps.version.outputs.version }}" --pattern stable.json --dir dist/kernel
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - shell: pwsh
+        run: |
+          gh release view kernel-stable *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create kernel-stable --prerelease --title 'Harness kernel stable channel' --notes 'The desktop client reads stable.json from this release.'
+          }
+          gh release upload kernel-stable dist/kernel/stable.json --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}

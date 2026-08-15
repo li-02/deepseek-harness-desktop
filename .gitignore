@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.log
+.kernel-build/
+.smoke-kernel-store/
+build/kernel-bootstrap/
+build/kernel-bootstrap.tar.gz
+secrets/
+runtime/node.exe

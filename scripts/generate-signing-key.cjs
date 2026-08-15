@@ -1,0 +1,16 @@
+const { generateKeyPairSync } = require('node:crypto')
+const { existsSync, mkdirSync, writeFileSync } = require('node:fs')
+const { join, resolve } = require('node:path')
+
+const root = resolve(__dirname, '..')
+const privateFile = join(root, 'secrets', 'kernel-private-key.pem')
+const publicFile = join(root, 'build', 'kernel-public-key.pem')
+if (existsSync(privateFile) || existsSync(publicFile)) throw new Error('内核签名密钥已存在，拒绝覆盖')
+
+const { privateKey, publicKey } = generateKeyPairSync('ed25519')
+mkdirSync(join(root, 'secrets'), { recursive: true })
+mkdirSync(join(root, 'build'), { recursive: true })
+writeFileSync(privateFile, privateKey.export({ type: 'pkcs8', format: 'pem' }), { mode: 0o600 })
+writeFileSync(publicFile, publicKey.export({ type: 'spki', format: 'pem' }))
+console.log(`Private key: ${privateFile}`)
+console.log(`Public key:  ${publicFile}`)
