@@ -1,6 +1,6 @@
 {
   "name": "deepseek-harness-desktop",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": true,
   "description": "Desktop shell with an independently updatable DeepSeek Harness kernel",
   "author": "Local DeepSeek Harness Desktop",
@@ -15,8 +15,8 @@
     "kernel:release": "node scripts/build-kernel.cjs --release",
     "pack": "electron-builder --dir --win --x64",
     "dist": "npm run dist:portable && npm run dist:installer",
-    "dist:portable": "electron-builder --win portable --x64 --config.win.artifactName=DeepSeek-Harness-Desktop-Portable-${version}-${arch}.${ext}",
-    "dist:installer": "electron-builder --win nsis --x64 --config.win.artifactName=DeepSeek-Harness-Desktop-Setup-${version}-${arch}.${ext}"
+    "dist:portable": "electron-builder --win portable --x64 --publish never --config.win.artifactName=DeepSeek-Harness-Desktop-Portable-${version}-${arch}.${ext}",
+    "dist:installer": "electron-builder --win nsis --x64 --publish never --config.win.artifactName=DeepSeek-Harness-Desktop-Setup-${version}-${arch}.${ext}"
   },
   "devDependencies": {
     "electron": "43.4.0",
