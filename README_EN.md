@@ -2,94 +2,76 @@
 
 [简体中文](README.md) | [English](README_EN.md)
 
-DeepSeek Harness Desktop is a Windows desktop client for DeepSeek Harness. It packages the local agent runtime as a desktop application while allowing the desktop shell and Harness kernel to be updated independently.
+DeepSeek Harness Desktop is a Windows desktop app that lets you use DeepSeek Harness — a powerful AI assistant workbench — on your own computer, with no programming knowledge required. Just install it and open it: everything is set up for you automatically.
 
-## Features
+## What it does for you
 
-- **Ready to use**: The package includes a bootstrap Harness kernel and Node.js runtime, so no development environment is required for the first launch.
-- **Desktop experience**: Starts the local Harness service automatically and opens it in a dedicated window whose size and position are preserved.
-- **Secure updates**: Checks for kernel updates in the background and verifies downloads with an Ed25519 signature and SHA-256 digest.
-- **Pre-activation checks**: Tests every new kernel in an isolated environment before marking it ready for activation.
-- **Automatic rollback**: Restores the previous working kernel if an updated kernel fails during its first real launch.
-- **Persistent data**: Stores settings, sessions, and logs separately from the kernel so they survive kernel updates.
-- **Failure recovery**: Provides restart and log shortcuts when the application fails to start.
-- **Single-instance operation**: Focuses the existing window instead of starting multiple background instances.
+- **Ready to use**: No need to install Node.js or any development environment.
+- **Feels like a normal app**: Launches the Harness workbench in its own window and remembers the window size and position.
+- **Automatic updates**: Checks for core updates in the background — no manual work, just restart the app when asked.
+- **Rolls back if an update fails**: If the app can't start after an update, it automatically restores the last working version.
+- **Your data is safe**: Settings, sessions, and logs are stored separately and survive updates.
+- **Single window**: Launching the app again focuses the existing window instead of starting extra background instances.
 
-## Download and installation
+## Download and install
 
-Download the latest Windows x64 release from the [Releases page](https://github.com/li-02/deepseek-harness-desktop/releases):
+Download the latest Windows x64 version from the [Releases page](https://github.com/li-02/deepseek-harness-desktop/releases). There are two options:
 
-- `DeepSeek-Harness-Desktop-Setup-<version>-x64.exe`: Installer edition, recommended for everyday use.
-- `DeepSeek-Harness-Desktop-Portable-<version>-x64.exe`: Portable edition that runs without installation.
+- **Installer** (`DeepSeek-Harness-Desktop-Setup-<version>-x64.exe`): Follow the setup wizard, then launch the app from the desktop or Start menu. Recommended for most people.
+- **Portable** (`DeepSeek-Harness-Desktop-Portable-<version>-x64.exe`): No installation needed — just run the downloaded file. Great for temporary use or a USB stick.
 
-For the installer edition, follow the setup wizard and launch the app from the desktop or Start menu. For the portable edition, run the downloaded executable directly.
+> Note: Windows or your browser may warn that the file was downloaded from the internet. As long as it came from the GitHub Releases page above, it's safe to run.
 
-> Windows or your browser may warn that the file was downloaded from the internet. Verify that it came from this repository's GitHub Releases page before running it.
+## First-time use
 
-## Usage guide
+1. Double-click to launch DeepSeek Harness Desktop.
+2. The first launch takes a little longer while the runtime is prepared — please be patient.
+3. Once open, you'll see the Harness workbench: create a session, chat with the AI, or schedule tasks.
+4. Close the window to quit — the app and its background service stop together.
 
-1. Launch DeepSeek Harness Desktop.
-2. Wait while the app prepares the local agent runtime. The first launch may take a little longer.
-3. Complete the service configuration, create a session, and start working in the Harness interface.
-4. Close the window to exit both the application and its local background service.
+## Plugin store: add new features to the workbench
 
-After launch, the app periodically checks for Harness kernel updates in the background. A downloaded and verified update is activated automatically on the next launch, without reinstalling the desktop client.
+Just like an app store on your phone, the Harness workbench has a built-in **plugin store** where you can add new capabilities (such as memory, tools, and more).
 
-## How updates work
+How to open it: click the **Settings** button in the workbench, go to **Plugins**, then switch to the **Plugin store** tab.
 
-- Each application package contains a bootstrap kernel that can start offline.
-- A downloaded kernel is staged only after its version, compatibility, signature, file hash, and startup check all pass.
-- A staged kernel is activated on the next launch and is confirmed only after its first real startup succeeds.
-- If that startup fails, the app rolls back automatically and temporarily blocks the faulty version.
-- Updates to the desktop client itself must be downloaded from the Releases page.
+- **Browse and search**: Filter by category, or use the search box to find plugins by name, author, or description.
+- **Install a plugin**: Click **Install** on a plugin, check the box acknowledging it's a third-party plugin (meaning it isn't made by the official team — make sure you trust it), then click **Confirm install**.
+- **Restart to activate**: After installation, restart the app so the new plugin can load.
+- **See what's installed**: Switch to the **Plugin list** tab to view the plugins currently installed.
 
-## Data and logs
+> Note: Most plugins in the store are made by community developers. Before installing, read the description, check the source, and make sure you trust it.
 
-Default locations:
+## About automatic updates
+
+- The app checks for updates quietly in the background. Once an update is downloaded and verified, it takes effect on **the next launch** — no reinstallation needed.
+- If the app fails to start after an update, it automatically rolls back to the last working version.
+- Major updates to the desktop client itself must be downloaded from the Releases page.
+
+## Troubleshooting
+
+### Stuck on the loading screen
+
+The first launch needs time to prepare the local service. If it takes too long, close and reopen the app. If an error page appears, click **Open Logs** to see what went wrong.
+
+### The app won't start after an update
+
+The app automatically tries to roll back to the last working version. If it still fails, open the logs from the error page and include them when filing an issue.
+
+### Resetting local data
+
+Exit the app, then back up and delete the `%APPDATA%\DeepSeek Harness` folder to reset settings, sessions, and logs. This cannot be undone, so make sure you keep anything you need.
+
+## Where data and logs live
 
 - Harness settings and sessions: `%APPDATA%\DeepSeek Harness\harness-home-v2`
 - Desktop logs: `%APPDATA%\DeepSeek Harness\logs`
 - Kernel versions and update files: `%LOCALAPPDATA%\DeepSeek Harness\kernel-runtime`
 
-If startup fails, select **Open Logs** on the error page. The main log files are:
+Main log files:
 
-- `desktop.log`: Desktop shell, startup, and update events.
-- `harness.stdout.log`: Harness standard output.
-- `harness.stderr.log`: Harness error output.
-
-## Troubleshooting
-
-### The app remains on the loading screen
-
-The first launch needs time to prepare the local service. If it does not finish, close and reopen the app. If an error page appears, open the logs for the underlying error.
-
-### The app does not start after an update
-
-The app automatically attempts to roll back to the previous working kernel. If the problem persists, open the logs from the error page and include the relevant error details when filing an issue.
-
-### Resetting local data
-
-Exit the app, then back up and remove `%APPDATA%\DeepSeek Harness` to reset settings, sessions, and logs. This operation cannot be undone, so preserve any data you need first.
-
-## Local development
-
-Node.js, npm, and PowerShell are required:
-
-```powershell
-npm install
-npm run runtime:prepare
-npm run kernel:bootstrap
-npm test
-npm start
-```
-
-Build the Windows installer and portable editions:
-
-```powershell
-npm run dist
-```
-
-`harness-path.json` selects the DeepSeek Harness source directory in development mode. Packaged applications ignore this file by default; set `DSH_DESKTOP_HARNESS_ROOT` to explicitly use a source directory.
+- `desktop.log`: App startup and update events.
+- `harness.stdout.log` / `harness.stderr.log`: Harness runtime output and errors.
 
 ## License
 
