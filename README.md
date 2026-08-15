@@ -2,6 +2,8 @@
 
 Windows desktop shell with an independently updatable DeepSeek Harness kernel. Users install the Electron shell once; signed Harness kernels download in the background, pass an isolated startup probe, and activate atomically on the next launch.
 
+Repository and release downloads: <https://github.com/li-02/deepseek-harness-desktop>
+
 ## Runtime model
 
 - The installer contains one bootstrap kernel so the first launch works offline.
