@@ -1,5 +1,5 @@
 const { app, BrowserWindow, ipcMain, shell } = require('electron')
-const { spawn, execFile, execFileSync } = require('node:child_process')
+const { spawn, execFile } = require('node:child_process')
 const { appendFileSync, createWriteStream, existsSync, mkdirSync, readFileSync, writeFileSync } = require('node:fs')
 const { createServer } = require('node:net')
 const { join, resolve } = require('node:path')
@@ -24,9 +24,14 @@ function userDataPath(...parts) {
   return join(app.getPath('userData'), ...parts)
 }
 
+let logDirectoryReady = false
+
 function logDesktop(message) {
   const directory = userDataPath('logs')
-  mkdirSync(directory, { recursive: true })
+  if (!logDirectoryReady) {
+    mkdirSync(directory, { recursive: true })
+    logDirectoryReady = true
+  }
   appendFileSync(join(directory, 'desktop.log'), `${new Date().toISOString()} ${message}\n`)
 }
 
@@ -59,11 +64,25 @@ function nodeExecutable() {
   return executable
 }
 
+let nodeMajorPromise
+
 function runtimeNodeMajor() {
-  return Number(execFileSync(nodeExecutable(), ['-p', 'process.versions.node.split(".")[0]'], {
-    encoding: 'utf8',
-    windowsHide: true
-  }).trim())
+  if (!nodeMajorPromise) {
+    nodeMajorPromise = new Promise((resolvePromise) => {
+      execFile(nodeExecutable(), ['-p', 'process.versions.node.split(".")[0]'], {
+        encoding: 'utf8',
+        windowsHide: true
+      }, (error, stdout) => {
+        if (error) {
+          logDesktop(`Node version probe failed: ${error.message}`)
+          resolvePromise(undefined)
+          return
+        }
+        resolvePromise(Number(stdout.trim()))
+      })
+    })
+  }
+  return nodeMajorPromise
 }
 
 function kernelStorageRoot() {
@@ -103,7 +122,11 @@ function readUpdateConfig() {
 }
 
 function startUpdateChecks() {
-  if (!app.isPackaged || updateChecksStarted || !kernelUpdater) return
+  if (!app.isPackaged || updateChecksStarted) return
+  if (!kernelUpdater) {
+    setTimeout(startUpdateChecks, 1000).unref()
+    return
+  }
   updateChecksStarted = true
   const { checkIntervalMs } = readUpdateConfig()
   const check = () => kernelUpdater.check()
@@ -135,8 +158,13 @@ function escapeHtml(value) {
     .replaceAll("'", '&#039;')
 }
 
+let iconDataUrlCache
+
 function iconDataUrl() {
-  return `data:image/png;base64,${readFileSync(join(__dirname, 'build', 'icon.png')).toString('base64')}`
+  if (!iconDataUrlCache) {
+    iconDataUrlCache = `data:image/png;base64,${readFileSync(join(__dirname, 'build', 'icon.png')).toString('base64')}`
+  }
+  return iconDataUrlCache
 }
 
 function shellPage({ title, detail = '', loading = false, actions = false }) {
@@ -336,16 +364,18 @@ if (!lock) {
   app.whenReady().then(() => {
     kernelStore = new KernelStore({ root: kernelStorageRoot(), ...bootstrapKernelLocation() })
     const updateConfig = readUpdateConfig()
-    kernelUpdater = new KernelUpdater({
-      store: kernelStore,
-      manifestUrl: updateConfig.manifestUrl,
-      publicKeyFile: join(__dirname, 'build', 'kernel-public-key.pem'),
-      nodeExecutable: nodeExecutable(),
-      nodeMajor: runtimeNodeMajor(),
-      shellVersion: app.getVersion(),
-      log: logDesktop
-    })
     createWindow(() => launchHarness())
+    runtimeNodeMajor().then(nodeMajor => {
+      kernelUpdater = new KernelUpdater({
+        store: kernelStore,
+        manifestUrl: updateConfig.manifestUrl,
+        publicKeyFile: join(__dirname, 'build', 'kernel-public-key.pem'),
+        nodeExecutable: nodeExecutable(),
+        nodeMajor,
+        shellVersion: app.getVersion(),
+        log: logDesktop
+      })
+    }).catch(error => logDesktop(`Kernel updater init failed: ${error.stack || error.message}`))
   })
 }
 
