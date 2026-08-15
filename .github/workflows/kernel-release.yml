@@ -1,3 +1,4 @@
+# Publishes a separately signed runtime consumed by the stable desktop shell.
 name: Release Harness kernel
 
 on:
