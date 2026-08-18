@@ -126,6 +126,31 @@ function launchTarget() {
   return { kind: 'kernel', label: `${kernel.version} (${kernel.source})`, cwd: kernel.root, args: [kernel.entry], kernel }
 }
 
+function patchLayoutStartup(targetRoot) {
+  const layoutEntry = join(targetRoot, 'node_modules', '@deepseek-ai', 'dsh-client-ui-layout', 'lib', 'client.js')
+  if (!existsSync(layoutEntry)) return
+
+  const marker = '/* deepseek-harness-desktop: close details panel on startup */'
+  const source = readFileSync(layoutEntry, 'utf8')
+  if (source.includes(marker)) return
+
+  const needles = [
+    'const lastSession = useRef(detailsSession);',
+    'const lastSession = (0, react.useRef)(detailsSession);'
+  ]
+  const needle = needles.find(candidate => source.includes(candidate))
+  if (!needle) {
+    logDesktop(`Layout startup patch skipped: marker not found in ${layoutEntry}`)
+    return
+  }
+
+  const replacement = needle.includes('react.useRef')
+    ? `${needle}\n\t\t${marker}\n\t\t(0, react.useEffect)(() => { actions.closeDetails(); }, [actions]);`
+    : `${needle}\n\t\t${marker}\n\t\tuseEffect(() => { actions.closeDetails(); }, [actions]);`
+  writeFileSync(layoutEntry, source.replace(needle, replacement), 'utf8')
+  logDesktop(`Patched layout startup state: ${layoutEntry}`)
+}
+
 function readUpdateConfig() {
   const config = JSON.parse(readFileSync(join(__dirname, 'kernel-update.json'), 'utf8'))
   return {
@@ -485,6 +510,7 @@ async function launchHarness() {
   try {
     target = launchTarget()
     currentTarget = target
+    patchLayoutStartup(target.cwd)
     const port = await reservePort()
     const url = `http://127.0.0.1:${port}`
     const logDirectory = userDataPath('logs')
