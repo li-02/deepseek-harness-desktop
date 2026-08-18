@@ -1,22 +1,34 @@
-const { app, BrowserWindow, ipcMain, shell } = require('electron')
+const { app, BrowserWindow, dialog, ipcMain, Menu, nativeImage, shell, Tray } = require('electron')
 const { spawn, execFile } = require('node:child_process')
 const { appendFileSync, createWriteStream, existsSync, mkdirSync, readFileSync, writeFileSync } = require('node:fs')
 const { createServer } = require('node:net')
-const { join, resolve } = require('node:path')
+const { delimiter, dirname, join, resolve } = require('node:path')
 const { KernelStore } = require('./kernel-store.cjs')
 const { KernelUpdater } = require('./kernel-updater.cjs')
+const { findPlugin, installSpec, installedBundles, isHttpUrl, loadCatalog } = require('./plugin-store.cjs')
 
 const APP_NAME = 'DeepSeek Harness'
 const READY_TIMEOUT_MS = 90_000
 const MAX_ERROR_OUTPUT = 12_000
 
+/** Close-window behaviors: ask each time / minimize to tray / quit the app. */
+const CLOSE_BEHAVIORS = Object.freeze(['ask', 'minimize', 'exit'])
+const DEFAULT_DESKTOP_SETTINGS = Object.freeze({ closeBehavior: 'minimize' })
+
 let mainWindow
+let pluginStoreWindow
 let backend
 let backendStopping = false
 let booting = false
 let kernelStore
 let kernelUpdater
 let updateChecksStarted = false
+let quitting = false
+let tray
+let trayHintShown = false
+let currentTarget
+let catalogCache
+let pluginInstallInProgress = false
 
 app.setName(APP_NAME)
 
@@ -36,23 +48,10 @@ function logDesktop(message) {
 }
 
 function configuredDevelopmentWorkspace() {
-  if (app.isPackaged && !process.env.DSH_DESKTOP_HARNESS_ROOT) return undefined
-  const candidates = []
-  if (process.env.DSH_DESKTOP_HARNESS_ROOT) candidates.push(process.env.DSH_DESKTOP_HARNESS_ROOT)
-  try {
-    const config = JSON.parse(readFileSync(join(__dirname, 'harness-path.json'), 'utf8'))
-    if (typeof config.workspace === 'string') candidates.push(config.workspace)
-  } catch (error) {
-    logDesktop(`Ignoring invalid harness-path.json: ${error.message}`)
-  }
-  candidates.push(resolve(__dirname, '..', 'deepseek-harness'))
-
-  for (const candidate of candidates) {
-    const root = resolve(candidate)
-    if (existsSync(join(root, 'apps', 'cli', 'src', 'bin.ts')) && existsSync(join(root, 'node_modules', 'tsx'))) {
-      return root
-    }
-  }
+  if (app.isPackaged || !process.env.DSH_DESKTOP_HARNESS_ROOT) return undefined
+  const root = resolve(process.env.DSH_DESKTOP_HARNESS_ROOT)
+  if (existsSync(join(root, 'apps', 'cli', 'src', 'bin.ts')) && existsSync(join(root, 'node_modules', 'tsx'))) return root
+  logDesktop(`Ignoring invalid DSH_DESKTOP_HARNESS_ROOT: ${root}`)
   return undefined
 }
 
@@ -62,6 +61,20 @@ function nodeExecutable() {
     : join(__dirname, 'runtime', 'node.exe')
   if (!existsSync(executable)) throw new Error(`缺少内置 Node 运行时：${executable}`)
   return executable
+}
+
+function pnpmDirectory() {
+  return app.isPackaged
+    ? join(process.resourcesPath, 'runtime')
+    : dirname(require.resolve('@pnpm/exe/package.json'))
+}
+
+function harnessEnvironment() {
+  return {
+    ...process.env,
+    DSH_HOME: userDataPath('harness-home-v2'),
+    PATH: `${pnpmDirectory()}${delimiter}${process.env.PATH || ''}`
+  }
 }
 
 let nodeMajorPromise
@@ -205,6 +218,181 @@ function saveWindowState() {
   writeFileSync(userDataPath('window-state.json'), JSON.stringify(mainWindow.getBounds()))
 }
 
+function desktopSettingsPath() {
+  return userDataPath('desktop-settings.json')
+}
+
+function readDesktopSettings() {
+  try {
+    const parsed = JSON.parse(readFileSync(desktopSettingsPath(), 'utf8'))
+    const behavior = parsed && typeof parsed.closeBehavior === 'string' ? parsed.closeBehavior : undefined
+    return {
+      closeBehavior: CLOSE_BEHAVIORS.includes(behavior) ? behavior : DEFAULT_DESKTOP_SETTINGS.closeBehavior
+    }
+  } catch {
+    return { ...DEFAULT_DESKTOP_SETTINGS }
+  }
+}
+
+function writeDesktopSettings(settings) {
+  writeFileSync(desktopSettingsPath(), JSON.stringify(settings, null, 2))
+}
+
+function setCloseBehavior(behavior) {
+  if (!CLOSE_BEHAVIORS.includes(behavior)) throw new Error(`未知的关闭行为：${behavior}`)
+  writeDesktopSettings({ ...readDesktopSettings(), closeBehavior: behavior })
+  return behavior
+}
+
+function showMainWindow() {
+  if (!mainWindow || mainWindow.isDestroyed()) return
+  if (mainWindow.isMinimized()) mainWindow.restore()
+  mainWindow.show()
+  mainWindow.focus()
+}
+
+function hideToTray() {
+  if (!mainWindow || mainWindow.isDestroyed()) return
+  mainWindow.hide()
+  if (!trayHintShown && process.platform === 'win32' && tray) {
+    trayHintShown = true
+    tray.displayBalloon({
+      iconType: 'info',
+      title: APP_NAME,
+      content: '已最小化到系统托盘，点击托盘图标可重新打开窗口。'
+    })
+  }
+}
+
+function quitApp() {
+  quitting = true
+  app.quit()
+}
+
+async function askCloseBehavior() {
+  const result = await dialog.showMessageBox(mainWindow, {
+    type: 'question',
+    title: '关闭 DeepSeek Harness',
+    message: '关闭窗口后希望执行什么操作？',
+    detail: '选择「最小化到托盘」可让应用继续在后台运行，选择「关闭程序」将完全关闭。',
+    buttons: ['最小化到托盘', '关闭程序'],
+    defaultId: 0,
+    cancelId: 0,
+    noLink: true
+  })
+  if (result.response === 0) hideToTray()
+  else quitApp()
+}
+
+async function handleCloseRequest() {
+  const { closeBehavior } = readDesktopSettings()
+  if (closeBehavior === 'minimize') {
+    hideToTray()
+    return
+  }
+  if (closeBehavior === 'exit') {
+    quitApp()
+    return
+  }
+  await askCloseBehavior()
+}
+
+function createTray() {
+  if (tray) return tray
+  const icon = process.platform === 'win32'
+    ? nativeImage.createFromPath(join(__dirname, 'build', 'icon.ico'))
+    : nativeImage.createFromPath(join(__dirname, 'build', 'icon.png'))
+  tray = new Tray(icon)
+  tray.setToolTip(APP_NAME)
+  tray.setContextMenu(Menu.buildFromTemplate([
+    { label: '显示主窗口', click: showMainWindow },
+    { label: '插件商店', click: showPluginStore },
+    { type: 'separator' },
+    { label: '退出', click: quitApp }
+  ]))
+  tray.on('click', showMainWindow)
+  return tray
+}
+
+function pluginCatalogConfig() {
+  try {
+    const config = JSON.parse(readFileSync(join(__dirname, 'plugin-store-config.json'), 'utf8'))
+    return {
+      remoteUrl: process.env.DSH_PLUGIN_CATALOG_URL || config.catalogUrl,
+      timeoutMs: Math.max(1000, Number(config.timeoutMs) || 8000)
+    }
+  } catch (error) {
+    logDesktop(`Ignoring invalid plugin-store-config.json: ${error.message}`)
+    return { remoteUrl: process.env.DSH_PLUGIN_CATALOG_URL, timeoutMs: 8000 }
+  }
+}
+
+async function pluginCatalog() {
+  if (catalogCache && Date.now() - catalogCache.loadedAt < 10 * 60 * 1000) return catalogCache
+  const config = pluginCatalogConfig()
+  const loaded = await loadCatalog({
+    bundledFile: join(__dirname, 'plugin-catalog.json'),
+    ...config,
+    log: logDesktop
+  })
+  catalogCache = { ...loaded, loadedAt: Date.now() }
+  return catalogCache
+}
+
+function showPluginStore() {
+  if (pluginStoreWindow && !pluginStoreWindow.isDestroyed()) {
+    pluginStoreWindow.show()
+    pluginStoreWindow.focus()
+    return
+  }
+  pluginStoreWindow = new BrowserWindow({
+    width: 1180,
+    height: 820,
+    minWidth: 860,
+    minHeight: 600,
+    show: false,
+    autoHideMenuBar: true,
+    title: '插件商店 - DeepSeek Harness',
+    backgroundColor: '#0d0e12',
+    icon: join(__dirname, 'build', 'icon.png'),
+    webPreferences: {
+      preload: join(__dirname, 'plugin-store-preload.cjs'),
+      contextIsolation: true,
+      nodeIntegration: false,
+      sandbox: true
+    }
+  })
+  pluginStoreWindow.webContents.setWindowOpenHandler(({ url }) => {
+    if (isHttpUrl(url)) shell.openExternal(url)
+    return { action: 'deny' }
+  })
+  pluginStoreWindow.loadFile(join(__dirname, 'plugin-store.html'))
+  pluginStoreWindow.once('ready-to-show', () => pluginStoreWindow?.show())
+  pluginStoreWindow.on('closed', () => { pluginStoreWindow = undefined })
+}
+
+function runPluginInstall(target, spec) {
+  return new Promise((resolveInstall, reject) => {
+    const child = spawn(nodeExecutable(), [
+      ...target.args, 'plugin', '--profile', 'web', 'add', spec
+    ], {
+      cwd: target.cwd,
+      env: harnessEnvironment(),
+      windowsHide: true,
+      stdio: ['ignore', 'pipe', 'pipe']
+    })
+    let output = ''
+    const append = chunk => { output = (output + chunk.toString()).slice(-MAX_ERROR_OUTPUT) }
+    child.stdout.on('data', append)
+    child.stderr.on('data', append)
+    child.once('error', reject)
+    child.once('exit', code => {
+      if (code === 0) resolveInstall(output.trim())
+      else reject(new Error(`插件安装失败（退出码 ${code}）\n${output.trim()}`))
+    })
+  })
+}
+
 function createWindow(onShown) {
   const state = readWindowState()
   mainWindow = new BrowserWindow({
@@ -238,6 +426,11 @@ function createWindow(onShown) {
   mainWindow.once('ready-to-show', () => {
     mainWindow.show()
     setImmediate(onShown)
+  })
+  mainWindow.on('close', (event) => {
+    if (quitting) return
+    event.preventDefault()
+    handleCloseRequest()
   })
 }
 
@@ -291,6 +484,7 @@ async function launchHarness() {
   let retryAfterRollback = false
   try {
     target = launchTarget()
+    currentTarget = target
     const port = await reservePort()
     const url = `http://127.0.0.1:${port}`
     const logDirectory = userDataPath('logs')
@@ -302,7 +496,7 @@ async function launchHarness() {
       ...target.args, 'web', '--port', String(port)
     ], {
       cwd: target.cwd,
-      env: { ...process.env, DSH_HOME: userDataPath('harness-home-v2') },
+      env: harnessEnvironment(),
       windowsHide: true,
       stdio: ['ignore', 'pipe', 'pipe']
     })
@@ -350,21 +544,57 @@ async function launchHarness() {
 
 ipcMain.handle('desktop:retry', () => launchHarness())
 ipcMain.handle('desktop:open-logs', () => shell.openPath(userDataPath('logs')))
+ipcMain.handle('desktop:get-close-behavior', () => readDesktopSettings().closeBehavior)
+ipcMain.handle('desktop:set-close-behavior', (_event, behavior) => setCloseBehavior(behavior))
+ipcMain.handle('desktop:plugin-store:list', async () => {
+  const { catalog, source } = await pluginCatalog()
+  return {
+    catalog,
+    source,
+    installed: installedBundles(userDataPath('harness-home-v2'))
+  }
+})
+ipcMain.handle('desktop:plugin-store:install', async (_event, identity) => {
+  if (typeof identity !== 'string' || identity.length > 300) throw new Error('插件标识无效')
+  if (pluginInstallInProgress) throw new Error('已有插件正在安装，请等待完成后再试')
+  const { catalog } = await pluginCatalog()
+  const plugin = findPlugin(catalog, identity)
+  const spec = installSpec(plugin)
+  const target = currentTarget || launchTarget()
+  logDesktop(`Installing plugin identity=${identity} spec=${spec} target=${target.label}`)
+  pluginInstallInProgress = true
+  try {
+    const output = await runPluginInstall(target, spec)
+    logDesktop(`Plugin installed identity=${identity}`)
+    return { installed: installedBundles(userDataPath('harness-home-v2')), output }
+  } finally {
+    pluginInstallInProgress = false
+  }
+})
+ipcMain.handle('desktop:plugin-store:restart', async () => {
+  pluginStoreWindow?.close()
+  showMainWindow()
+  await launchHarness()
+})
+ipcMain.handle('desktop:plugin-store:open-external', (_event, url) => {
+  if (!isHttpUrl(url)) throw new Error('只能打开 HTTP(S) 链接')
+  return shell.openExternal(url)
+})
 
 const lock = app.requestSingleInstanceLock()
 if (!lock) {
   app.quit()
 } else {
-  app.on('second-instance', () => {
-    if (!mainWindow) return
-    if (mainWindow.isMinimized()) mainWindow.restore()
-    mainWindow.show()
-    mainWindow.focus()
+  app.on('second-instance', (_event, commandLine) => {
+    if (commandLine.includes('--plugin-store')) showPluginStore()
+    else showMainWindow()
   })
   app.whenReady().then(() => {
     kernelStore = new KernelStore({ root: kernelStorageRoot(), ...bootstrapKernelLocation() })
     const updateConfig = readUpdateConfig()
     createWindow(() => launchHarness())
+    createTray()
+    if (process.argv.includes('--plugin-store')) showPluginStore()
     runtimeNodeMajor().then(nodeMajor => {
       kernelUpdater = new KernelUpdater({
         store: kernelStore,
@@ -380,6 +610,7 @@ if (!lock) {
 }
 
 app.on('before-quit', () => {
+  quitting = true
   backendStopping = true
   stopBackend()
 })

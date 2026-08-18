@@ -1,6 +1,6 @@
 {
   "name": "deepseek-harness-desktop",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "private": true,
   "description": "Desktop shell with an independently updatable DeepSeek Harness kernel",
   "author": "Local DeepSeek Harness Desktop",
@@ -13,12 +13,14 @@
     "kernel:keygen": "node scripts/generate-signing-key.cjs",
     "kernel:bootstrap": "node scripts/build-kernel.cjs --bootstrap",
     "kernel:release": "node scripts/build-kernel.cjs --release",
+    "catalog:sync": "node scripts/sync-plugin-catalog.cjs",
     "pack": "electron-builder --dir --win --x64",
     "dist": "npm run dist:portable && npm run dist:installer",
     "dist:portable": "electron-builder --win portable --x64 --publish never --config.win.artifactName=DeepSeek-Harness-Desktop-Portable-${version}-${arch}.${ext}",
     "dist:installer": "electron-builder --win nsis --x64 --publish never --config.win.artifactName=DeepSeek-Harness-Desktop-Setup-${version}-${arch}.${ext}"
   },
   "devDependencies": {
+    "@pnpm/exe": "10.33.0",
     "electron": "43.4.0",
     "electron-builder": "26.15.3"
   },
@@ -31,11 +33,17 @@
     "files": [
       "main.cjs",
       "preload.cjs",
+      "plugin-store.cjs",
+      "plugin-store-preload.cjs",
+      "plugin-store.html",
+      "plugin-store.css",
+      "plugin-store.js",
+      "plugin-store-config.json",
+      "plugin-catalog.json",
       "kernel-common.cjs",
       "kernel-store.cjs",
       "kernel-updater.cjs",
       "kernel-update.json",
-      "harness-path.json",
       "LICENSE",
       "THIRD_PARTY_NOTICES.md",
       "build/icon.png",
@@ -48,6 +56,10 @@
         "filter": [
           "node.exe"
         ]
+      },
+      {
+        "from": "node_modules/@pnpm/exe/pnpm.exe",
+        "to": "runtime/pnpm.exe"
       },
       {
         "from": "build/kernel-bootstrap.tar.gz",

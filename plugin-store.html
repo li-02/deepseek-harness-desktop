@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>插件商店</title>
+    <link rel="stylesheet" href="./plugin-store.css">
+    <script src="./plugin-store.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">DeepSeek Harness Desktop</p>
+          <h1>插件商店</h1>
+        </div>
+        <div class="header-actions">
+          <button class="ghost-button" type="button" data-action="refresh">刷新目录</button>
+          <button class="primary-button" type="button" data-action="restart">重启应用</button>
+        </div>
+      </header>
+
+      <section class="summary-panel" aria-live="polite">
+        <div>
+          <span class="summary-label">目录状态</span>
+          <strong id="catalogStatus">正在加载...</strong>
+        </div>
+        <div>
+          <span class="summary-label">已安装</span>
+          <strong id="installedCount">0</strong>
+        </div>
+        <div>
+          <span class="summary-label">可用插件</span>
+          <strong id="pluginCount">0</strong>
+        </div>
+      </section>
+
+      <main class="store-layout">
+        <aside class="filters" aria-label="插件筛选">
+          <label class="search-label" for="searchInput">关键词搜索</label>
+          <input
+            id="searchInput"
+            class="search-input"
+            type="search"
+            placeholder="搜索名称、作者、描述、npm..."
+            autocomplete="off"
+          >
+          <div class="filter-title">分类</div>
+          <div id="categoryList" class="category-list"></div>
+        </aside>
+
+        <section class="results-panel">
+          <div class="results-header">
+            <div>
+              <h2 id="resultsTitle">全部插件</h2>
+              <p id="resultsMeta">正在读取插件目录</p>
+            </div>
+            <select id="sortSelect" class="sort-select" aria-label="排序">
+              <option value="stars">按星标排序</option>
+              <option value="added">按新增时间</option>
+              <option value="name">按名称排序</option>
+            </select>
+          </div>
+
+          <div id="messageArea" class="message-area" hidden></div>
+          <div id="pluginGrid" class="plugin-grid" aria-live="polite"></div>
+          <div id="emptyState" class="empty-state" hidden>
+            <h3>没有找到匹配插件</h3>
+            <p>换一个关键词或分类试试。</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="confirmDialog" class="confirm-dialog">
+      <form method="dialog">
+        <h2>确认安装第三方插件</h2>
+        <p id="confirmText"></p>
+        <div class="risk-box">
+          <strong>风险提示</strong>
+          <p>插件来自第三方仓库，安装后可能执行本地代码、读取工作区或影响界面行为。请确认你信任作者和来源。</p>
+        </div>
+        <label class="confirm-check">
+          <input id="riskCheckbox" type="checkbox">
+          我已查看来源，并确认继续安装
+        </label>
+        <div class="dialog-actions">
+          <button type="button" class="ghost-button" data-action="cancel-install">取消</button>
+          <button id="confirmInstallButton" type="button" class="danger-button" disabled>安装</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
