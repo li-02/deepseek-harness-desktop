@@ -3,7 +3,7 @@
   "url": "https://awesome-dsh-plugin.com",
   "source": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
   "updated": "2026-08-19",
-  "count": 1500,
+  "count": 1544,
   "categories": {
     "ui": {
       "en": "UI Enhancements",
@@ -99,7 +99,7 @@
       },
       "npm": "dsh-status-rotator",
       "stars": 35,
-      "downloads": 0,
+      "downloads": 313,
       "install": "dsh plugin --profile web add dsh-status-rotator",
       "added": "2026-08-14"
     },
@@ -147,7 +147,7 @@
       },
       "npm": "dsh-composer-expand",
       "stars": 4,
-      "downloads": 311,
+      "downloads": 680,
       "install": "dsh plugin --profile web add dsh-composer-expand",
       "added": "2026-08-15"
     },
@@ -184,7 +184,7 @@
       },
       "npm": "@2nd1st/dsh-plugin-open-app",
       "stars": 3,
-      "downloads": 228,
+      "downloads": 292,
       "install": "dsh plugin --profile web add @2nd1st/dsh-plugin-open-app",
       "added": "2026-08-15",
       "screenshots": [
@@ -239,7 +239,7 @@
       },
       "npm": "dsh-skill-picker",
       "stars": 17,
-      "downloads": 0,
+      "downloads": 570,
       "install": "dsh plugin --profile web add dsh-skill-picker",
       "added": "2026-08-16"
     },
@@ -331,7 +331,7 @@
       },
       "npm": "dsh-web-mobile-fix",
       "stars": 5,
-      "downloads": 255,
+      "downloads": 689,
       "install": "dsh plugin --profile web add dsh-web-mobile-fix",
       "added": "2026-08-14",
       "screenshots": [
@@ -351,7 +351,7 @@
       },
       "npm": "@a9i5k4/dsh-anchored-monitor",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 1341,
       "install": "dsh plugin --profile web add @a9i5k4/dsh-anchored-monitor",
       "added": "2026-08-18"
     },
@@ -367,7 +367,7 @@
       },
       "npm": "dsh-alive",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 326,
       "install": "dsh plugin --profile web add dsh-alive",
       "added": "2026-08-16"
     },
@@ -431,7 +431,7 @@
       },
       "npm": "deepseek-desk-pet",
       "stars": 4,
-      "downloads": 0,
+      "downloads": 164,
       "install": "dsh plugin --profile web add deepseek-desk-pet",
       "added": "2026-08-19",
       "screenshots": [
@@ -485,7 +485,7 @@
       },
       "npm": "dsh-sleep-send",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 813,
       "install": "dsh plugin --profile web add dsh-sleep-send",
       "added": "2026-08-18"
     },
@@ -586,7 +586,7 @@
       },
       "npm": "dsh-focus-overlay",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 354,
       "install": "dsh plugin --profile web add dsh-focus-overlay",
       "added": "2026-08-18"
     },
@@ -618,7 +618,7 @@
       },
       "npm": "dsh-pomodoro",
       "stars": 3,
-      "downloads": 39,
+      "downloads": 478,
       "install": "dsh plugin --profile web add dsh-pomodoro",
       "added": "2026-08-14"
     },
@@ -634,7 +634,7 @@
       },
       "npm": "@deepseek-harness-tui/dsh-tui",
       "stars": 1996,
-      "downloads": 3360,
+      "downloads": 16959,
       "install": "dsh plugin --profile web add @deepseek-harness-tui/dsh-tui",
       "added": "2026-08-14"
     },
@@ -666,7 +666,7 @@
       },
       "npm": "@opendsh/dsh-plugin-setting-mcp",
       "stars": 7,
-      "downloads": 128,
+      "downloads": 832,
       "install": "dsh plugin --profile web add @opendsh/dsh-plugin-setting-mcp",
       "added": "2026-08-15"
     },
@@ -698,7 +698,7 @@
       },
       "npm": "dsh-chat-tidy",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 13,
       "install": "dsh plugin --profile web add dsh-chat-tidy",
       "added": "2026-08-15"
     },
@@ -746,7 +746,7 @@
       },
       "npm": "dsh-multi-chat",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 2514,
       "install": "dsh plugin --profile web add dsh-multi-chat",
       "added": "2026-08-17",
       "screenshots": [
@@ -874,8 +874,8 @@
       "page": "https://awesome-dsh-plugin.com/p/demacia1314/dsh-airdrop/",
       "category": "ui",
       "description": {
-        "en": "Codex-app-style attachments for DSH: drop any file or folder anywhere in the window — bytes upload straight into the session workspace on the server, so remote servers and SSH tunnels work exactly like localhost.",
-        "zh": "像在 Codex app 里一样给 DSH 加附件：任意文件、任意文件夹，拖到窗口任意位置即可——字节直接上传到服务器的会话工作区，远程服务器和 SSH 隧道下与本地体验一致。"
+        "en": "⭐ Drag-and-drop uploads of any file or whole folders, anywhere in the window; remote-safe — bytes go straight into the session workspace on the server, so a DSH deployed on a remote machine works exactly like localhost.",
+        "zh": "⭐ 支持拖拽上传：任意文件、整个文件夹，拖到窗口任意位置即可；支持远程上传——字节直传服务器的会话工作区，部署在服务器上的 DSH 也能像本地一样拖了就发。"
       },
       "npm": null,
       "stars": 0,
@@ -975,9 +975,25 @@
       },
       "npm": "dsh-input-traffic",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 1124,
       "install": "dsh plugin --profile web add dsh-input-traffic",
       "added": "2026-08-18"
+    },
+    {
+      "name": "dsh-niao-quick-open",
+      "owner": "dsh-niao",
+      "url": "https://github.com/dsh-niao/dsh-niao-quick-open",
+      "page": "https://awesome-dsh-plugin.com/p/dsh-niao/dsh-niao-quick-open/",
+      "category": "ui",
+      "description": {
+        "en": "UI enhancement suite for DeepSeek Harness: one-click workspace open (copy path, reveal in Finder, open in an auto-discovered editor), DeepSeek-web-style user-message nav rail, session to-do marks, flat-list polish, and a hard-restart button.",
+        "zh": "DeepSeek Harness 界面增强插件：工作区一键打开（复制路径、访达显示、自动发现编辑器打开）、用户消息导航条、会话待办标记、单列表增强与硬性重启按钮。"
+      },
+      "npm": "dsh-niao-quick-open",
+      "stars": 0,
+      "downloads": 468,
+      "install": "dsh plugin --profile web add dsh-niao-quick-open",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-popout-sidebar",
@@ -989,10 +1005,10 @@
         "en": "Pop-out sidebar: lists artifacts and a file tree with multiple preview formats, pops out into a separate browser tab you can drag to another monitor, and coexists with other sidebar plugins simultaneously.",
         "zh": "可弹出式侧边栏：侧边栏展示产物与文件树，支持多种文件预览形式；并可弹出为独立浏览器标签页（可拖至另一显示器）；兼容其他sidebar插件，可以同时显示。"
       },
-      "npm": null,
+      "npm": "dsh-popout-sidebar",
       "stars": 16,
-      "downloads": null,
-      "install": "dsh plugin --profile web add github:e2mcc/dsh-popout-sidebar",
+      "downloads": 0,
+      "install": "dsh plugin --profile web add dsh-popout-sidebar",
       "added": "2026-08-17"
     },
     {
@@ -1007,7 +1023,7 @@
       },
       "npm": "dsh-ui-agents-pixe",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 531,
       "install": "dsh plugin --profile web add dsh-ui-agents-pixe",
       "added": "2026-08-18"
     },
@@ -1023,7 +1039,7 @@
       },
       "npm": "dsh-office",
       "stars": 1,
-      "downloads": 142,
+      "downloads": 1208,
       "install": "dsh plugin --profile web add dsh-office",
       "added": "2026-08-15"
     },
@@ -1042,6 +1058,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:FeatherHunter/dsh-prompt",
       "added": "2026-08-18"
+    },
+    {
+      "name": "dsh-input-rewriter",
+      "owner": "feiertu",
+      "url": "https://github.com/feiertu/dsh-input-rewriter",
+      "page": "https://awesome-dsh-plugin.com/p/feiertu/dsh-input-rewriter/",
+      "category": "ui",
+      "description": {
+        "en": "Auto-rewrites the composer draft into a clearer, more executable prompt after you stop typing, using scene-aware playbooks, preserving long attachments verbatim, and numbering multi-part questions.",
+        "zh": "停止输入后自动把草稿改写为更清晰、更可执行的提示词：按场景套用 playbook、长附件逐字保留、多提问保留编号。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:feiertu/dsh-input-rewriter",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-line-select",
@@ -1087,7 +1119,7 @@
       },
       "npm": "dsh-peak-indicator",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 1767,
       "install": "dsh plugin --profile web add dsh-peak-indicator",
       "added": "2026-08-18"
     },
@@ -1151,7 +1183,7 @@
       },
       "npm": "dsh-terminal",
       "stars": 0,
-      "downloads": 311,
+      "downloads": 379,
       "install": "dsh plugin --profile web add dsh-terminal",
       "added": "2026-08-15"
     },
@@ -1263,7 +1295,7 @@
       },
       "npm": "dsh-file-upload",
       "stars": 10,
-      "downloads": 394,
+      "downloads": 2084,
       "install": "dsh plugin --profile web add dsh-file-upload",
       "added": "2026-08-15"
     },
@@ -1279,7 +1311,7 @@
       },
       "npm": "dsh-timeline",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 375,
       "install": "dsh plugin --profile web add dsh-timeline",
       "added": "2026-08-18"
     },
@@ -1295,7 +1327,7 @@
       },
       "npm": "dsh-client-auto-continue",
       "stars": 26,
-      "downloads": 1481,
+      "downloads": 3804,
       "install": "dsh plugin --profile web add dsh-client-auto-continue",
       "added": "2026-08-14"
     },
@@ -1311,7 +1343,7 @@
       },
       "npm": "@huiliyi37/dsh-tianshu-tui",
       "stars": 215,
-      "downloads": 632,
+      "downloads": 1763,
       "install": "dsh plugin --profile web add @huiliyi37/dsh-tianshu-tui",
       "added": "2026-08-13"
     },
@@ -1344,7 +1376,7 @@
       },
       "npm": "dsh-shorts-wall",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 1140,
       "install": "dsh plugin --profile web add dsh-shorts-wall",
       "added": "2026-08-17",
       "screenshots": [
@@ -1365,7 +1397,7 @@
       },
       "npm": "dsh-splash-launcher",
       "stars": 2,
-      "downloads": 243,
+      "downloads": 323,
       "install": "dsh plugin --profile web add dsh-splash-launcher",
       "added": "2026-08-15",
       "screenshots": [
@@ -1408,6 +1440,23 @@
       "added": "2026-08-18"
     },
     {
+      "name": "agent-context-editor#deepseek-harness",
+      "owner": "jermaine123123",
+      "url": "https://github.com/jermaine123123/agent-context-editor/tree/main/adapters/deepseek-harness",
+      "page": "https://awesome-dsh-plugin.com/p/jermaine123123/agent-context-editor--adapters-deepseek-harness/",
+      "category": "ui",
+      "description": {
+        "en": "Searchable and reversible management view for DeepSeek Harness reasoning and answer units, with type filters, batch actions, and sidecar-persisted hide state that preserves the original Session.",
+        "zh": "为 DeepSeek Harness 的 reasoning 与 answer 单元提供可搜索、可恢复的管理视图，支持类型筛选和批量操作，使用 sidecar 保存隐藏状态并保留原始 Session。"
+      },
+      "npm": null,
+      "tarball": "https://github.com/jermaine123123/agent-context-editor/releases/download/v0.1.0-alpha.1/context-editor-deepseek-harness-0.1.1.tgz",
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add \"https://github.com/jermaine123123/agent-context-editor/releases/download/v0.1.0-alpha.1/context-editor-deepseek-harness-0.1.1.tgz\"",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-ux",
       "owner": "jiangnanquan",
       "url": "https://github.com/jiangnanquan/dsh-ux",
@@ -1435,7 +1484,7 @@
       },
       "npm": "dsh-canvas-preview",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 862,
       "install": "dsh plugin --profile web add dsh-canvas-preview",
       "added": "2026-08-18"
     },
@@ -1451,7 +1500,7 @@
       },
       "npm": "@jiyr0119/dsh-workspace-explorer",
       "stars": 3,
-      "downloads": 0,
+      "downloads": 1219,
       "install": "dsh plugin --profile web add @jiyr0119/dsh-workspace-explorer",
       "added": "2026-08-16",
       "screenshots": [
@@ -1472,7 +1521,7 @@
       },
       "npm": "dsh-chat-timeline",
       "stars": 15,
-      "downloads": 0,
+      "downloads": 729,
       "install": "dsh plugin --profile web add dsh-chat-timeline",
       "added": "2026-08-14"
     },
@@ -1539,7 +1588,7 @@
       },
       "npm": "@kelearns/dsh-navigation-bar",
       "stars": 5,
-      "downloads": 254,
+      "downloads": 334,
       "install": "dsh plugin --profile web add @kelearns/dsh-navigation-bar",
       "added": "2026-08-15"
     },
@@ -1587,7 +1636,7 @@
       },
       "npm": "dsh-smooth-stream",
       "stars": 33,
-      "downloads": 0,
+      "downloads": 937,
       "install": "dsh plugin --profile web add dsh-smooth-stream",
       "added": "2026-08-16"
     },
@@ -1629,6 +1678,22 @@
       ]
     },
     {
+      "name": "dsh-moon-light",
+      "owner": "lihang-lh",
+      "url": "https://github.com/lihang-lh/dsh-moon-light",
+      "page": "https://awesome-dsh-plugin.com/p/lihang-lh/dsh-moon-light/",
+      "category": "ui",
+      "description": {
+        "en": "A marquee mood-light ring around the DSH web UI edge that reacts to session state, turning green while the agent works, pink when done, and yellow when something needs attention, with colors, ring width, rotation speed, and flash frequency configurable from the settings panel.",
+        "zh": "DSH Web 界面边缘的跑马灯氛围光环：随会话状态自动变色（运行中绿色流动、完成粉色、有待处理黄色警告），设置面板可调颜色、光圈宽度、转速与闪动频率。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:lihang-lh/dsh-moon-light",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-chat-outline",
       "owner": "liliuCourier",
       "url": "https://github.com/liliuCourier/dsh-chat-outline",
@@ -1640,7 +1705,7 @@
       },
       "npm": "dsh-chat-outline",
       "stars": 5,
-      "downloads": 824,
+      "downloads": 1196,
       "install": "dsh plugin --profile web add dsh-chat-outline",
       "added": "2026-08-14"
     },
@@ -1704,7 +1769,7 @@
       },
       "npm": "dsh-community-hot",
       "stars": 1,
-      "downloads": 364,
+      "downloads": 442,
       "install": "dsh plugin --profile web add dsh-community-hot",
       "added": "2026-08-15"
     },
@@ -1768,7 +1833,7 @@
       },
       "npm": "dsh-web-attention-badge",
       "stars": 5,
-      "downloads": 250,
+      "downloads": 338,
       "install": "dsh plugin --profile web add dsh-web-attention-badge",
       "added": "2026-08-14"
     },
@@ -1785,7 +1850,7 @@
       "npm": "dsh-quick-toc",
       "tarball": "https://github.com/LyaxZ/dsh-quick-toc/releases/latest/download/dsh-quick-toc.tgz",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 272,
       "install": "dsh plugin --profile web add dsh-quick-toc",
       "added": "2026-08-18"
     },
@@ -1801,7 +1866,7 @@
       },
       "npm": "deepseek-harness-zh_pro",
       "stars": 12,
-      "downloads": 824,
+      "downloads": 2360,
       "install": "dsh plugin --profile web add deepseek-harness-zh_pro",
       "added": "2026-08-15"
     },
@@ -1961,7 +2026,7 @@
       },
       "npm": "dsh-chat-index-rail",
       "stars": 0,
-      "downloads": 266,
+      "downloads": 286,
       "install": "dsh plugin --profile web add dsh-chat-index-rail",
       "added": "2026-08-15"
     },
@@ -2089,7 +2154,7 @@
       },
       "npm": "dsh-keyboard-history",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 266,
       "install": "dsh plugin --profile web add dsh-keyboard-history",
       "added": "2026-08-19"
     },
@@ -2159,7 +2224,7 @@
       },
       "npm": "dsh-better-sidebar",
       "stars": 2203,
-      "downloads": 7486,
+      "downloads": 39717,
       "install": "dsh plugin --profile web add dsh-better-sidebar",
       "added": "2026-08-14"
     },
@@ -2293,7 +2358,7 @@
       },
       "npm": "dsh-pathlink",
       "stars": 1,
-      "downloads": 578,
+      "downloads": 671,
       "install": "dsh plugin --profile web add dsh-pathlink",
       "added": "2026-08-15"
     },
@@ -2309,7 +2374,7 @@
       },
       "npm": "dsh-plugin-genui",
       "stars": 41,
-      "downloads": 125,
+      "downloads": 991,
       "install": "dsh plugin --profile web add dsh-plugin-genui",
       "added": "2026-08-16",
       "screenshots": [
@@ -2332,7 +2397,7 @@
       },
       "npm": "dsh-composer-history",
       "stars": 6,
-      "downloads": 228,
+      "downloads": 651,
       "install": "dsh plugin --profile web add dsh-composer-history",
       "added": "2026-08-15"
     },
@@ -2348,7 +2413,7 @@
       },
       "npm": "harness-ui-enhancer",
       "stars": 5,
-      "downloads": 292,
+      "downloads": 814,
       "install": "dsh plugin --profile web add harness-ui-enhancer",
       "added": "2026-08-15"
     },
@@ -2364,7 +2429,7 @@
       },
       "npm": "harness-widgets",
       "stars": 2,
-      "downloads": 139,
+      "downloads": 904,
       "install": "dsh plugin --profile web add harness-widgets",
       "added": "2026-08-15",
       "screenshots": [
@@ -2409,7 +2474,7 @@
       },
       "npm": "reasoning-slider",
       "stars": 4,
-      "downloads": 91,
+      "downloads": 504,
       "install": "dsh plugin --profile web add reasoning-slider",
       "added": "2026-08-14",
       "screenshots": [
@@ -2447,7 +2512,7 @@
       },
       "npm": "dsh-desktop-plugin",
       "stars": 4,
-      "downloads": 1221,
+      "downloads": 2784,
       "install": "dsh plugin --profile web add dsh-desktop-plugin",
       "added": "2026-08-14"
     },
@@ -2463,7 +2528,7 @@
       },
       "npm": "dsh-desktop-windows-launcher",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 142,
       "install": "dsh plugin --profile web add dsh-desktop-windows-launcher",
       "added": "2026-08-16"
     },
@@ -2495,7 +2560,7 @@
       },
       "npm": "dsh-workspace-scope",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 242,
       "install": "dsh plugin --profile web add dsh-workspace-scope",
       "added": "2026-08-18"
     },
@@ -2514,6 +2579,23 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:Ricketts-Guo/dsh-shortcuts",
       "added": "2026-08-15"
+    },
+    {
+      "name": "dsh-inline-comments",
+      "owner": "ruisenbai",
+      "url": "https://github.com/ruisenbai/dsh-inline-comments",
+      "page": "https://awesome-dsh-plugin.com/p/ruisenbai/dsh-inline-comments/",
+      "category": "ui",
+      "description": {
+        "en": "Select text in a finished assistant reply to add numbered comments beside the quote; collect drafts and submit the batch through the official composer as one user message.",
+        "zh": "在已完成的助手回复中选中原文，在引文旁添加编号注释；草稿攒齐后通过官方输入框一次性作为一条用户消息发送。"
+      },
+      "npm": null,
+      "tarball": "https://github.com/ruisenbai/dsh-inline-comments/releases/download/v0.1.1/dsh-inline-comments-0.1.1.tgz",
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add \"https://github.com/ruisenbai/dsh-inline-comments/releases/download/v0.1.1/dsh-inline-comments-0.1.1.tgz\"",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-desktop#bundle",
@@ -2543,7 +2625,7 @@
       },
       "npm": "dsh-auto-paste",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 459,
       "install": "dsh plugin --profile web add dsh-auto-paste",
       "added": "2026-08-18"
     },
@@ -2559,7 +2641,7 @@
       },
       "npm": "dsh-model-picker",
       "stars": 1,
-      "downloads": 421,
+      "downloads": 514,
       "install": "dsh plugin --profile web add dsh-model-picker",
       "added": "2026-08-15"
     },
@@ -2642,7 +2724,7 @@
       },
       "npm": "dsh-plugin-terminal",
       "stars": 4,
-      "downloads": 243,
+      "downloads": 870,
       "install": "dsh plugin --profile web add dsh-plugin-terminal",
       "added": "2026-08-14",
       "screenshots": [
@@ -2731,7 +2813,7 @@
       },
       "npm": "dsh-plugin-smooth-stream",
       "stars": 9,
-      "downloads": 0,
+      "downloads": 464,
       "install": "dsh plugin --profile web add dsh-plugin-smooth-stream",
       "added": "2026-08-16"
     },
@@ -2763,7 +2845,7 @@
       },
       "npm": "dsh-chat-history",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 293,
       "install": "dsh plugin --profile web add dsh-chat-history",
       "added": "2026-08-19"
     },
@@ -2779,7 +2861,7 @@
       },
       "npm": "dsh-file-mention",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 119,
       "install": "dsh plugin --profile web add dsh-file-mention",
       "added": "2026-08-18"
     },
@@ -2795,7 +2877,7 @@
       },
       "npm": "dsh-input-history",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 119,
       "install": "dsh plugin --profile web add dsh-input-history",
       "added": "2026-08-18"
     },
@@ -2954,7 +3036,7 @@
       },
       "npm": "dsh-outline",
       "stars": 11,
-      "downloads": 115,
+      "downloads": 871,
       "install": "dsh plugin --profile web add dsh-outline",
       "added": "2026-08-14"
     },
@@ -3050,7 +3132,7 @@
       },
       "npm": "dsh-cache-miss",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 489,
       "install": "dsh plugin --profile web add dsh-cache-miss",
       "added": "2026-08-16"
     },
@@ -3066,7 +3148,7 @@
       },
       "npm": "weshop-dsh-plugin",
       "stars": 12,
-      "downloads": 32,
+      "downloads": 136,
       "install": "dsh plugin --profile web add weshop-dsh-plugin",
       "added": "2026-08-17"
     },
@@ -3114,7 +3196,7 @@
       },
       "npm": "dsh-wsl-workspace-picker",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 255,
       "install": "dsh plugin --profile web add dsh-wsl-workspace-picker",
       "added": "2026-08-18",
       "screenshots": [
@@ -3133,9 +3215,25 @@
       },
       "npm": "dsh-codex-timeline",
       "stars": 2,
-      "downloads": 562,
+      "downloads": 1199,
       "install": "dsh plugin --profile web add dsh-codex-timeline",
       "added": "2026-08-15"
+    },
+    {
+      "name": "dsh-deep-verbs",
+      "owner": "Winter-And-You-Gone",
+      "url": "https://github.com/Winter-And-You-Gone/dsh-deep-verbs",
+      "page": "https://awesome-dsh-plugin.com/p/Winter-And-You-Gone/dsh-deep-verbs/",
+      "category": "ui",
+      "description": {
+        "en": "Rotates the model status line through a 53-phrase English/Chinese deep-theme pool: a random pick at turn start, event-driven switching on new thinking segments or tool calls (3s throttle), and a click on the status line toggles the language.",
+        "zh": "把内置 'Deep diving...' 思考状态行扩展为 53 条 deep 系英/中双语短语池：回合开场随机一条，随新思考段/工具调用事件轮换（最短间隔 3 秒），点击状态行切换中英文。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:Winter-And-You-Gone/dsh-deep-verbs",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-turn-fold",
@@ -3149,7 +3247,7 @@
       },
       "npm": "dsh-turn-fold",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 131,
       "install": "dsh plugin --profile web add dsh-turn-fold",
       "added": "2026-08-18"
     },
@@ -3197,7 +3295,7 @@
       },
       "npm": "dsh-ui-tweaks",
       "stars": 2,
-      "downloads": 117,
+      "downloads": 1139,
       "install": "dsh plugin --profile web add dsh-ui-tweaks",
       "added": "2026-08-17"
     },
@@ -3267,12 +3365,32 @@
       },
       "npm": "dsh-message-rail",
       "stars": 7,
-      "downloads": 588,
+      "downloads": 799,
       "install": "dsh plugin --profile web add dsh-message-rail",
       "added": "2026-08-15",
       "screenshots": [
         "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-hover-preview.png",
         "https://raw.githubusercontent.com/wx-yss/dsh-message-rail/main/assets/rail-market-2.png"
+      ]
+    },
+    {
+      "name": "dsh-hover-approve",
+      "owner": "wydddddcool",
+      "url": "https://github.com/wydddddcool/dsh-hover-approve",
+      "page": "https://awesome-dsh-plugin.com/p/wydddddcool/dsh-hover-approve/",
+      "category": "ui",
+      "description": {
+        "en": "Anchors an approve/answer bubble to each DSH Web sidebar session row — one-click handling of authorization, questions, plan reviews and blocked goals without opening the conversation.",
+        "zh": "DSH Web 侧边栏锚定气泡：会话待授权、提问、计划确认、目标阻断时在会话行旁自动弹出并一键处理，无需点进会话。"
+      },
+      "npm": null,
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:wydddddcool/dsh-hover-approve",
+      "added": "2026-08-19",
+      "screenshots": [
+        "https://raw.githubusercontent.com/wydddddcool/dsh-hover-approve/main/assets/shot-approval.png",
+        "https://raw.githubusercontent.com/wydddddcool/dsh-hover-approve/main/assets/shot-goal-blocked.png"
       ]
     },
     {
@@ -3287,7 +3405,7 @@
       },
       "npm": "dsh-rule-manager",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 150,
       "install": "dsh plugin --profile web add dsh-rule-manager",
       "added": "2026-08-18"
     },
@@ -3303,7 +3421,7 @@
       },
       "npm": "dsh-client-ui-writing",
       "stars": 3,
-      "downloads": 604,
+      "downloads": 973,
       "install": "dsh plugin --profile web add dsh-client-ui-writing",
       "added": "2026-08-15"
     },
@@ -3351,7 +3469,7 @@
       },
       "npm": "dsh-skin-manager",
       "stars": 5,
-      "downloads": 0,
+      "downloads": 365,
       "install": "dsh plugin --profile web add dsh-skin-manager",
       "added": "2026-08-15"
     },
@@ -3367,7 +3485,7 @@
       },
       "npm": "dsh-session-timeline",
       "stars": 4,
-      "downloads": 259,
+      "downloads": 354,
       "install": "dsh plugin --profile web add dsh-session-timeline",
       "added": "2026-08-15"
     },
@@ -3399,7 +3517,7 @@
       },
       "npm": "dsh-result-only-view",
       "stars": 1,
-      "downloads": 516,
+      "downloads": 761,
       "install": "dsh plugin --profile web add dsh-result-only-view",
       "added": "2026-08-16"
     },
@@ -3463,7 +3581,7 @@
       },
       "npm": "dsh-noletme",
       "stars": 5,
-      "downloads": 0,
+      "downloads": 531,
       "install": "dsh plugin --profile web add dsh-noletme",
       "added": "2026-08-18"
     },
@@ -3479,7 +3597,7 @@
       },
       "npm": "dsh-turn-rail",
       "stars": 2,
-      "downloads": 113,
+      "downloads": 158,
       "install": "dsh plugin --profile web add dsh-turn-rail",
       "added": "2026-08-15"
     },
@@ -3527,7 +3645,7 @@
       },
       "npm": "dsh-settings-nav-organizer",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 448,
       "install": "dsh plugin --profile web add dsh-settings-nav-organizer",
       "added": "2026-08-16"
     },
@@ -3612,6 +3730,23 @@
       "added": "2026-08-14"
     },
     {
+      "name": "dsh-settings-drawer",
+      "owner": "zizhongfeiyang",
+      "url": "https://github.com/zizhongfeiyang/dsh-settings-drawer",
+      "page": "https://awesome-dsh-plugin.com/p/zizhongfeiyang/dsh-settings-drawer/",
+      "category": "ui",
+      "description": {
+        "en": "Lets you choose which items appear in the DeepSeek Harness settings left nav.",
+        "zh": "让你选择 DeepSeek Harness 设置页左侧导航要显示哪些栏目。"
+      },
+      "npm": null,
+      "tarball": "https://github.com/zizhongfeiyang/dsh-settings-drawer/releases/latest/download/dsh-settings-drawer-1.1.1.tgz",
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add \"https://github.com/zizhongfeiyang/dsh-settings-drawer/releases/latest/download/dsh-settings-drawer-1.1.1.tgz\"",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-web-preview",
       "owner": "zoumutou",
       "url": "https://github.com/zoumutou/dsh-web-preview",
@@ -3660,6 +3795,22 @@
       "added": "2026-08-16"
     },
     {
+      "name": "dsh-selection-followup",
+      "owner": "zzx-dear",
+      "url": "https://github.com/zzx-dear/dsh-selection-followup",
+      "page": "https://awesome-dsh-plugin.com/p/zzx-dear/dsh-selection-followup/",
+      "category": "ui",
+      "description": {
+        "en": "Select any text in a DSH chat reply to get a floating Follow-up/Copy pill: one click quotes the selection into the composer so you can type your own follow-up question, or copies it.",
+        "zh": "选中聊天回复中的任意文字，浮出「追问/复制」气泡：一键把选中内容作为引用填入输入框（问题由你输入），或一键复制。另附安装与实现文档。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:zzx-dear/dsh-selection-followup",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-api-balance",
       "owner": "02Muller25",
       "url": "https://github.com/02Muller25/dsh-api-balance",
@@ -3687,7 +3838,7 @@
       },
       "npm": "dsh-usage-dashboard-plus",
       "stars": 3,
-      "downloads": 71,
+      "downloads": 348,
       "install": "dsh plugin --profile web add dsh-usage-dashboard-plus",
       "added": "2026-08-18"
     },
@@ -3832,7 +3983,7 @@
       },
       "npm": "dsh-context",
       "stars": 413,
-      "downloads": 1022,
+      "downloads": 6612,
       "install": "dsh plugin --profile web add dsh-context",
       "added": "2026-08-14"
     },
@@ -3880,7 +4031,7 @@
       },
       "npm": "@choi-p/dsh-deepseek-balance",
       "stars": 1,
-      "downloads": 78,
+      "downloads": 611,
       "install": "dsh plugin --profile web add @choi-p/dsh-deepseek-balance",
       "added": "2026-08-17"
     },
@@ -3980,7 +4131,7 @@
       },
       "npm": "deepseek-harness-wallet",
       "stars": 41,
-      "downloads": 333,
+      "downloads": 2066,
       "install": "dsh plugin --profile web add deepseek-harness-wallet",
       "added": "2026-08-14"
     },
@@ -3996,7 +4147,7 @@
       },
       "npm": "dsh-plugin-llm-balance",
       "stars": 3,
-      "downloads": 188,
+      "downloads": 401,
       "install": "dsh plugin --profile web add dsh-plugin-llm-balance",
       "added": "2026-08-15",
       "screenshots": [
@@ -4031,9 +4182,25 @@
       },
       "npm": "@floatingdeaming/minimax-usage",
       "stars": 1,
-      "downloads": 560,
+      "downloads": 636,
       "install": "dsh plugin --profile web add @floatingdeaming/minimax-usage",
       "added": "2026-08-16"
+    },
+    {
+      "name": "dsh-token-cost",
+      "owner": "gdy01",
+      "url": "https://github.com/gdy01/dsh-token-cost",
+      "page": "https://awesome-dsh-plugin.com/p/gdy01/dsh-token-cost/",
+      "category": "usage",
+      "description": {
+        "en": "Per-project LLM token usage and RMB cost in the DSH Web sidebar, split by input (cache miss), cache hit, and output with model price auto-pricing.",
+        "zh": "在 DSH Web 侧边栏按项目展示 LLM Token 用量与人民币花费，分别统计输入（未命中）、命中与输出，并按模型标准价格自动计价。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:gdy01/dsh-token-cost",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-balance-meter",
@@ -4079,7 +4246,7 @@
       },
       "npm": "context-vista",
       "stars": 10,
-      "downloads": 88,
+      "downloads": 301,
       "install": "dsh plugin --profile web add context-vista",
       "added": "2026-08-14"
     },
@@ -4111,7 +4278,7 @@
       },
       "npm": "dsh-cost-meter",
       "stars": 96,
-      "downloads": 0,
+      "downloads": 919,
       "install": "dsh plugin --profile web add dsh-cost-meter",
       "added": "2026-08-14"
     },
@@ -4143,7 +4310,7 @@
       },
       "npm": "dsh-go-balance",
       "stars": 2,
-      "downloads": 112,
+      "downloads": 317,
       "install": "dsh plugin --profile web add dsh-go-balance",
       "added": "2026-08-15",
       "screenshots": [
@@ -4196,7 +4363,7 @@
       },
       "npm": "dsh-bill",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 1122,
       "install": "dsh plugin --profile web add dsh-bill",
       "added": "2026-08-17",
       "screenshots": [
@@ -4216,7 +4383,7 @@
       },
       "npm": "dsh-deepseek-quota-bar",
       "stars": 3,
-      "downloads": 142,
+      "downloads": 215,
       "install": "dsh plugin --profile web add dsh-deepseek-quota-bar",
       "added": "2026-08-15"
     },
@@ -4280,7 +4447,7 @@
       },
       "npm": "@kenz1117/dsh-ui-usage-billing",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 1227,
       "install": "dsh plugin --profile web add @kenz1117/dsh-ui-usage-billing",
       "added": "2026-08-16"
     },
@@ -4296,7 +4463,7 @@
       },
       "npm": "@kidli1412/dsh-session-cost",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 111,
       "install": "dsh plugin --profile web add @kidli1412/dsh-session-cost",
       "added": "2026-08-16"
     },
@@ -4312,7 +4479,7 @@
       },
       "npm": "@kidli1412/dsh-token-heatmap",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 86,
       "install": "dsh plugin --profile web add @kidli1412/dsh-token-heatmap",
       "added": "2026-08-16"
     },
@@ -4328,7 +4495,7 @@
       },
       "npm": "dsh-usage-vendor-stats",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 158,
       "install": "dsh plugin --profile web add dsh-usage-vendor-stats",
       "added": "2026-08-16"
     },
@@ -4383,7 +4550,7 @@
       },
       "npm": "@lemcae/dsh-balance",
       "stars": 6,
-      "downloads": 367,
+      "downloads": 1044,
       "install": "dsh plugin --profile web add @lemcae/dsh-balance",
       "added": "2026-08-15"
     },
@@ -4399,7 +4566,7 @@
       },
       "npm": "dsh-convo-cost",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 183,
       "install": "dsh plugin --profile web add dsh-convo-cost",
       "added": "2026-08-18"
     },
@@ -4415,7 +4582,7 @@
       },
       "npm": "dsh-balance-plugin",
       "stars": 1,
-      "downloads": 203,
+      "downloads": 446,
       "install": "dsh plugin --profile web add dsh-balance-plugin",
       "added": "2026-08-15"
     },
@@ -4463,13 +4630,29 @@
       },
       "npm": "dsh-usage-chart",
       "stars": 7,
-      "downloads": 363,
+      "downloads": 811,
       "install": "dsh plugin --profile web add dsh-usage-chart",
       "added": "2026-08-14",
       "screenshots": [
         "https://github.com/Max-Samson/dsh-usage-chart/blob/main/docs/images/usage-panel-demo-en-lightv1.0.0.png",
         "https://github.com/Max-Samson/dsh-usage-chart/blob/main/docs/images/usage-panel-demo-zh-darkv1.0.0.png"
       ]
+    },
+    {
+      "name": "dsh-cost-dashboard",
+      "owner": "mike-lee0120",
+      "url": "https://github.com/mike-lee0120/dsh-cost-dashboard",
+      "page": "https://awesome-dsh-plugin.com/p/mike-lee0120/dsh-cost-dashboard/",
+      "category": "usage",
+      "description": {
+        "en": "Cost dashboard for DeepSeek Harness: aggregates model input/output/cache tokens across all local sessions, prices them with a builtin table (including DeepSeek peak/off-peak), and shows daily trends plus per-model and per-session tables.",
+        "zh": "费用看板：汇总本机全部会话的模型输入/输出/缓存 token，按内置价格表计费（含 DeepSeek 峰谷），展示每日趋势与按模型/会话明细。"
+      },
+      "npm": null,
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:mike-lee0120/dsh-cost-dashboard",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-token-anxiety",
@@ -4515,7 +4698,7 @@
       },
       "npm": "dsh-token-usage-counter",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 358,
       "install": "dsh plugin --profile web add dsh-token-usage-counter",
       "added": "2026-08-16",
       "screenshots": [
@@ -4568,7 +4751,7 @@
       },
       "npm": "dsh-spend",
       "stars": 6,
-      "downloads": 824,
+      "downloads": 1877,
       "install": "dsh plugin --profile web add dsh-spend",
       "added": "2026-08-14",
       "screenshots": [
@@ -4657,7 +4840,7 @@
       },
       "npm": "dsh-whale-meter",
       "stars": 4,
-      "downloads": 0,
+      "downloads": 239,
       "install": "dsh plugin --profile web add dsh-whale-meter",
       "added": "2026-08-17"
     },
@@ -4673,7 +4856,7 @@
       },
       "npm": "dsh-liquid-glass-balance-card",
       "stars": 5,
-      "downloads": 0,
+      "downloads": 306,
       "install": "dsh plugin --profile web add dsh-liquid-glass-balance-card",
       "added": "2026-08-16"
     },
@@ -4737,7 +4920,7 @@
       },
       "npm": "dsh-usage-meter",
       "stars": 0,
-      "downloads": 344,
+      "downloads": 416,
       "install": "dsh plugin --profile web add dsh-usage-meter",
       "added": "2026-08-15"
     },
@@ -4806,7 +4989,7 @@
       },
       "npm": "dsh-quota-panel",
       "stars": 3,
-      "downloads": 519,
+      "downloads": 640,
       "install": "dsh plugin --profile web add dsh-quota-panel",
       "added": "2026-08-15"
     },
@@ -4838,7 +5021,7 @@
       },
       "npm": "dsh-balance-float",
       "stars": 4,
-      "downloads": 84,
+      "downloads": 155,
       "install": "dsh plugin --profile web add dsh-balance-float",
       "added": "2026-08-15"
     },
@@ -4960,6 +5143,22 @@
       ]
     },
     {
+      "name": "DSH-Balance-display",
+      "owner": "yoiizesdev-crypto",
+      "url": "https://github.com/yoiizesdev-crypto/DSH-Balance-display",
+      "page": "https://awesome-dsh-plugin.com/p/yoiizesdev-crypto/DSH-Balance-display/",
+      "category": "usage",
+      "description": {
+        "en": "Real-time DeepSeek account balance badge in the sidebar footer with odometer roll animation, multi-currency support, balance trend chart, per-key usage statistics with historical backfill, and GitHub version auto-check.",
+        "zh": "侧边栏底部实时显示 DeepSeek 账户余额徽章：数字滚轮动画、多币种支持、余额趋势图、按 Key 用量统计（含安装前历史回填），并支持 GitHub 版本自动检查。"
+      },
+      "npm": null,
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:yoiizesdev-crypto/DSH-Balance-display",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-usage-lens",
       "owner": "yokesky",
       "url": "https://github.com/yokesky/dsh-usage-lens",
@@ -5055,7 +5254,7 @@
       },
       "npm": "dsh-tokenledger",
       "stars": 102,
-      "downloads": 130,
+      "downloads": 589,
       "install": "dsh plugin --profile web add dsh-tokenledger",
       "added": "2026-08-15"
     },
@@ -5087,7 +5286,7 @@
       },
       "npm": "dsh-save-money",
       "stars": 31,
-      "downloads": 0,
+      "downloads": 420,
       "install": "dsh plugin --profile web add dsh-save-money",
       "added": "2026-08-18"
     },
@@ -5303,7 +5502,7 @@
       },
       "npm": "dsh-wallpaper-skin",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 140,
       "install": "dsh plugin --profile web add dsh-wallpaper-skin",
       "added": "2026-08-17"
     },
@@ -5338,7 +5537,7 @@
       },
       "npm": "@dsh-plugin/dsh-thought-buddy",
       "stars": 2,
-      "downloads": 597,
+      "downloads": 877,
       "install": "dsh plugin --profile web add @dsh-plugin/dsh-thought-buddy",
       "added": "2026-08-16"
     },
@@ -5354,7 +5553,7 @@
       },
       "npm": "dsh-plugin-wallpaper-engine",
       "stars": 78,
-      "downloads": 0,
+      "downloads": 1495,
       "install": "dsh plugin --profile web add dsh-plugin-wallpaper-engine",
       "added": "2026-08-18"
     },
@@ -5435,7 +5634,7 @@
       },
       "npm": "dsh-anthropic-fonts",
       "stars": 0,
-      "downloads": 375,
+      "downloads": 466,
       "install": "dsh plugin --profile web add dsh-anthropic-fonts",
       "added": "2026-08-15"
     },
@@ -5552,7 +5751,7 @@
       },
       "npm": "dsh-neu-theme",
       "stars": 3,
-      "downloads": 0,
+      "downloads": 395,
       "install": "dsh plugin --profile web add dsh-neu-theme",
       "added": "2026-08-16"
     },
@@ -5642,7 +5841,7 @@
       },
       "npm": "dsh-theme",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 273,
       "install": "dsh plugin --profile web add dsh-theme",
       "added": "2026-08-18",
       "screenshots": [
@@ -5704,7 +5903,7 @@
       },
       "npm": "dsh-dracula-theme",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 571,
       "install": "dsh plugin --profile web add dsh-dracula-theme",
       "added": "2026-08-18"
     },
@@ -5736,7 +5935,7 @@
       },
       "npm": "dsh-dream-skin",
       "stars": 58,
-      "downloads": 1308,
+      "downloads": 4475,
       "install": "dsh plugin --profile web add dsh-dream-skin",
       "added": "2026-08-15",
       "screenshots": [
@@ -5804,7 +6003,7 @@
       },
       "npm": "dsh-client-ui-theme-xp",
       "stars": 5,
-      "downloads": 255,
+      "downloads": 347,
       "install": "dsh plugin --profile web add dsh-client-ui-theme-xp",
       "added": "2026-08-15",
       "screenshots": [
@@ -5871,7 +6070,7 @@
       },
       "npm": "dsh-blue-whale",
       "stars": 6,
-      "downloads": 0,
+      "downloads": 138,
       "install": "dsh plugin --profile web add dsh-blue-whale",
       "added": "2026-08-14",
       "screenshots": [
@@ -5944,7 +6143,7 @@
       },
       "npm": "dsh-any-background",
       "stars": 10,
-      "downloads": 814,
+      "downloads": 2047,
       "install": "dsh plugin --profile web add dsh-any-background",
       "added": "2026-08-15",
       "screenshots": [
@@ -5985,7 +6184,7 @@
       },
       "npm": "dsh-joi-channel-theme",
       "stars": 8,
-      "downloads": 0,
+      "downloads": 952,
       "install": "dsh plugin --profile web add dsh-joi-channel-theme",
       "added": "2026-08-17",
       "screenshots": [
@@ -6011,7 +6210,7 @@
       },
       "npm": "dsh-ui-appearance",
       "stars": 7,
-      "downloads": 136,
+      "downloads": 1057,
       "install": "dsh plugin --profile web add dsh-ui-appearance",
       "added": "2026-08-16",
       "screenshots": [
@@ -6047,7 +6246,7 @@
       },
       "npm": "dsh-liquid-glass",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 391,
       "install": "dsh plugin --profile web add dsh-liquid-glass",
       "added": "2026-08-16",
       "screenshots": [
@@ -6055,6 +6254,22 @@
         "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/2-glass-shell.png",
         "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/3-settings-wallpaper.png"
       ]
+    },
+    {
+      "name": "dsh-bloom-theme",
+      "owner": "webkubor",
+      "url": "https://github.com/webkubor/dsh-bloom-theme",
+      "page": "https://awesome-dsh-plugin.com/p/webkubor/dsh-bloom-theme/",
+      "category": "theme",
+      "description": {
+        "en": "Bloom Morandi theme: four variants (mist, cinnabar, petal, ripple) built on OKLCH so light and dark stay perceptually even, switchable from the top bar, with all eight foreground/background pairs measured at WCAG AA or better.",
+        "zh": "Bloom 莫兰迪主题：四款变体（雾蓝 mist、朱砂 cinnabar、花瓣 petal、涟漪 ripple）基于 OKLCH 调色，明暗切换不跳变，顶栏一键切换，八组「主色 + 底色」实测全部达到 WCAG AA。"
+      },
+      "npm": "@kubor/dsh-bloom-theme",
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add @kubor/dsh-bloom-theme",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-dynamic-wallpaper",
@@ -6144,6 +6359,22 @@
       ]
     },
     {
+      "name": "dsh-bloub-mood",
+      "owner": "Yuuhann1999",
+      "url": "https://github.com/Yuuhann1999/dsh-bloub-mood",
+      "page": "https://awesome-dsh-plugin.com/p/Yuuhann1999/dsh-bloub-mood/",
+      "category": "theme",
+      "description": {
+        "en": "Animated mood icon: swaps the favicon, sidebar wordmark and hero headline for bloub expression animations that follow session state (working / awaiting input / done / idle), with 8 shapes, 12 colors and custom wordmark texts configurable in Settings.",
+        "zh": "动态心情图标：favicon、侧栏字标与首页标题随会话状态切换 bloub 表情动画（执行中 / 等输入 / 完成 / 空闲），8 种形状、12 种颜色与自定义文字均可在设置页配置。"
+      },
+      "npm": "dsh-bloub-mood",
+      "stars": 3,
+      "downloads": 1260,
+      "install": "dsh plugin --profile web add dsh-bloub-mood",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-icon-theme",
       "owner": "yzke",
       "url": "https://github.com/yzke/dsh-icon-theme",
@@ -6155,7 +6386,7 @@
       },
       "npm": "dsh-icon-theme",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 326,
       "install": "dsh plugin --profile web add dsh-icon-theme",
       "added": "2026-08-18"
     },
@@ -6171,7 +6402,7 @@
       },
       "npm": "dsh-diorama",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 135,
       "install": "dsh plugin --profile web add dsh-diorama",
       "added": "2026-08-18"
     },
@@ -6187,7 +6418,7 @@
       },
       "npm": "dsh-catppuccin",
       "stars": 9,
-      "downloads": 113,
+      "downloads": 897,
       "install": "dsh plugin --profile web add dsh-catppuccin",
       "added": "2026-08-15"
     },
@@ -6224,22 +6455,6 @@
       "added": "2026-08-15"
     },
     {
-      "name": "dsh-skin-switcher",
-      "owner": "zhtx2024",
-      "url": "https://github.com/zhtx2024/dsh-skin-switcher",
-      "page": "https://awesome-dsh-plugin.com/p/zhtx2024/dsh-skin-switcher/",
-      "category": "theme",
-      "description": {
-        "en": "A settings-panel skin manager that auto-discovers installed Web UI skins, switches between them in one click, and maintains the profile patch automatically.",
-        "zh": "设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。"
-      },
-      "npm": "dsh-skin-switcher",
-      "stars": 4,
-      "downloads": 24,
-      "install": "dsh plugin --profile web add dsh-skin-switcher",
-      "added": "2026-08-17"
-    },
-    {
       "name": "dsh-oh-my-theme",
       "owner": "zhxqc",
       "url": "https://github.com/zhxqc/dsh-oh-my-theme",
@@ -6251,7 +6466,7 @@
       },
       "npm": "dsh-oh-my-theme",
       "stars": 5,
-      "downloads": 423,
+      "downloads": 982,
       "install": "dsh plugin --profile web add dsh-oh-my-theme",
       "added": "2026-08-15"
     },
@@ -6268,7 +6483,7 @@
       "npm": "dsh-ivory",
       "tarball": "https://github.com/ZJUZhiyuCai/dsh-ivory/releases/latest/download/dsh-ivory.tgz",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 717,
       "install": "dsh plugin --profile web add dsh-ivory",
       "added": "2026-08-17",
       "screenshots": [
@@ -6309,6 +6524,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:btspoony/dsh-llm-fallbacks",
       "added": "2026-08-13"
+    },
+    {
+      "name": "dsh-plugin-dit",
+      "owner": "cuboteam",
+      "url": "https://github.com/cuboteam/dsh-plugin-dit",
+      "page": "https://awesome-dsh-plugin.com/p/cuboteam/dsh-plugin-dit/",
+      "category": "model",
+      "description": {
+        "en": "DIT.ai provider bundle for DeepSeek Harness: installs 29 OpenAI Chat Completions models and 10 Anthropic Messages models from one DIT_API_KEY, with protocol-specific thinking configuration.",
+        "zh": "DIT.ai 的 DeepSeek Harness 模型接入 bundle：使用一个 DIT_API_KEY 安装 29 个 OpenAI Chat Completions 模型和 10 个 Anthropic Messages 模型，并按协议配置 thinking。"
+      },
+      "npm": "dsh-plugin-dit",
+      "stars": 1,
+      "downloads": 201,
+      "install": "dsh plugin --profile web add dsh-plugin-dit",
+      "added": "2026-08-18"
     },
     {
       "name": "dsh-chinese-mode",
@@ -6405,7 +6636,7 @@
       },
       "npm": "dsh-codex-connect",
       "stars": 27,
-      "downloads": 196,
+      "downloads": 2048,
       "install": "dsh plugin --profile web add dsh-codex-connect",
       "added": "2026-08-14",
       "screenshots": [
@@ -6431,7 +6662,7 @@
       },
       "npm": "@godd6366/dsh-sub2api",
       "stars": 0,
-      "downloads": 712,
+      "downloads": 905,
       "install": "dsh plugin --profile web add @godd6366/dsh-sub2api",
       "added": "2026-08-15"
     },
@@ -6447,7 +6678,7 @@
       },
       "npm": "dsh-llm-failover",
       "stars": 0,
-      "downloads": 127,
+      "downloads": 183,
       "install": "dsh plugin --profile web add dsh-llm-failover",
       "added": "2026-08-18"
     },
@@ -6479,7 +6710,7 @@
       },
       "npm": "dsh-model-sync",
       "stars": 1,
-      "downloads": 295,
+      "downloads": 495,
       "install": "dsh plugin --profile web add dsh-model-sync",
       "added": "2026-08-15"
     },
@@ -6495,7 +6726,7 @@
       },
       "npm": "dsh-plugin-weaknet-adaptor",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 906,
       "install": "dsh plugin --profile web add dsh-plugin-weaknet-adaptor",
       "added": "2026-08-17"
     },
@@ -6581,7 +6812,7 @@
       },
       "npm": "dsh-coding-subscription-oauth",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 467,
       "install": "dsh plugin --profile web add dsh-coding-subscription-oauth",
       "added": "2026-08-18"
     },
@@ -6761,7 +6992,7 @@
       },
       "npm": "dsh-plugin-subagent-director",
       "stars": 3,
-      "downloads": 18,
+      "downloads": 320,
       "install": "dsh plugin --profile web add dsh-plugin-subagent-director",
       "added": "2026-08-17"
     },
@@ -6809,7 +7040,7 @@
       },
       "npm": "dsh-codex-connect-plus",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 628,
       "install": "dsh plugin --profile web add dsh-codex-connect-plus",
       "added": "2026-08-17"
     },
@@ -6825,7 +7056,7 @@
       },
       "npm": "dsh-codex-auth",
       "stars": 11,
-      "downloads": 217,
+      "downloads": 419,
       "install": "dsh plugin --profile web add dsh-codex-auth",
       "added": "2026-08-14"
     },
@@ -6844,6 +7075,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:superboy911/dsh-model-router",
       "added": "2026-08-14"
+    },
+    {
+      "name": "dsh-llm-proxy",
+      "owner": "superfish058",
+      "url": "https://github.com/superfish058/dsh-llm-proxy",
+      "page": "https://awesome-dsh-plugin.com/p/superfish058/dsh-llm-proxy/",
+      "category": "model",
+      "description": {
+        "en": "Per-model proxy routing for LLM requests: selected models go through a proxy (Clash etc.) while the rest stay direct, with automatic retry on transport errors, 429 and 5xx, configured live from the settings page.",
+        "zh": "按模型给 LLM 请求分流代理：勾选的模型走代理（Clash 等），其余直连；传输错误、429、5xx 自动重试，设置页实时生效。"
+      },
+      "npm": "@superfish058/dsh-llm-proxy",
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add @superfish058/dsh-llm-proxy",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-model-reasoning",
@@ -6926,7 +7173,7 @@
       },
       "npm": "dsh-codex-subscription",
       "stars": 14,
-      "downloads": 0,
+      "downloads": 1490,
       "install": "dsh plugin --profile web add dsh-codex-subscription",
       "added": "2026-08-16"
     },
@@ -6990,7 +7237,7 @@
       },
       "npm": "@anionex/dsh-turn-rewind",
       "stars": 83,
-      "downloads": 621,
+      "downloads": 2373,
       "install": "dsh plugin --profile web add @anionex/dsh-turn-rewind",
       "added": "2026-08-13"
     },
@@ -7006,9 +7253,25 @@
       },
       "npm": "dsh-assistant-message-forge",
       "stars": 0,
-      "downloads": 137,
+      "downloads": 166,
       "install": "dsh plugin --profile web add dsh-assistant-message-forge",
       "added": "2026-08-15"
+    },
+    {
+      "name": "dsh-message-copy-enhance",
+      "owner": "Asianfleet",
+      "url": "https://github.com/Asianfleet/dsh-message-copy-enhance",
+      "page": "https://awesome-dsh-plugin.com/p/Asianfleet/dsh-message-copy-enhance/",
+      "category": "session",
+      "description": {
+        "en": "Copy selections from assistant messages as Markdown, preserving links, LaTeX sources, and code-fence language info.",
+        "zh": "将助手消息中选中的内容复制为 Markdown，保留链接、LaTeX 源码与代码块语言信息。"
+      },
+      "npm": "dsh-message-copy-enhance",
+      "stars": 0,
+      "downloads": 147,
+      "install": "dsh plugin --profile web add dsh-message-copy-enhance",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-session-mover",
@@ -7026,6 +7289,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add \"https://github.com/baisama-cloud/dsh-session-mover/releases/download/v0.1.0/dsh-session-mover-0.1.0.tgz\"",
       "added": "2026-08-18"
+    },
+    {
+      "name": "dsh-chat",
+      "owner": "baixianger",
+      "url": "https://github.com/baixianger/dsh-chat",
+      "page": "https://awesome-dsh-plugin.com/p/baixianger/dsh-chat/",
+      "category": "session",
+      "description": {
+        "en": "Group chat rooms for DSH sessions with explicit @mentions, cold-session wake-up delivery, and optional cross-host transport through dsh-weave.",
+        "zh": "面向 DSH 会话的群聊室：支持明确 @ 提及、冷会话唤醒投递，并可通过 dsh-weave 跨主机通信。"
+      },
+      "npm": "dsh-chat",
+      "stars": 0,
+      "downloads": 2346,
+      "install": "dsh plugin --profile web add dsh-chat",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-companion",
@@ -7135,7 +7414,7 @@
       },
       "npm": "dsh-history",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 3568,
       "install": "dsh plugin --profile web add dsh-history",
       "added": "2026-08-18"
     },
@@ -7309,7 +7588,7 @@
       },
       "npm": "task-passport",
       "stars": 9,
-      "downloads": 527,
+      "downloads": 764,
       "install": "dsh plugin --profile web add task-passport",
       "added": "2026-08-14"
     },
@@ -7373,7 +7652,7 @@
       },
       "npm": "dsh-plugin-solo-thinking",
       "stars": 15,
-      "downloads": 138,
+      "downloads": 311,
       "install": "dsh plugin --profile web add dsh-plugin-solo-thinking",
       "added": "2026-08-15"
     },
@@ -7389,7 +7668,7 @@
       },
       "npm": "dsh-agent-message",
       "stars": 5,
-      "downloads": 291,
+      "downloads": 374,
       "install": "dsh plugin --profile web add dsh-agent-message",
       "added": "2026-08-15"
     },
@@ -7437,7 +7716,7 @@
       },
       "npm": "dsh-share",
       "stars": 27,
-      "downloads": 379,
+      "downloads": 727,
       "install": "dsh plugin --profile web add dsh-share",
       "added": "2026-08-13"
     },
@@ -7453,7 +7732,7 @@
       },
       "npm": "dsh-session-manager",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 781,
       "install": "dsh plugin --profile web add dsh-session-manager",
       "added": "2026-08-17"
     },
@@ -7469,7 +7748,7 @@
       },
       "npm": "dsh-plugin-session-import",
       "stars": 5,
-      "downloads": 299,
+      "downloads": 431,
       "install": "dsh plugin --profile web add dsh-plugin-session-import",
       "added": "2026-08-14",
       "screenshots": [
@@ -7488,7 +7767,7 @@
       },
       "npm": "dsh-incognito",
       "stars": 3,
-      "downloads": 102,
+      "downloads": 138,
       "install": "dsh plugin --profile web add dsh-incognito",
       "added": "2026-08-15"
     },
@@ -7555,7 +7834,7 @@
       },
       "npm": "dsh-archive-manager",
       "stars": 3,
-      "downloads": 117,
+      "downloads": 527,
       "install": "dsh plugin --profile web add dsh-archive-manager",
       "added": "2026-08-16"
     },
@@ -7603,7 +7882,7 @@
       },
       "npm": "claude2dsh",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 808,
       "install": "dsh plugin --profile web add claude2dsh",
       "added": "2026-08-16"
     },
@@ -7667,7 +7946,7 @@
       },
       "npm": "dsh-recall-plugin",
       "stars": 21,
-      "downloads": 478,
+      "downloads": 1105,
       "install": "dsh plugin --profile web add dsh-recall-plugin",
       "added": "2026-08-15"
     },
@@ -7784,7 +8063,7 @@
       },
       "npm": "dsh-message-edit",
       "stars": 32,
-      "downloads": 524,
+      "downloads": 1250,
       "install": "dsh plugin --profile web add dsh-message-edit",
       "added": "2026-08-13"
     },
@@ -7848,7 +8127,7 @@
       },
       "npm": "dsh-chat-import",
       "stars": 71,
-      "downloads": 761,
+      "downloads": 4273,
       "install": "dsh plugin --profile web add dsh-chat-import",
       "added": "2026-08-13"
     },
@@ -7864,7 +8143,7 @@
       },
       "npm": "dsh-file-claim",
       "stars": 6,
-      "downloads": 64,
+      "downloads": 331,
       "install": "dsh plugin --profile web add dsh-file-claim",
       "added": "2026-08-14"
     },
@@ -7896,7 +8175,7 @@
       },
       "npm": "dsh-bookmarks",
       "stars": 9,
-      "downloads": 88,
+      "downloads": 405,
       "install": "dsh plugin --profile web add dsh-bookmarks",
       "added": "2026-08-14"
     },
@@ -7912,7 +8191,7 @@
       },
       "npm": "dsh-claude-move",
       "stars": 6,
-      "downloads": 0,
+      "downloads": 364,
       "install": "dsh plugin --profile web add dsh-claude-move",
       "added": "2026-08-16"
     },
@@ -7944,7 +8223,7 @@
       },
       "npm": "dsh-session-link",
       "stars": 5,
-      "downloads": 61,
+      "downloads": 136,
       "install": "dsh plugin --profile web add dsh-session-link",
       "added": "2026-08-14",
       "screenshots": [
@@ -7980,7 +8259,7 @@
       },
       "npm": "dsh-prompt-manager",
       "stars": 1,
-      "downloads": 112,
+      "downloads": 187,
       "install": "dsh plugin --profile web add dsh-prompt-manager",
       "added": "2026-08-15"
     },
@@ -8012,7 +8291,7 @@
       },
       "npm": "dsh-rewind-plugin",
       "stars": 4,
-      "downloads": 0,
+      "downloads": 2235,
       "install": "dsh plugin --profile web add dsh-rewind-plugin",
       "added": "2026-08-18"
     },
@@ -8028,7 +8307,7 @@
       },
       "npm": "dsh-what-changed",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 649,
       "install": "dsh plugin --profile web add dsh-what-changed",
       "added": "2026-08-18",
       "screenshots": [
@@ -8066,7 +8345,7 @@
       },
       "npm": "dsh-queue-plus",
       "stars": 15,
-      "downloads": 0,
+      "downloads": 189,
       "install": "dsh plugin --profile web add dsh-queue-plus",
       "added": "2026-08-15",
       "screenshots": [
@@ -8136,7 +8415,7 @@
       },
       "npm": "dsh-archived-chats",
       "stars": 3,
-      "downloads": 0,
+      "downloads": 642,
       "install": "dsh plugin --profile web add dsh-archived-chats",
       "added": "2026-08-16",
       "screenshots": [
@@ -8196,7 +8475,7 @@
       },
       "npm": "dsh-prompt-stash",
       "stars": 3,
-      "downloads": 50,
+      "downloads": 442,
       "install": "dsh plugin --profile web add dsh-prompt-stash",
       "added": "2026-08-14"
     },
@@ -8287,6 +8566,22 @@
       "added": "2026-08-16"
     },
     {
+      "name": "dsh-session-surgeon",
+      "owner": "xiaoshenming",
+      "url": "https://github.com/xiaoshenming/dsh-session-surgeon",
+      "page": "https://awesome-dsh-plugin.com/p/xiaoshenming/dsh-session-surgeon/",
+      "category": "session",
+      "description": {
+        "en": "Repair DeepSeek Harness sessions that refuse to load, with a sidebar Session surgeon overlay and dry-run repair.",
+        "zh": "修好打不开的 DeepSeek Harness 会话，侧栏「会话医生」可查看对话并默认 dry-run 修复。"
+      },
+      "npm": null,
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:xiaoshenming/dsh-session-surgeon",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-session-actions",
       "owner": "xingyingyuzhui",
       "url": "https://github.com/xingyingyuzhui/dsh-session-actions",
@@ -8330,7 +8625,7 @@
       },
       "npm": "dsh-session-flow",
       "stars": 2,
-      "downloads": 108,
+      "downloads": 456,
       "install": "dsh plugin --profile web add dsh-session-flow",
       "added": "2026-08-16",
       "screenshots": [
@@ -8354,7 +8649,7 @@
       },
       "npm": "dsh-session-hotkeys",
       "stars": 2,
-      "downloads": 403,
+      "downloads": 672,
       "install": "dsh plugin --profile web add dsh-session-hotkeys",
       "added": "2026-08-16"
     },
@@ -8368,10 +8663,10 @@
         "en": "Deterministic context compaction: prunes conversation atoms in reference-graph topological order with no LLM calls during compaction, and keeps pruned atoms recallable by marker.",
         "zh": "确定性上下文压缩：按引用图拓扑序摘除对话原子，压缩阶段不调用 LLM；被摘除的原子保留 marker，可按需回拉。"
       },
-      "npm": null,
+      "npm": "dsh-argp",
       "stars": 1,
-      "downloads": null,
-      "install": "dsh plugin --profile web add github:yoza10635/dsh-argp",
+      "downloads": 0,
+      "install": "dsh plugin --profile web add dsh-argp",
       "added": "2026-08-18"
     },
     {
@@ -8402,7 +8697,7 @@
       },
       "npm": "dsh-period-report",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 340,
       "install": "dsh plugin --profile web add dsh-period-report",
       "added": "2026-08-15"
     },
@@ -8455,7 +8750,7 @@
       },
       "npm": "dsh-minimal-first-turn",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 183,
       "install": "dsh plugin --profile web add dsh-minimal-first-turn",
       "added": "2026-08-16"
     },
@@ -8471,7 +8766,7 @@
       },
       "npm": "dsh-plugin-focus",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 228,
       "install": "dsh plugin --profile web add dsh-plugin-focus",
       "added": "2026-08-16"
     },
@@ -8503,7 +8798,7 @@
       },
       "npm": "@a9i5k4/dsh-auto-memory",
       "stars": 16,
-      "downloads": 351,
+      "downloads": 3782,
       "install": "dsh plugin --profile web add @a9i5k4/dsh-auto-memory",
       "added": "2026-08-15"
     },
@@ -8519,7 +8814,7 @@
       },
       "npm": "@akslcw/dsh-negative-ledger",
       "stars": 3,
-      "downloads": 214,
+      "downloads": 365,
       "install": "dsh plugin --profile web add @akslcw/dsh-negative-ledger",
       "added": "2026-08-15"
     },
@@ -8538,6 +8833,23 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:AndyYang12345/dsh-butler-memory",
       "added": "2026-08-18"
+    },
+    {
+      "name": "dsh-memory",
+      "owner": "aqsk-BLG",
+      "url": "https://github.com/aqsk-BLG/dsh-memory",
+      "page": "https://awesome-dsh-plugin.com/p/aqsk-BLG/dsh-memory/",
+      "category": "memory",
+      "description": {
+        "en": "Layered file memory for DeepSeek Harness with workspace-scoped USER/MEMORY notes, background consolidation, and hybrid session recall.",
+        "zh": "DeepSeek Harness 分层文件记忆，提供工作区隔离的 USER/MEMORY 笔记、后台沉淀与混合会话召回。"
+      },
+      "npm": "dsh-file-memory",
+      "tarball": "https://github.com/aqsk-BLG/dsh-memory/releases/download/v1.2.1/dsh-file-memory-1.2.1.tgz",
+      "stars": 1,
+      "downloads": 0,
+      "install": "dsh plugin --profile web add dsh-file-memory",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-memory-protocol",
@@ -8567,7 +8879,7 @@
       },
       "npm": "dsh-eli-mode",
       "stars": 4,
-      "downloads": 1319,
+      "downloads": 1750,
       "install": "dsh plugin --profile web add dsh-eli-mode",
       "added": "2026-08-15"
     },
@@ -8583,7 +8895,7 @@
       },
       "npm": "@co-engram/dsh",
       "stars": 10,
-      "downloads": 0,
+      "downloads": 325,
       "install": "dsh plugin --profile web add @co-engram/dsh",
       "added": "2026-08-16"
     },
@@ -8615,7 +8927,7 @@
       },
       "npm": "dsh-client-ui-obsidian-memory",
       "stars": 8,
-      "downloads": 0,
+      "downloads": 1417,
       "install": "dsh plugin --profile web add dsh-client-ui-obsidian-memory",
       "added": "2026-08-18",
       "screenshots": [
@@ -8634,7 +8946,7 @@
       },
       "npm": "stratagate-dsh",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 457,
       "install": "dsh plugin --profile web add stratagate-dsh",
       "added": "2026-08-16"
     },
@@ -8666,7 +8978,7 @@
       },
       "npm": "dsh-memory-vault",
       "stars": 2,
-      "downloads": 165,
+      "downloads": 512,
       "install": "dsh plugin --profile web add dsh-memory-vault",
       "added": "2026-08-14"
     },
@@ -8698,7 +9010,7 @@
       },
       "npm": "@furongjun1999/dsh-memory",
       "stars": 20,
-      "downloads": 636,
+      "downloads": 992,
       "install": "dsh plugin --profile web add @furongjun1999/dsh-memory",
       "added": "2026-08-14"
     },
@@ -8714,7 +9026,7 @@
       },
       "npm": "sage-mem",
       "stars": 4,
-      "downloads": 178,
+      "downloads": 235,
       "install": "dsh plugin --profile web add sage-mem",
       "added": "2026-08-17"
     },
@@ -8730,7 +9042,7 @@
       },
       "npm": "dsh-memory-gate",
       "stars": 3,
-      "downloads": 784,
+      "downloads": 1663,
       "install": "dsh plugin --profile web add dsh-memory-gate",
       "added": "2026-08-14"
     },
@@ -8794,7 +9106,7 @@
       },
       "npm": "dsh-native-memory",
       "stars": 0,
-      "downloads": 370,
+      "downloads": 609,
       "install": "dsh plugin --profile web add dsh-native-memory",
       "added": "2026-08-15"
     },
@@ -8810,9 +9122,25 @@
       },
       "npm": "dsh-knowledge-base",
       "stars": 7,
-      "downloads": 0,
+      "downloads": 931,
       "install": "dsh plugin --profile web add dsh-knowledge-base",
       "added": "2026-08-16"
+    },
+    {
+      "name": "dsh-hindsight-local-optimize",
+      "owner": "Hua1Q1nG",
+      "url": "https://github.com/Hua1Q1nG/dsh-hindsight-local-optimize",
+      "page": "https://awesome-dsh-plugin.com/p/Hua1Q1nG/dsh-hindsight-local-optimize/",
+      "category": "memory",
+      "description": {
+        "en": "Local-memory lifecycle for the official Hindsight plugin on DSH desktop: one-click start/stop of the hindsight-embed daemon, auto-start on boot, stop on exit, hides the uv.exe console window, and installs the vault/models to another drive.",
+        "zh": "为 DSH 桌面端官方 Hindsight 插件补齐本地记忆生命周期：一键启停 hindsight-embed 守护进程、开机自启、退出随停、隐藏 uv.exe 黑框，并支持把档案柜与模型装到其它盘。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:Hua1Q1nG/dsh-hindsight-local-optimize",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-prompt-self",
@@ -9018,7 +9346,7 @@
       },
       "npm": "dsh-layered-memory",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 1089,
       "install": "dsh plugin --profile web add dsh-layered-memory",
       "added": "2026-08-18"
     },
@@ -9071,7 +9399,7 @@
       },
       "npm": "@lemoncat7/dsh-knowledge",
       "stars": 1,
-      "downloads": 0,
+      "downloads": null,
       "install": "dsh plugin --profile web add @lemoncat7/dsh-knowledge",
       "added": "2026-08-18"
     },
@@ -9183,7 +9511,7 @@
       },
       "npm": "dsh-patchouli",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 152,
       "install": "dsh plugin --profile web add dsh-patchouli",
       "added": "2026-08-18"
     },
@@ -9215,7 +9543,7 @@
       },
       "npm": "dsh-trilium",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 375,
       "install": "dsh plugin --profile web add dsh-trilium",
       "added": "2026-08-18"
     },
@@ -9231,7 +9559,7 @@
       },
       "npm": "dsh-obsidian",
       "stars": 4,
-      "downloads": 0,
+      "downloads": 573,
       "install": "dsh plugin --profile web add dsh-obsidian",
       "added": "2026-08-16"
     },
@@ -9295,7 +9623,7 @@
       },
       "npm": "dsh-unified-agent-memory",
       "stars": 3,
-      "downloads": 354,
+      "downloads": 688,
       "install": "dsh plugin --profile web add dsh-unified-agent-memory",
       "added": "2026-08-14"
     },
@@ -9343,7 +9671,7 @@
       },
       "npm": "dsh-mnemon",
       "stars": 107,
-      "downloads": 1129,
+      "downloads": 6799,
       "install": "dsh plugin --profile web add dsh-mnemon",
       "added": "2026-08-13"
     },
@@ -9375,7 +9703,7 @@
       },
       "npm": "dsh-library",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 418,
       "install": "dsh plugin --profile web add dsh-library",
       "added": "2026-08-18"
     },
@@ -9391,7 +9719,7 @@
       },
       "npm": "dsh-memento",
       "stars": 58,
-      "downloads": 344,
+      "downloads": 910,
       "install": "dsh plugin --profile web add dsh-memento",
       "added": "2026-08-14"
     },
@@ -9407,7 +9735,7 @@
       },
       "npm": "meow-memory",
       "stars": 11,
-      "downloads": 144,
+      "downloads": 1172,
       "install": "dsh plugin --profile web add meow-memory",
       "added": "2026-08-14"
     },
@@ -9439,7 +9767,7 @@
       },
       "npm": "dsh-recall",
       "stars": 1,
-      "downloads": 105,
+      "downloads": 859,
       "install": "dsh plugin --profile web add dsh-recall",
       "added": "2026-08-16"
     },
@@ -9503,7 +9831,7 @@
       },
       "npm": "dsh-memory-porter",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 187,
       "install": "dsh plugin --profile web add dsh-memory-porter",
       "added": "2026-08-18"
     },
@@ -9519,7 +9847,7 @@
       },
       "npm": "dsh-plugin-sodamem",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 185,
       "install": "dsh plugin --profile web add dsh-plugin-sodamem",
       "added": "2026-08-18"
     },
@@ -9551,7 +9879,7 @@
       },
       "npm": "dsh-yogacara",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 367,
       "install": "dsh plugin --profile web add dsh-yogacara",
       "added": "2026-08-17"
     },
@@ -9589,7 +9917,7 @@
       },
       "npm": "dsh-engramory",
       "stars": 160,
-      "downloads": 233,
+      "downloads": 946,
       "install": "dsh plugin --profile web add dsh-engramory",
       "added": "2026-08-16"
     },
@@ -9605,7 +9933,7 @@
       },
       "npm": "dsh-plugin-recall",
       "stars": 0,
-      "downloads": 73,
+      "downloads": 187,
       "install": "dsh plugin --profile web add dsh-plugin-recall",
       "added": "2026-08-14"
     },
@@ -9691,7 +10019,7 @@
       },
       "npm": "dsh-md-notes",
       "stars": 12,
-      "downloads": 224,
+      "downloads": 1029,
       "install": "dsh plugin --profile web add dsh-md-notes",
       "added": "2026-08-17"
     },
@@ -9755,7 +10083,7 @@
       },
       "npm": "qmd-autosearch",
       "stars": 0,
-      "downloads": 112,
+      "downloads": 315,
       "install": "dsh plugin --profile web add qmd-autosearch",
       "added": "2026-08-16"
     },
@@ -9771,7 +10099,7 @@
       },
       "npm": "dsh-flomo",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 327,
       "install": "dsh plugin --profile web add dsh-flomo",
       "added": "2026-08-15"
     },
@@ -9787,9 +10115,25 @@
       },
       "npm": "dsh-notion-connector",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 323,
       "install": "dsh plugin --profile web add dsh-notion-connector",
       "added": "2026-08-16"
+    },
+    {
+      "name": "dsh-noema",
+      "owner": "ZSeven-W",
+      "url": "https://github.com/ZSeven-W/dsh-noema",
+      "page": "https://awesome-dsh-plugin.com/p/ZSeven-W/dsh-noema/",
+      "category": "memory",
+      "description": {
+        "en": "Long-term memory for DSH agents — durable, inspectable memories with recall, search, browse and knowledge-graph tools, import from ten other AI coding tools, and a settings page.",
+        "zh": "为 DSH Agent 提供长期记忆——可检索、可检视的持久记忆，带回忆、搜索、浏览与知识图谱工具，支持从十个其他 AI 编码工具导入记忆，并附设置页。"
+      },
+      "npm": "@zseven-w/dsh-noema",
+      "stars": 113,
+      "downloads": null,
+      "install": "dsh plugin --profile web add @zseven-w/dsh-noema",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-hdc-bridge",
@@ -9803,7 +10147,7 @@
       },
       "npm": "dsh-hdc-bridge",
       "stars": 11,
-      "downloads": 517,
+      "downloads": 1050,
       "install": "dsh plugin --profile web add dsh-hdc-bridge",
       "added": "2026-08-14"
     },
@@ -9819,7 +10163,7 @@
       },
       "npm": "dsh-wsl-workspace",
       "stars": 11,
-      "downloads": 70,
+      "downloads": 404,
       "install": "dsh plugin --profile web add dsh-wsl-workspace",
       "added": "2026-08-14"
     },
@@ -9835,7 +10179,7 @@
       },
       "npm": "dsh-plugin-academic-writing",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 250,
       "install": "dsh plugin --profile web add dsh-plugin-academic-writing",
       "added": "2026-08-17"
     },
@@ -9851,7 +10195,7 @@
       },
       "npm": "dsh-plugin-education",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 143,
       "install": "dsh plugin --profile web add dsh-plugin-education",
       "added": "2026-08-17"
     },
@@ -9867,7 +10211,7 @@
       },
       "npm": "dsh-plugin-finance-data",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 201,
       "install": "dsh plugin --profile web add dsh-plugin-finance-data",
       "added": "2026-08-17"
     },
@@ -9883,7 +10227,7 @@
       },
       "npm": "dsh-plugin-local-life",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 133,
       "install": "dsh plugin --profile web add dsh-plugin-local-life",
       "added": "2026-08-17"
     },
@@ -9899,7 +10243,7 @@
       },
       "npm": "dsh-plugin-translation",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 139,
       "install": "dsh plugin --profile web add dsh-plugin-translation",
       "added": "2026-08-17"
     },
@@ -9931,7 +10275,7 @@
       },
       "npm": "dsh-toolbox-web",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 1444,
       "install": "dsh plugin --profile web add dsh-toolbox-web",
       "added": "2026-08-16"
     },
@@ -9947,7 +10291,7 @@
       },
       "npm": "dsh-monitor",
       "stars": 2,
-      "downloads": 139,
+      "downloads": 200,
       "install": "dsh plugin --profile web add dsh-monitor",
       "added": "2026-08-15"
     },
@@ -9963,7 +10307,7 @@
       },
       "npm": "dsh-agentmail",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 139,
       "install": "dsh plugin --profile web add dsh-agentmail",
       "added": "2026-08-18"
     },
@@ -9979,7 +10323,7 @@
       },
       "npm": "dsh-multi-folder",
       "stars": 5,
-      "downloads": 304,
+      "downloads": 558,
       "install": "dsh plugin --profile web add dsh-multi-folder",
       "added": "2026-08-15"
     },
@@ -9995,7 +10339,7 @@
       },
       "npm": "dsh-plugin-sync",
       "stars": 2,
-      "downloads": 120,
+      "downloads": 181,
       "install": "dsh plugin --profile web add dsh-plugin-sync",
       "added": "2026-08-15"
     },
@@ -10011,7 +10355,7 @@
       },
       "npm": "@anionex/dsh-computer-use",
       "stars": 22,
-      "downloads": 97,
+      "downloads": 360,
       "install": "dsh plugin --profile web add @anionex/dsh-computer-use",
       "added": "2026-08-13"
     },
@@ -10107,7 +10451,7 @@
       },
       "npm": "dsh-ssh-ops",
       "stars": 4,
-      "downloads": 260,
+      "downloads": 1726,
       "install": "dsh plugin --profile web add dsh-ssh-ops",
       "added": "2026-08-15"
     },
@@ -10171,7 +10515,7 @@
       },
       "npm": "dsh-blender",
       "stars": 17,
-      "downloads": 67,
+      "downloads": 257,
       "install": "dsh plugin --profile web add dsh-blender",
       "added": "2026-08-14"
     },
@@ -10203,9 +10547,25 @@
       },
       "npm": "dsh-learning-mode",
       "stars": 4,
-      "downloads": 294,
+      "downloads": 343,
       "install": "dsh plugin --profile web add dsh-learning-mode",
       "added": "2026-08-16"
+    },
+    {
+      "name": "dsh-shell-command",
+      "owner": "CHplus0",
+      "url": "https://github.com/CHplus0/dsh-shell-command",
+      "page": "https://awesome-dsh-plugin.com/p/CHplus0/dsh-shell-command/",
+      "category": "tools",
+      "description": {
+        "en": "Claude Code-style shell integration: /! for single-command analysis and /terminal for interactive PTY sessions with on-demand history reference.",
+        "zh": "Claude Code 风格的 shell 集成：/! 单命令分析 与 /terminal 交互式终端（带按需历史引用）。"
+      },
+      "npm": null,
+      "stars": 3,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:CHplus0/dsh-shell-command",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-data-insight",
@@ -10235,7 +10595,7 @@
       },
       "npm": "dsh-wechat-mp",
       "stars": 0,
-      "downloads": 278,
+      "downloads": 1032,
       "install": "dsh plugin --profile web add dsh-wechat-mp",
       "added": "2026-08-16",
       "screenshots": [
@@ -10323,7 +10683,7 @@
       },
       "npm": "@dsh-plugin/dsh-auxiliary",
       "stars": 4,
-      "downloads": 751,
+      "downloads": 1202,
       "install": "dsh plugin --profile web add @dsh-plugin/dsh-auxiliary",
       "added": "2026-08-16"
     },
@@ -10339,7 +10699,7 @@
       },
       "npm": "qcc-dsh-mcp-oauth",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 895,
       "install": "dsh plugin --profile web add qcc-dsh-mcp-oauth",
       "added": "2026-08-17"
     },
@@ -10355,7 +10715,7 @@
       },
       "npm": "dsh-mcp-bridge",
       "stars": 4,
-      "downloads": 281,
+      "downloads": 514,
       "install": "dsh plugin --profile web add dsh-mcp-bridge",
       "added": "2026-08-15"
     },
@@ -10439,7 +10799,7 @@
       },
       "npm": "dsh-remote",
       "stars": 23,
-      "downloads": 691,
+      "downloads": 1687,
       "install": "dsh plugin --profile web add dsh-remote",
       "added": "2026-08-14"
     },
@@ -10471,7 +10831,7 @@
       },
       "npm": "@geml/dsh-plugin",
       "stars": 24,
-      "downloads": 0,
+      "downloads": 16,
       "install": "dsh plugin --profile web add @geml/dsh-plugin",
       "added": "2026-08-17"
     },
@@ -10482,8 +10842,8 @@
       "page": "https://awesome-dsh-plugin.com/p/Github-CJX/dsh-tool-imagegen/",
       "category": "tools",
       "description": {
-        "en": "OpenAI-compatible image generation for DSH Desktop: the model calls generate_image in chat and the images render inline in the conversation.",
-        "zh": "DSH Desktop 对话内联生图插件：模型在对话中调用 generate_image，图片直接显示在对话框内。"
+        "en": "OpenAI-compatible image generation in DSH Desktop chat: generate inline, upload or one-click edit reference images (image-to-image), with storage cleanup.",
+        "zh": "对话内联生图插件：模型在对话框直接出图，上传参考图即可图生图连续修改，附存储清理。"
       },
       "npm": null,
       "stars": 0,
@@ -10503,7 +10863,7 @@
       },
       "npm": "dsh-repo-setup",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 330,
       "install": "dsh plugin --profile web add dsh-repo-setup",
       "added": "2026-08-16"
     },
@@ -10535,7 +10895,7 @@
       },
       "npm": "dsh-excel-chat",
       "stars": 5,
-      "downloads": 717,
+      "downloads": 1591,
       "install": "dsh plugin --profile web add dsh-excel-chat",
       "added": "2026-08-14"
     },
@@ -10551,7 +10911,7 @@
       },
       "npm": "dsh-hacker-news",
       "stars": 50,
-      "downloads": 0,
+      "downloads": 118,
       "install": "dsh plugin --profile web add dsh-hacker-news",
       "added": "2026-08-18"
     },
@@ -10584,7 +10944,7 @@
       },
       "npm": "dsh-capability-optimizer",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 1241,
       "install": "dsh plugin --profile web add dsh-capability-optimizer",
       "added": "2026-08-18",
       "screenshots": [
@@ -10706,7 +11066,7 @@
       },
       "npm": "beav-creator-dsh",
       "stars": 1,
-      "downloads": 264,
+      "downloads": 621,
       "install": "dsh plugin --profile web add beav-creator-dsh",
       "added": "2026-08-16"
     },
@@ -10722,9 +11082,25 @@
       },
       "npm": "dsh-devtoolbox",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 138,
       "install": "dsh plugin --profile web add dsh-devtoolbox",
       "added": "2026-08-18"
+    },
+    {
+      "name": "dsh-drawio",
+      "owner": "jean3690",
+      "url": "https://github.com/jean3690/dsh-drawio",
+      "page": "https://awesome-dsh-plugin.com/p/jean3690/dsh-drawio/",
+      "category": "tools",
+      "description": {
+        "en": "AI-driven drawio: four agent tools (validate, render to SVG/PNG, edit, template) plus a sidebar live board — zero-dependency mxfile-to-SVG preview, embedded diagrams.net editor with save bridge, and auto-open whenever the agent draws.",
+        "zh": "AI 驱动 drawio：四个画图工具（校验 / 渲染 SVG/PNG / 编辑 / 模板）+ 侧栏实时画板——零依赖 mxfile→SVG 预览、内嵌 diagrams.net 官方编辑器、AI 画图时自动弹出跟随。"
+      },
+      "npm": "dsh-drawio",
+      "stars": 1,
+      "downloads": 134,
+      "install": "dsh plugin --profile web add dsh-drawio",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-docker",
@@ -10757,6 +11133,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:Jesse-njx/dsh-skillport",
       "added": "2026-08-14"
+    },
+    {
+      "name": "dsh-codegraph",
+      "owner": "jiangzhenguo",
+      "url": "https://github.com/jiangzhenguo/dsh-codegraph",
+      "page": "https://awesome-dsh-plugin.com/p/jiangzhenguo/dsh-codegraph/",
+      "category": "tools",
+      "description": {
+        "en": "DSH bundle that registers 13 native codegraph_* tools wrapping the codegraph CLI, so agents bootstrap, maintain, and query a pre-indexed code knowledge graph (symbol query, explore, node trail, callers/callees, impact, affected tests) instead of grepping files.",
+        "zh": "DSH 插件，注册 13 个原生 codegraph_* 工具包装 codegraph CLI，让代理初始化、维护并查询预索引的代码知识图谱（符号查询、区域探索、节点轨迹、callers/callees、影响分析、受影响测试），无需 grep 文件。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:jiangzhenguo/dsh-codegraph",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-codebase-memory",
@@ -10882,7 +11274,7 @@
       },
       "npm": "dsh-paste-to-path",
       "stars": 2,
-      "downloads": 144,
+      "downloads": 253,
       "install": "dsh plugin --profile web add dsh-paste-to-path",
       "added": "2026-08-15"
     },
@@ -11015,6 +11407,22 @@
       "added": "2026-08-17"
     },
     {
+      "name": "xiwen#dsh-xiwen",
+      "owner": "kaiwangleo",
+      "url": "https://github.com/kaiwangleo/xiwen/tree/master/plugins/dsh-xiwen",
+      "page": "https://awesome-dsh-plugin.com/p/kaiwangleo/xiwen--plugins-dsh-xiwen/",
+      "category": "tools",
+      "description": {
+        "en": "Semantic-layer analytics tool that uses curated table, column and metric metadata with Qdrant and Elasticsearch recall to generate, validate and execute MySQL analytical queries through the Xiwen service.",
+        "zh": "基于人工维护的表、字段和指标语义元数据，结合 Qdrant 与 Elasticsearch 召回，通过析问服务生成、校验并执行 MySQL 分析查询。"
+      },
+      "npm": "@kaiwangleo/dsh-xiwen",
+      "stars": 0,
+      "downloads": 0,
+      "install": "dsh plugin --profile web add @kaiwangleo/dsh-xiwen",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-aigc-radar",
       "owner": "Kaixxrua",
       "url": "https://github.com/Kaixxrua/dsh-aigc-radar",
@@ -11107,8 +11515,8 @@
       "page": "https://awesome-dsh-plugin.com/p/leaforbook/dsh-mcp-lazy/",
       "category": "tools",
       "description": {
-        "en": "Loads MCP tools on demand and unloads idle tool schemas at turn end, reducing the tool catalog and context tokens sent to the model while keeping connections warm for fast reuse.",
-        "zh": "按需加载 MCP 工具，并在轮次结束时卸载闲置工具 Schema，减少发送给模型的工具目录及上下文 Token；同时保温连接以便快速复用。"
+        "en": "An MCP lazy-loading, dynamic tool-loading, and Tool Router plugin for DSH. It addresses context bloat, wasted tokens, oversized tool catalogs, and persistent tool schemas when many MCP servers are configured. The plugin searches, routes, and loads MCP tools on demand only when the current task needs them, then unloads idle tool schemas at turn end to reduce context usage and save tokens while keeping connections warm for fast reuse. Supports explicit activation, automatic routing, paginated tool-catalog refresh, bounded reconnection, and both stdio and Streamable HTTP MCP transports.",
+        "zh": "DSH 的 MCP懒加载、动态加载工具与 Tool Router 插件：解决同时配置多个 MCP 服务器时 MCP工具过多、工具Schema常驻、工具目录过长造成的上下文膨胀和Token浪费。插件只在当前任务需要时搜索、路由并按需加载MCP工具，轮次结束后卸载闲置工具Schema，以减少Token占用、节省Token；连接继续保温，短时间内再次使用可快速复用。支持显式激活、自动路由、工具目录分页刷新、有限自动重连，以及 stdio 和 Streamable HTTP MCP 传输。"
       },
       "npm": null,
       "stars": 0,
@@ -11148,7 +11556,7 @@
       },
       "npm": "dsh-tool-search",
       "stars": 4,
-      "downloads": 101,
+      "downloads": 211,
       "install": "dsh plugin --profile web add dsh-tool-search",
       "added": "2026-08-14"
     },
@@ -11164,7 +11572,7 @@
       },
       "npm": "dsh-compressor",
       "stars": 1,
-      "downloads": 137,
+      "downloads": 286,
       "install": "dsh plugin --profile web add dsh-compressor",
       "added": "2026-08-16"
     },
@@ -11180,7 +11588,7 @@
       },
       "npm": "dsh-ai4scholar",
       "stars": 10,
-      "downloads": 0,
+      "downloads": 973,
       "install": "dsh plugin --profile web add dsh-ai4scholar",
       "added": "2026-08-17",
       "screenshots": [
@@ -11265,7 +11673,7 @@
       },
       "npm": "dsh-http-tools",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 858,
       "install": "dsh plugin --profile web add dsh-http-tools",
       "added": "2026-08-16"
     },
@@ -11333,7 +11741,7 @@
       },
       "npm": "dsh-bash-terminal",
       "stars": 12,
-      "downloads": 252,
+      "downloads": 534,
       "install": "dsh plugin --profile web add dsh-bash-terminal",
       "added": "2026-08-14"
     },
@@ -11368,6 +11776,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:moononnn/DeepSeek-Harness-biaoqingbao",
       "added": "2026-08-15"
+    },
+    {
+      "name": "dsh-context7",
+      "owner": "Nrxous",
+      "url": "https://github.com/Nrxous/dsh-context7",
+      "page": "https://awesome-dsh-plugin.com/p/Nrxous/dsh-context7/",
+      "category": "tools",
+      "description": {
+        "en": "Fetches up-to-date, version-pinned library documentation and code examples from context7.com for DSH agents via context7_search and context7_get_docs tools.",
+        "zh": "通过 context7_search 与 context7_get_docs 工具，为 DSH 智能体从 context7.com 获取最新、可锁定版本的库文档与代码示例。"
+      },
+      "npm": "dsh-context7",
+      "stars": 2,
+      "downloads": 0,
+      "install": "dsh plugin --profile web add dsh-context7",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-custom-tool",
@@ -11589,7 +12013,7 @@
       },
       "npm": "dsh-oomol",
       "stars": 11,
-      "downloads": 0,
+      "downloads": 784,
       "install": "dsh plugin --profile web add dsh-oomol",
       "added": "2026-08-17"
     },
@@ -11624,7 +12048,7 @@
       },
       "npm": "dsh-shop-assistant",
       "stars": 0,
-      "downloads": 155,
+      "downloads": 200,
       "install": "dsh plugin --profile web add dsh-shop-assistant",
       "added": "2026-08-16"
     },
@@ -11640,7 +12064,7 @@
       },
       "npm": "dsh-checkpoint-rewind",
       "stars": 8,
-      "downloads": 255,
+      "downloads": 1027,
       "install": "dsh plugin --profile web add dsh-checkpoint-rewind",
       "added": "2026-08-15"
     },
@@ -11656,7 +12080,7 @@
       },
       "npm": "dsh-lsp-actions",
       "stars": 5,
-      "downloads": 180,
+      "downloads": 660,
       "install": "dsh plugin --profile web add dsh-lsp-actions",
       "added": "2026-08-15"
     },
@@ -11708,7 +12132,7 @@
       },
       "npm": "dsh-tools",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 632,
       "install": "dsh plugin --profile web add dsh-tools",
       "added": "2026-08-17"
     },
@@ -11740,7 +12164,7 @@
       },
       "npm": "dsh-us-stocks",
       "stars": 5,
-      "downloads": 75,
+      "downloads": 612,
       "install": "dsh plugin --profile web add dsh-us-stocks",
       "added": "2026-08-14"
     },
@@ -11756,7 +12180,7 @@
       },
       "npm": "dsh-better-edit",
       "stars": 10,
-      "downloads": 1404,
+      "downloads": 2306,
       "install": "dsh plugin --profile web add dsh-better-edit",
       "added": "2026-08-15"
     },
@@ -11847,12 +12271,12 @@
       "page": "https://awesome-dsh-plugin.com/p/seven282/oss-prompt-optimizer/",
       "category": "tools",
       "description": {
-        "en": "Optimize a raw instruction into a professional prompt through the harness llm service — four-section (Role / Task / Context / Format) or a headerless plain-text style. Context-aware by default: the recent conversation is injected as background and may enrich the ## Context section. Long outputs resume from the truncation point with auto-expanded budgets; validated results are cached (identical requests cost zero model calls); a unified call budget bounds worst-case cost. Composer ✨ one-click optimize, undo, cancel and a token-cost hint; prompt_optimize tool (optimize + iterate), auto-optimize hook, auto-detected zh/en role document.",
-        "zh": "将原始指令经 harness llm 服务优化为专业提示词——四段（Role / Task / Context / Format）或无标题纯文本风格；上下文感知默认开启（注入此前对话作背景，四段模式可充实 ## Context 段）；长输出断点续传+自动扩容、结果缓存（同请求零模型调用）、统一调用预算控制最坏成本；输入框 ✨ 一键优化/撤销/取消与 token 消耗提示、prompt_optimize 工具（优化+迭代）、自动优化钩子与中英自动检测的角色文档。"
+        "en": "Optimize a raw instruction into a professional prompt through the harness llm service — four-section (Role / Task / Context / Format) or a headerless plain-text style. Situation-aware (1.3.0+): the instruction and conversation are parsed into role / task / goal profiles, so the role stays on-task and goals/constraints are preserved (goal-alignment retry, per-session goal carry-over); roles follow an identity + capability + behavior formula with per-task-type writing tips (1.3.3-1.3.5). Context-aware by default; long outputs resume with auto-expanded budgets; validated results are cached (identical requests cost zero model calls); stream early-stop and an optional fast profile cut latency (1.3.6). Composer ✨ one-click optimize / undo / cancel with a token-cost hint; prompt_optimize tool (optimize + iterate), auto-optimize hook, auto-detected zh/en role document.",
+        "zh": "将原始指令经 harness llm 服务优化为专业提示词——四段（Role / Task / Context / Format）或无标题纯文本风格；情境感知（1.3.0+）：自动解析指令与对话为角色/任务/目标画像，角色与任务强相关、目标与约束自动保留（目标对齐重试、会话级目标沿用），角色按「身份＋能力＋行为」三要素撰写并附任务类型写法建议（1.3.3-1.3.5）；上下文感知默认开启；长输出断点续传+自动扩容、结果缓存（同请求零模型调用）、流式早停与可选速档降低耗时（1.3.6）；输入框 ✨ 一键优化/撤销/取消与 token 消耗提示、prompt_optimize 工具（优化+迭代）、自动优化钩子与中英自动检测的角色文档。"
       },
       "npm": "oss-prompt-optimizer",
       "stars": 4,
-      "downloads": 0,
+      "downloads": 973,
       "install": "dsh plugin --profile web add oss-prompt-optimizer",
       "added": "2026-08-16"
     },
@@ -11884,7 +12308,7 @@
       },
       "npm": "dsh-edit-approval",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 1313,
       "install": "dsh plugin --profile web add dsh-edit-approval",
       "added": "2026-08-18"
     },
@@ -11967,7 +12391,7 @@
       },
       "npm": "dsh-codex-tools",
       "stars": 4,
-      "downloads": 166,
+      "downloads": 313,
       "install": "dsh plugin --profile web add dsh-codex-tools",
       "added": "2026-08-14"
     },
@@ -11983,7 +12407,7 @@
       },
       "npm": "dsh-calendar",
       "stars": 3,
-      "downloads": 430,
+      "downloads": 607,
       "install": "dsh plugin --profile web add dsh-calendar",
       "added": "2026-08-15"
     },
@@ -11999,7 +12423,7 @@
       },
       "npm": "dsh-cite",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 568,
       "install": "dsh plugin --profile web add dsh-cite",
       "added": "2026-08-17"
     },
@@ -12015,7 +12439,7 @@
       },
       "npm": "dsh-codex-port",
       "stars": 7,
-      "downloads": 50,
+      "downloads": 407,
       "install": "dsh plugin --profile web add dsh-codex-port",
       "added": "2026-08-15"
     },
@@ -12047,7 +12471,7 @@
       },
       "npm": "dsh-ffmpeg",
       "stars": 4,
-      "downloads": 57,
+      "downloads": 651,
       "install": "dsh plugin --profile web add dsh-ffmpeg",
       "added": "2026-08-15"
     },
@@ -12063,7 +12487,7 @@
       },
       "npm": "dsh-rss",
       "stars": 4,
-      "downloads": 195,
+      "downloads": 367,
       "install": "dsh plugin --profile web add dsh-rss",
       "added": "2026-08-15"
     },
@@ -12079,7 +12503,7 @@
       },
       "npm": "dsh-sql",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 624,
       "install": "dsh plugin --profile web add dsh-sql",
       "added": "2026-08-17"
     },
@@ -12111,7 +12535,7 @@
       },
       "npm": "dsh-rollback",
       "stars": 0,
-      "downloads": 121,
+      "downloads": 447,
       "install": "dsh plugin --profile web add dsh-rollback",
       "added": "2026-08-17"
     },
@@ -12143,7 +12567,7 @@
       },
       "npm": "dsh-deeptutor",
       "stars": 2,
-      "downloads": 539,
+      "downloads": 749,
       "install": "dsh plugin --profile web add dsh-deeptutor",
       "added": "2026-08-16"
     },
@@ -12178,6 +12602,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add @trench-xinxin/dsh-tool-lens",
       "added": "2026-08-18"
+    },
+    {
+      "name": "dsh-ssq-plugin",
+      "owner": "uriekang1211-bot",
+      "url": "https://github.com/uriekang1211-bot/dsh-ssq-plugin",
+      "page": "https://awesome-dsh-plugin.com/p/uriekang1211-bot/dsh-ssq-plugin/",
+      "category": "tools",
+      "description": {
+        "en": "SSQ (China Welfare Lottery Double Color Ball) helper for DeepSeek Harness: 1000-draw trend tracking, six prediction models with ensemble voting, structure analysis and dan-tuo/random generation via the ssq tool.",
+        "zh": "双色球助手 DSH 插件：千期趋势追踪、6 种预测模型与集成投票、组合结构分析、胆拖/随机选号，对话中直接调用 ssq 工具。"
+      },
+      "npm": null,
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:uriekang1211-bot/dsh-ssq-plugin",
+      "added": "2026-08-19"
     },
     {
       "name": "capital-generation#dsh-plugin",
@@ -12223,7 +12663,7 @@
       },
       "npm": "dsh-design",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 488,
       "install": "dsh plugin --profile web add dsh-design",
       "added": "2026-08-18"
     },
@@ -12239,7 +12679,7 @@
       },
       "npm": "dsh-zotero",
       "stars": 6,
-      "downloads": 478,
+      "downloads": 1619,
       "install": "dsh plugin --profile web add dsh-zotero",
       "added": "2026-08-15",
       "screenshots": [
@@ -12278,7 +12718,7 @@
       },
       "npm": "dsh-codex-sync",
       "stars": 3,
-      "downloads": 0,
+      "downloads": 1265,
       "install": "dsh plugin --profile web add dsh-codex-sync",
       "added": "2026-08-16"
     },
@@ -12294,7 +12734,7 @@
       },
       "npm": "dsh-search-failover",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 498,
       "install": "dsh plugin --profile web add dsh-search-failover",
       "added": "2026-08-18"
     },
@@ -12361,7 +12801,7 @@
       },
       "npm": "dsh-mmx-bridge",
       "stars": 6,
-      "downloads": 98,
+      "downloads": 1087,
       "install": "dsh plugin --profile web add dsh-mmx-bridge",
       "added": "2026-08-16",
       "screenshots": [
@@ -12463,7 +12903,7 @@
       },
       "npm": "dsh-tool-writing",
       "stars": 7,
-      "downloads": 816,
+      "downloads": 1285,
       "install": "dsh plugin --profile web add dsh-tool-writing",
       "added": "2026-08-15"
     },
@@ -12479,7 +12919,7 @@
       },
       "npm": "dsh-writing-remote",
       "stars": 3,
-      "downloads": 681,
+      "downloads": 1058,
       "install": "dsh plugin --profile web add dsh-writing-remote",
       "added": "2026-08-15"
     },
@@ -12495,7 +12935,7 @@
       },
       "npm": "dsh-config-manager",
       "stars": 4,
-      "downloads": 532,
+      "downloads": 4395,
       "install": "dsh plugin --profile web add dsh-config-manager",
       "added": "2026-08-18",
       "screenshots": [
@@ -12517,7 +12957,7 @@
       },
       "npm": "dsh-deepread",
       "stars": 20,
-      "downloads": 1130,
+      "downloads": 1974,
       "install": "dsh plugin --profile web add dsh-deepread",
       "added": "2026-08-15"
     },
@@ -12533,7 +12973,7 @@
       },
       "npm": "dsh-plugin-writing-guard",
       "stars": 12,
-      "downloads": 164,
+      "downloads": 3933,
       "install": "dsh plugin --profile web add dsh-plugin-writing-guard",
       "added": "2026-08-15"
     },
@@ -12565,7 +13005,7 @@
       },
       "npm": "dsh-kubernetes",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 246,
       "install": "dsh plugin --profile web add dsh-kubernetes",
       "added": "2026-08-16"
     },
@@ -12618,7 +13058,7 @@
       },
       "npm": "dsh-funnel",
       "stars": 0,
-      "downloads": 111,
+      "downloads": 148,
       "install": "dsh plugin --profile web add dsh-funnel",
       "added": "2026-08-15"
     },
@@ -12637,6 +13077,23 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:yun520-1/deepseek-heartflow",
       "added": "2026-08-14"
+    },
+    {
+      "name": "dsh-webui-launcher",
+      "owner": "YV3507",
+      "url": "https://github.com/YV3507/dsh-webui-launcher",
+      "page": "https://awesome-dsh-plugin.com/p/YV3507/dsh-webui-launcher/",
+      "category": "tools",
+      "description": {
+        "en": "Cross-platform Web UI launcher for DeepSeek Harness: webui_start/stop/status/open model tools, a /webui start|stop|status|open slash command, a Settings-page launch card, and an optional desktop shortcut that starts the Web UI hidden and opens the browser once it is fully ready (dsh default icon).",
+        "zh": "跨平台 Web UI 启动器：提供 webui_start/stop/status/open 模型工具、/webui start|stop|status|open 斜杠命令、设置页启动卡片，以及可选的桌面快捷方式——隐藏控制台启动 Web UI，完全就绪后自动打开浏览器，默认使用 dsh 官方图标。"
+      },
+      "npm": null,
+      "tarball": "https://github.com/YV3507/dsh-webui-launcher/releases/download/v0.1.11/dsh-webui-launcher-0.1.11.tgz",
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add \"https://github.com/YV3507/dsh-webui-launcher/releases/download/v0.1.11/dsh-webui-launcher-0.1.11.tgz\"",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-desktop-launcher",
@@ -12714,7 +13171,7 @@
       },
       "npm": "dsh-plugin-stylotrace",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 1746,
       "install": "dsh plugin --profile web add dsh-plugin-stylotrace",
       "added": "2026-08-18"
     },
@@ -12733,6 +13190,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add @zhaoolee/dsh-notes",
       "added": "2026-08-14"
+    },
+    {
+      "name": "dsh-skin-switcher",
+      "owner": "zhtx2024",
+      "url": "https://github.com/zhtx2024/dsh-skin-switcher",
+      "page": "https://awesome-dsh-plugin.com/p/zhtx2024/dsh-skin-switcher/",
+      "category": "tools",
+      "description": {
+        "en": "A settings-panel skin manager that auto-discovers installed Web UI skins, switches between them in one click, and maintains the profile patch automatically.",
+        "zh": "设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。"
+      },
+      "npm": "dsh-skin-switcher",
+      "stars": 4,
+      "downloads": 420,
+      "install": "dsh plugin --profile web add dsh-skin-switcher",
+      "added": "2026-08-17"
     },
     {
       "name": "dsh-exam-countdown",
@@ -12794,7 +13267,7 @@
       },
       "npm": "dsh-harness-zh-cn",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 594,
       "install": "dsh plugin --profile web add dsh-harness-zh-cn",
       "added": "2026-08-16"
     },
@@ -12810,7 +13283,7 @@
       },
       "npm": "dsh-artifacts",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 381,
       "install": "dsh plugin --profile web add dsh-artifacts",
       "added": "2026-08-18"
     },
@@ -12826,7 +13299,7 @@
       },
       "npm": "dsh-recommend",
       "stars": 18,
-      "downloads": 68,
+      "downloads": 277,
       "install": "dsh plugin --profile web add dsh-recommend",
       "added": "2026-08-14"
     },
@@ -12890,7 +13363,7 @@
       },
       "npm": "dsh-verify",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 2088,
       "install": "dsh plugin --profile web add dsh-verify",
       "added": "2026-08-17",
       "screenshots": [
@@ -12926,7 +13399,7 @@
       },
       "npm": "@anweat/dsh-browser",
       "stars": 6,
-      "downloads": 721,
+      "downloads": 2430,
       "install": "dsh plugin --profile web add @anweat/dsh-browser",
       "added": "2026-08-14"
     },
@@ -12942,7 +13415,7 @@
       },
       "npm": "dsh-web-search-pro",
       "stars": 26,
-      "downloads": 404,
+      "downloads": 1173,
       "install": "dsh plugin --profile web add dsh-web-search-pro",
       "added": "2026-08-14"
     },
@@ -12990,7 +13463,7 @@
       },
       "npm": "dsh-free-search",
       "stars": 21,
-      "downloads": 724,
+      "downloads": 2141,
       "install": "dsh plugin --profile web add dsh-free-search",
       "added": "2026-08-16"
     },
@@ -13006,7 +13479,7 @@
       },
       "npm": "@elves-ai/dsh-web-search-firecrawl",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 156,
       "install": "dsh plugin --profile web add @elves-ai/dsh-web-search-firecrawl",
       "added": "2026-08-17",
       "screenshots": [
@@ -13041,7 +13514,7 @@
       },
       "npm": "dsh-jiey-browser",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 477,
       "install": "dsh plugin --profile web add dsh-jiey-browser",
       "added": "2026-08-18"
     },
@@ -13060,6 +13533,27 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:JohnXu22786/browser-automation",
       "added": "2026-08-17"
+    },
+    {
+      "name": "dsh-search-enhance",
+      "owner": "KKKneko",
+      "url": "https://github.com/KKKneko/dsh-search-enhance",
+      "page": "https://awesome-dsh-plugin.com/p/KKKneko/dsh-search-enhance/",
+      "category": "browser",
+      "description": {
+        "en": "Grok-compatible web search with retained source pagination, Context7 and Exa documentation lookup, bounded page extraction, site mapping, offline research planning, and read-only diagnostics.",
+        "zh": "提供 Grok-compatible 网页搜索、保留来源分页、Context7 与 Exa 文档检索、有界网页提取、站点映射、离线研究计划和只读诊断。"
+      },
+      "npm": "dsh-search-enhance",
+      "stars": 0,
+      "downloads": 684,
+      "install": "dsh plugin --profile web add dsh-search-enhance",
+      "added": "2026-08-19",
+      "screenshots": [
+        "https://raw.githubusercontent.com/KKKneko/dsh-search-enhance/main/assets/search-workflow.png",
+        "https://raw.githubusercontent.com/KKKneko/dsh-search-enhance/main/assets/docs-search.png",
+        "https://raw.githubusercontent.com/KKKneko/dsh-search-enhance/main/assets/settings.png"
+      ]
     },
     {
       "name": "dsh-browser-control",
@@ -13137,7 +13631,7 @@
       },
       "npm": "dsh-exa-mcp",
       "stars": 3,
-      "downloads": 136,
+      "downloads": 204,
       "install": "dsh plugin --profile web add dsh-exa-mcp",
       "added": "2026-08-15"
     },
@@ -13188,7 +13682,7 @@
       },
       "npm": "dsh-searxng",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 389,
       "install": "dsh plugin --profile web add dsh-searxng",
       "added": "2026-08-16"
     },
@@ -13220,7 +13714,7 @@
       },
       "npm": "dsh-chrome",
       "stars": 0,
-      "downloads": 266,
+      "downloads": 884,
       "install": "dsh plugin --profile web add dsh-chrome",
       "added": "2026-08-17"
     },
@@ -13236,7 +13730,7 @@
       },
       "npm": "dsh-s1",
       "stars": 3,
-      "downloads": 52,
+      "downloads": 198,
       "install": "dsh plugin --profile web add dsh-s1",
       "added": "2026-08-14",
       "screenshots": [
@@ -13255,7 +13749,7 @@
       },
       "npm": "dsh-tavily",
       "stars": 5,
-      "downloads": 0,
+      "downloads": 595,
       "install": "dsh plugin --profile web add dsh-tavily",
       "added": "2026-08-17"
     },
@@ -13287,7 +13781,7 @@
       },
       "npm": "dsh-web-search-metaso",
       "stars": 1,
-      "downloads": 136,
+      "downloads": 217,
       "install": "dsh plugin --profile web add dsh-web-search-metaso",
       "added": "2026-08-16"
     },
@@ -13303,7 +13797,7 @@
       },
       "npm": "dsh-pilot",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 498,
       "install": "dsh plugin --profile web add dsh-pilot",
       "added": "2026-08-17"
     },
@@ -13319,7 +13813,7 @@
       },
       "npm": "dsh-preview",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 407,
       "install": "dsh plugin --profile web add dsh-preview",
       "added": "2026-08-17"
     },
@@ -13335,7 +13829,7 @@
       },
       "npm": "dsh-builtin-browser",
       "stars": 7,
-      "downloads": 1808,
+      "downloads": 2626,
       "install": "dsh plugin --profile web add dsh-builtin-browser",
       "added": "2026-08-16"
     },
@@ -13354,6 +13848,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:yangyunsong023/dsh-sxs-anti-bot-http",
       "added": "2026-08-17"
+    },
+    {
+      "name": "dsh-plugins#dsh-web-search",
+      "owner": "yugasun",
+      "url": "https://github.com/yugasun/dsh-plugins/tree/main/packages/dsh-web-search",
+      "page": "https://awesome-dsh-plugin.com/p/yugasun/dsh-plugins--packages-dsh-web-search/",
+      "category": "browser",
+      "description": {
+        "en": "Registers Baidu, Doubao, Tavily, and Exa backends into ctx.web so official web_search can use them, and routes web_fetch through Tavily Extract or Exa Contents when that backend is active.",
+        "zh": "向 ctx.web 注册百度、豆包、Tavily、Exa 后端供官方 web_search 使用，并在 Tavily 或 Exa 生效时将 web_fetch 转到对应提取接口。"
+      },
+      "npm": "@yugasun/dsh-web-search",
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add @yugasun/dsh-web-search",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-cdp-browser",
@@ -13415,7 +13925,7 @@
       },
       "npm": "dsh-vision-fallback",
       "stars": 1,
-      "downloads": 206,
+      "downloads": 414,
       "install": "dsh plugin --profile web add dsh-vision-fallback",
       "added": "2026-08-18"
     },
@@ -13431,7 +13941,7 @@
       },
       "npm": "dsh-vision-proxy-route",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 86,
       "install": "dsh plugin --profile web add dsh-vision-proxy-route",
       "added": "2026-08-17"
     },
@@ -13447,7 +13957,7 @@
       },
       "npm": "dsh-vision-free-eyes",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 158,
       "install": "dsh plugin --profile web add dsh-vision-free-eyes",
       "added": "2026-08-17"
     },
@@ -13463,7 +13973,7 @@
       },
       "npm": "dsh-vision-web",
       "stars": 7,
-      "downloads": 0,
+      "downloads": 490,
       "install": "dsh plugin --profile web add dsh-vision-web",
       "added": "2026-08-16"
     },
@@ -13479,7 +13989,7 @@
       },
       "npm": "dsh-youreyes",
       "stars": 1,
-      "downloads": 140,
+      "downloads": 192,
       "install": "dsh plugin --profile web add dsh-youreyes",
       "added": "2026-08-16",
       "screenshots": [
@@ -13498,7 +14008,7 @@
       },
       "npm": "@anionex/dsh-vision-toolkit",
       "stars": 710,
-      "downloads": 1764,
+      "downloads": 17248,
       "install": "dsh plugin --profile web add @anionex/dsh-vision-toolkit",
       "added": "2026-08-13"
     },
@@ -13616,7 +14126,7 @@
       },
       "npm": "@dickpy/dsh-imagegen",
       "stars": 7,
-      "downloads": 48,
+      "downloads": 1248,
       "install": "dsh plugin --profile web add @dickpy/dsh-imagegen",
       "added": "2026-08-16",
       "screenshots": [
@@ -13636,7 +14146,7 @@
       },
       "npm": "dsh-llm-vision-bridge",
       "stars": 4,
-      "downloads": 50,
+      "downloads": 107,
       "install": "dsh plugin --profile web add dsh-llm-vision-bridge",
       "added": "2026-08-14"
     },
@@ -13652,7 +14162,7 @@
       },
       "npm": "dsh-plugin-image-input",
       "stars": 0,
-      "downloads": 126,
+      "downloads": 317,
       "install": "dsh plugin --profile web add dsh-plugin-image-input",
       "added": "2026-08-15"
     },
@@ -13684,7 +14194,7 @@
       },
       "npm": "dsh-vision-proxy",
       "stars": 11,
-      "downloads": 435,
+      "downloads": 1562,
       "install": "dsh plugin --profile web add dsh-vision-proxy",
       "added": "2026-08-14",
       "screenshots": [
@@ -13704,7 +14214,7 @@
       },
       "npm": "dsh-free-vision",
       "stars": 2,
-      "downloads": 2097,
+      "downloads": 4739,
       "install": "dsh plugin --profile web add dsh-free-vision",
       "added": "2026-08-15"
     },
@@ -13736,7 +14246,7 @@
       },
       "npm": "dsh-vision-guard",
       "stars": 0,
-      "downloads": 508,
+      "downloads": 596,
       "install": "dsh plugin --profile web add dsh-vision-guard",
       "added": "2026-08-15"
     },
@@ -13752,7 +14262,7 @@
       },
       "npm": "dsh-plugin-deepseek-vision",
       "stars": 4,
-      "downloads": 271,
+      "downloads": 909,
       "install": "dsh plugin --profile web add dsh-plugin-deepseek-vision",
       "added": "2026-08-15",
       "screenshots": [
@@ -13791,7 +14301,7 @@
       },
       "npm": "dsh-vision-mix",
       "stars": 2,
-      "downloads": 255,
+      "downloads": 614,
       "install": "dsh plugin --profile web add dsh-vision-mix",
       "added": "2026-08-16",
       "screenshots": [
@@ -13846,7 +14356,7 @@
       },
       "npm": "dsh-open-eyes",
       "stars": 2,
-      "downloads": 135,
+      "downloads": 209,
       "install": "dsh plugin --profile web add dsh-open-eyes",
       "added": "2026-08-17"
     },
@@ -13862,7 +14372,7 @@
       },
       "npm": "dsh-quicksight",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 328,
       "install": "dsh plugin --profile web add dsh-quicksight",
       "added": "2026-08-16"
     },
@@ -13881,6 +14391,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:jing-hy/picturereader",
       "added": "2026-08-16"
+    },
+    {
+      "name": "dsh-autovision",
+      "owner": "Junkrat9527",
+      "url": "https://github.com/Junkrat9527/dsh-autovision",
+      "page": "https://awesome-dsh-plugin.com/p/Junkrat9527/dsh-autovision/",
+      "category": "vision",
+      "description": {
+        "en": "Vision for text-only dsh models: paste an image and a configured multimodal model transcribes it to text automatically — transparent twin routing, an agent-callable read-image tool, no built-in keys or relay.",
+        "zh": "纯文本 dsh 模型的识图插件：粘贴图片自动由你配置的多模态模型转成文字——透明孪生路由、模型可自主调用识图工具、无内置密钥与中转。"
+      },
+      "npm": "@iroam2375/dsh-autovision",
+      "stars": 0,
+      "downloads": 126,
+      "install": "dsh plugin --profile web add @iroam2375/dsh-autovision",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-visual-plugin",
@@ -13916,7 +14442,7 @@
       },
       "npm": "dsh-vision-recognizer",
       "stars": 0,
-      "downloads": 501,
+      "downloads": 634,
       "install": "dsh plugin --profile web add dsh-vision-recognizer",
       "added": "2026-08-15",
       "screenshots": [
@@ -14031,7 +14557,7 @@
       },
       "npm": "@liustack/modlens",
       "stars": 3133,
-      "downloads": 20006,
+      "downloads": null,
       "install": "dsh plugin --profile web add @liustack/modlens",
       "added": "2026-08-14"
     },
@@ -14047,7 +14573,7 @@
       },
       "npm": "dsh-plugin-grok2api-media-tool",
       "stars": 1,
-      "downloads": 40,
+      "downloads": 571,
       "install": "dsh plugin --profile web add dsh-plugin-grok2api-media-tool",
       "added": "2026-08-15"
     },
@@ -14095,7 +14621,7 @@
       },
       "npm": "dsh-koboldcpp-hands",
       "stars": 1,
-      "downloads": 299,
+      "downloads": 451,
       "install": "dsh plugin --profile web add dsh-koboldcpp-hands",
       "added": "2026-08-15"
     },
@@ -14111,7 +14637,7 @@
       },
       "npm": "dsh-unsloth-hands",
       "stars": 0,
-      "downloads": 144,
+      "downloads": 175,
       "install": "dsh plugin --profile web add dsh-unsloth-hands",
       "added": "2026-08-15"
     },
@@ -14143,7 +14669,7 @@
       },
       "npm": "dsh-vision-tools",
       "stars": 2,
-      "downloads": 109,
+      "downloads": 560,
       "install": "dsh plugin --profile web add dsh-vision-tools",
       "added": "2026-08-17"
     },
@@ -14175,7 +14701,7 @@
       },
       "npm": "dsh-subagent-vision",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 633,
       "install": "dsh plugin --profile web add dsh-subagent-vision",
       "added": "2026-08-16",
       "screenshots": [
@@ -14211,7 +14737,7 @@
       },
       "npm": "dsh-auto-vision",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 270,
       "install": "dsh plugin --profile web add dsh-auto-vision",
       "added": "2026-08-18"
     },
@@ -14259,7 +14785,7 @@
       },
       "npm": "dsh-vision-subagent",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 295,
       "install": "dsh plugin --profile web add dsh-vision-subagent",
       "added": "2026-08-15"
     },
@@ -14307,7 +14833,7 @@
       },
       "npm": "dsh-deepseek-vision",
       "stars": 6,
-      "downloads": 615,
+      "downloads": 1773,
       "install": "dsh plugin --profile web add dsh-deepseek-vision",
       "added": "2026-08-15"
     },
@@ -14323,7 +14849,7 @@
       },
       "npm": "dsh-plugin-appshot",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 672,
       "install": "dsh plugin --profile web add dsh-plugin-appshot",
       "added": "2026-08-16"
     },
@@ -14355,7 +14881,7 @@
       },
       "npm": "visual-review",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 136,
       "install": "dsh plugin --profile web add visual-review",
       "added": "2026-08-18"
     },
@@ -14387,7 +14913,7 @@
       },
       "npm": "mimo-vision",
       "stars": 1,
-      "downloads": 124,
+      "downloads": 168,
       "install": "dsh plugin --profile web add mimo-vision",
       "added": "2026-08-15"
     },
@@ -14467,7 +14993,7 @@
       },
       "npm": "dsh-vision-router",
       "stars": 770,
-      "downloads": 2682,
+      "downloads": 21679,
       "install": "dsh plugin --profile web add dsh-vision-router",
       "added": "2026-08-14"
     },
@@ -14566,7 +15092,7 @@
       },
       "npm": "dsh-speak",
       "stars": 5,
-      "downloads": 315,
+      "downloads": 745,
       "install": "dsh plugin --profile web add dsh-speak",
       "added": "2026-08-16"
     },
@@ -14582,7 +15108,7 @@
       },
       "npm": "dsh-voice-webspeech",
       "stars": 1,
-      "downloads": 88,
+      "downloads": 229,
       "install": "dsh plugin --profile web add dsh-voice-webspeech",
       "added": "2026-08-14"
     },
@@ -14663,7 +15189,7 @@
       },
       "npm": "dsh-chatvoice",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 1370,
       "install": "dsh plugin --profile web add dsh-chatvoice",
       "added": "2026-08-16"
     },
@@ -14698,7 +15224,7 @@
       },
       "npm": "dsh-plugin-notify",
       "stars": 4,
-      "downloads": 189,
+      "downloads": 375,
       "install": "dsh plugin --profile web add dsh-plugin-notify",
       "added": "2026-08-14",
       "screenshots": [
@@ -14733,7 +15259,7 @@
       },
       "npm": "dsh-plugin-notify-sound",
       "stars": 2,
-      "downloads": 43,
+      "downloads": 57,
       "install": "dsh plugin --profile web add dsh-plugin-notify-sound",
       "added": "2026-08-14"
     },
@@ -14797,7 +15323,7 @@
       },
       "npm": "dsh-voice-call",
       "stars": 1,
-      "downloads": 128,
+      "downloads": 262,
       "install": "dsh plugin --profile web add dsh-voice-call",
       "added": "2026-08-16",
       "screenshots": [
@@ -14861,7 +15387,7 @@
       },
       "npm": "dsh-voice",
       "stars": 2,
-      "downloads": 131,
+      "downloads": 696,
       "install": "dsh plugin --profile web add dsh-voice",
       "added": "2026-08-15"
     },
@@ -14893,7 +15419,7 @@
       },
       "npm": "dsh-plugin-uisfx",
       "stars": 3,
-      "downloads": 293,
+      "downloads": 438,
       "install": "dsh plugin --profile web add dsh-plugin-uisfx",
       "added": "2026-08-15"
     },
@@ -15021,7 +15547,7 @@
       },
       "npm": "dsh-overleaf",
       "stars": 7,
-      "downloads": 32,
+      "downloads": 46,
       "install": "dsh plugin --profile web add dsh-overleaf",
       "added": "2026-08-14"
     },
@@ -15053,7 +15579,7 @@
       },
       "npm": "dsh-markdown-preview",
       "stars": 2,
-      "downloads": 294,
+      "downloads": 817,
       "install": "dsh plugin --profile web add dsh-markdown-preview",
       "added": "2026-08-15"
     },
@@ -15069,7 +15595,7 @@
       },
       "npm": "dsh-diagram",
       "stars": 2,
-      "downloads": 375,
+      "downloads": 841,
       "install": "dsh plugin --profile web add dsh-diagram",
       "added": "2026-08-15",
       "screenshots": [
@@ -15139,7 +15665,7 @@
       },
       "npm": "dsh-office-tools",
       "stars": 4,
-      "downloads": 224,
+      "downloads": 584,
       "install": "dsh plugin --profile web add dsh-office-tools",
       "added": "2026-08-15"
     },
@@ -15171,7 +15697,7 @@
       },
       "npm": "dsh-paperlab",
       "stars": 3,
-      "downloads": 402,
+      "downloads": 490,
       "install": "dsh plugin --profile web add dsh-paperlab",
       "added": "2026-08-16",
       "screenshots": [
@@ -15222,7 +15748,7 @@
       },
       "npm": "dsh-ppt",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 647,
       "install": "dsh plugin --profile web add dsh-ppt",
       "added": "2026-08-17"
     },
@@ -15279,7 +15805,7 @@
       },
       "npm": "dsh-inspiration-deck-workshop",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 11,
       "install": "dsh plugin --profile web add dsh-inspiration-deck-workshop",
       "added": "2026-08-16"
     },
@@ -15295,7 +15821,7 @@
       },
       "npm": "dsh-pdf-background-gray",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 148,
       "install": "dsh plugin --profile web add dsh-pdf-background-gray",
       "added": "2026-08-16"
     },
@@ -15379,7 +15905,7 @@
       },
       "npm": "dsh-skill-hub",
       "stars": 3,
-      "downloads": 46,
+      "downloads": 657,
       "install": "dsh plugin --profile web add dsh-skill-hub",
       "added": "2026-08-18",
       "screenshots": [
@@ -15452,7 +15978,7 @@
       },
       "npm": "@dhicoc/dsh-reverse-skill",
       "stars": 38,
-      "downloads": 224,
+      "downloads": 874,
       "install": "dsh plugin --profile web add @dhicoc/dsh-reverse-skill",
       "added": "2026-08-14"
     },
@@ -15468,7 +15994,7 @@
       },
       "npm": "@dhicoc/dsh-wuyun-liuqi",
       "stars": 2,
-      "downloads": 399,
+      "downloads": 469,
       "install": "dsh plugin --profile web add @dhicoc/dsh-wuyun-liuqi",
       "added": "2026-08-15"
     },
@@ -15548,7 +16074,7 @@
       },
       "npm": "dsh-ecc-skills",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 355,
       "install": "dsh plugin --profile web add dsh-ecc-skills",
       "added": "2026-08-16"
     },
@@ -15564,7 +16090,7 @@
       },
       "npm": "dsh-ponytail-skills",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 676,
       "install": "dsh plugin --profile web add dsh-ponytail-skills",
       "added": "2026-08-16"
     },
@@ -15580,7 +16106,7 @@
       },
       "npm": "mattpocock-skills-dsh",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 359,
       "install": "dsh plugin --profile web add mattpocock-skills-dsh",
       "added": "2026-08-16"
     },
@@ -15596,7 +16122,7 @@
       },
       "npm": "mattpocock-skills-dsh-zh",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 179,
       "install": "dsh plugin --profile web add mattpocock-skills-dsh-zh",
       "added": "2026-08-16"
     },
@@ -15628,7 +16154,7 @@
       },
       "npm": "dsh-desktop-app",
       "stars": 0,
-      "downloads": 136,
+      "downloads": 352,
       "install": "dsh plugin --profile web add dsh-desktop-app",
       "added": "2026-08-15"
     },
@@ -15661,7 +16187,7 @@
       },
       "npm": "@jeremy9682/dsh-skill-pack",
       "stars": 3,
-      "downloads": 80,
+      "downloads": 168,
       "install": "dsh plugin --profile web add @jeremy9682/dsh-skill-pack",
       "added": "2026-08-15"
     },
@@ -15757,7 +16283,7 @@
       },
       "npm": "gongwen-skill",
       "stars": 5,
-      "downloads": 120,
+      "downloads": 298,
       "install": "dsh plugin --profile web add gongwen-skill",
       "added": "2026-08-18"
     },
@@ -15837,7 +16363,7 @@
       },
       "npm": "dsh-plugin-guide",
       "stars": 4,
-      "downloads": 0,
+      "downloads": 73,
       "install": "dsh plugin --profile web add dsh-plugin-guide",
       "added": "2026-08-15"
     },
@@ -15855,6 +16381,22 @@
       "stars": 0,
       "downloads": null,
       "install": "dsh plugin --profile web add github:redfox-data/redfox-community-dsh",
+      "added": "2026-08-19"
+    },
+    {
+      "name": "sandbase-skills",
+      "owner": "sandbaseai",
+      "url": "https://github.com/sandbaseai/sandbase-skills",
+      "page": "https://awesome-dsh-plugin.com/p/sandbaseai/sandbase-skills/",
+      "category": "skill",
+      "description": {
+        "en": "Mounts 88 packaged research, social-intelligence, marketing and business Agent Skills into dsh through the filesystem Skill provider.",
+        "zh": "通过文件系统 Skill provider 将 88 个研究、社交情报、营销与商业 Agent Skills 挂载到 dsh。"
+      },
+      "npm": null,
+      "stars": 21,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:sandbaseai/sandbase-skills",
       "added": "2026-08-19"
     },
     {
@@ -15901,7 +16443,7 @@
       },
       "npm": "dsh-hyperframes",
       "stars": 3,
-      "downloads": 46,
+      "downloads": 392,
       "install": "dsh plugin --profile web add dsh-hyperframes",
       "added": "2026-08-15"
     },
@@ -15917,7 +16459,7 @@
       },
       "npm": "dsh-remotion",
       "stars": 4,
-      "downloads": 54,
+      "downloads": 436,
       "install": "dsh plugin --profile web add dsh-remotion",
       "added": "2026-08-15"
     },
@@ -16035,7 +16577,7 @@
       },
       "npm": "dsh-web-artifact-designer",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 157,
       "install": "dsh plugin --profile web add dsh-web-artifact-designer",
       "added": "2026-08-18"
     },
@@ -16051,7 +16593,7 @@
       },
       "npm": "cot-lint",
       "stars": 0,
-      "downloads": 434,
+      "downloads": 503,
       "install": "dsh plugin --profile web add cot-lint",
       "added": "2026-08-15"
     },
@@ -16115,7 +16657,7 @@
       },
       "npm": "dsh-commercial-ui-ux",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 138,
       "install": "dsh plugin --profile web add dsh-commercial-ui-ux",
       "added": "2026-08-16"
     },
@@ -16234,7 +16776,7 @@
       },
       "npm": "dsh-tool-orchestrate",
       "stars": 0,
-      "downloads": 135,
+      "downloads": 255,
       "install": "dsh plugin --profile web add dsh-tool-orchestrate",
       "added": "2026-08-15"
     },
@@ -16266,7 +16808,7 @@
       },
       "npm": "dsh-science",
       "stars": 19,
-      "downloads": 196,
+      "downloads": 553,
       "install": "dsh plugin --profile web add dsh-science",
       "added": "2026-08-14",
       "screenshots": [
@@ -16322,7 +16864,7 @@
       },
       "npm": "@mstar-harness/dsh",
       "stars": 49,
-      "downloads": 239,
+      "downloads": 753,
       "install": "dsh plugin --profile web add @mstar-harness/dsh",
       "added": "2026-08-14"
     },
@@ -16338,7 +16880,7 @@
       },
       "npm": "@opendsh/dsh-plugin-scheduled-tasks",
       "stars": 7,
-      "downloads": 52,
+      "downloads": 497,
       "install": "dsh plugin --profile web add @opendsh/dsh-plugin-scheduled-tasks",
       "added": "2026-08-15"
     },
@@ -16354,7 +16896,7 @@
       },
       "npm": "dsh-vibe-math",
       "stars": 3,
-      "downloads": 119,
+      "downloads": 1561,
       "install": "dsh plugin --profile web add dsh-vibe-math",
       "added": "2026-08-15",
       "screenshots": [
@@ -16374,7 +16916,7 @@
       },
       "npm": "dsh-taskboard",
       "stars": 5,
-      "downloads": 448,
+      "downloads": 1520,
       "install": "dsh plugin --profile web add dsh-taskboard",
       "added": "2026-08-15"
     },
@@ -16390,9 +16932,25 @@
       },
       "npm": "dsh-aicc-zhunao",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 139,
       "install": "dsh plugin --profile web add dsh-aicc-zhunao",
       "added": "2026-08-16"
+    },
+    {
+      "name": "dsh-agent-preset-router",
+      "owner": "CTWCTW9999",
+      "url": "https://github.com/CTWCTW9999/dsh-agent-preset-router",
+      "page": "https://awesome-dsh-plugin.com/p/CTWCTW9999/dsh-agent-preset-router/",
+      "category": "workflow",
+      "description": {
+        "en": "Auto Mode for DSH: a flash-model router that auto-picks the best agent preset (standard/code/minimal/cordis) for each new session and executes immediately, no confirmation.",
+        "zh": "DSH 自动模式：用 Flash 模型为每个新会话自动判断最合适的 Agent 预设（标准/PTC/极简/创造）并直接执行，无需确认。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:CTWCTW9999/dsh-agent-preset-router",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-personal-workbench",
@@ -16526,7 +17084,7 @@
       },
       "npm": "dsh-kimicode-swarm",
       "stars": 0,
-      "downloads": 124,
+      "downloads": 253,
       "install": "dsh plugin --profile web add dsh-kimicode-swarm",
       "added": "2026-08-15"
     },
@@ -16609,7 +17167,7 @@
       },
       "npm": "dsh-requirements-alignment",
       "stars": 7,
-      "downloads": 44,
+      "downloads": 700,
       "install": "dsh plugin --profile web add dsh-requirements-alignment",
       "added": "2026-08-16"
     },
@@ -16814,7 +17372,7 @@
       },
       "npm": "dsh-model-failover",
       "stars": 3,
-      "downloads": 101,
+      "downloads": 417,
       "install": "dsh plugin --profile web add dsh-model-failover",
       "added": "2026-08-14"
     },
@@ -16830,7 +17388,7 @@
       },
       "npm": "dsh-agent-canvas",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 240,
       "install": "dsh plugin --profile web add dsh-agent-canvas",
       "added": "2026-08-16",
       "screenshots": [
@@ -16882,7 +17440,7 @@
       },
       "npm": "dsh-kingdom",
       "stars": 6,
-      "downloads": 0,
+      "downloads": 1048,
       "install": "dsh plugin --profile web add dsh-kingdom",
       "added": "2026-08-18"
     },
@@ -16962,7 +17520,7 @@
       },
       "npm": "specworkflow",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 6,
       "install": "dsh plugin --profile web add specworkflow",
       "added": "2026-08-16"
     },
@@ -16994,7 +17552,7 @@
       },
       "npm": "dsh-agent-relay",
       "stars": 3,
-      "downloads": 326,
+      "downloads": 382,
       "install": "dsh plugin --profile web add dsh-agent-relay",
       "added": "2026-08-14"
     },
@@ -17074,7 +17632,7 @@
       },
       "npm": "odai-dsh-plugin",
       "stars": 89,
-      "downloads": 647,
+      "downloads": 1951,
       "install": "dsh plugin --profile web add odai-dsh-plugin",
       "added": "2026-08-18"
     },
@@ -17090,7 +17648,7 @@
       },
       "npm": "dsh-background-agents",
       "stars": 5,
-      "downloads": 81,
+      "downloads": 697,
       "install": "dsh plugin --profile web add dsh-background-agents",
       "added": "2026-08-16"
     },
@@ -17106,7 +17664,7 @@
       },
       "npm": "dsh-doublecheck",
       "stars": 4,
-      "downloads": 222,
+      "downloads": 611,
       "install": "dsh plugin --profile web add dsh-doublecheck",
       "added": "2026-08-14"
     },
@@ -17202,9 +17760,25 @@
       },
       "npm": "dsh-ha-orchestrator",
       "stars": 7,
-      "downloads": 0,
+      "downloads": 745,
       "install": "dsh plugin --profile web add dsh-ha-orchestrator",
       "added": "2026-08-16"
+    },
+    {
+      "name": "sandbase-harness",
+      "owner": "sandbaseai",
+      "url": "https://github.com/sandbaseai/sandbase-harness",
+      "page": "https://awesome-dsh-plugin.com/p/sandbaseai/sandbase-harness/",
+      "category": "workflow",
+      "description": {
+        "en": "Connects dsh to a local SandBase Harness runtime over stdio MCP for managing agents and sessions, streaming turns, inspecting artifacts and cancelling work.",
+        "zh": "通过 stdio MCP 将 dsh 连接到本地 SandBase Harness 运行时，用于管理代理与会话、流式执行任务、检查产物和取消工作。"
+      },
+      "npm": null,
+      "stars": 623,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:sandbaseai/sandbase-harness",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-plugin-automations",
@@ -17234,7 +17808,7 @@
       },
       "npm": "uagent-sync-dsh",
       "stars": 0,
-      "downloads": 198,
+      "downloads": 418,
       "install": "dsh plugin --profile web add uagent-sync-dsh",
       "added": "2026-08-14"
     },
@@ -17282,7 +17856,7 @@
       },
       "npm": "dsh-minimal-ptc",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 168,
       "install": "dsh plugin --profile web add dsh-minimal-ptc",
       "added": "2026-08-17"
     },
@@ -17298,7 +17872,7 @@
       },
       "npm": "dsh-project-kanban",
       "stars": 2,
-      "downloads": 988,
+      "downloads": 1373,
       "install": "dsh plugin --profile web add dsh-project-kanban",
       "added": "2026-08-16",
       "screenshots": [
@@ -17317,7 +17891,7 @@
       },
       "npm": "dsh-crew",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 1640,
       "install": "dsh plugin --profile web add dsh-crew",
       "added": "2026-08-19"
     },
@@ -17413,7 +17987,7 @@
       },
       "npm": "dsh-plugin-hooks",
       "stars": 0,
-      "downloads": 43,
+      "downloads": 72,
       "install": "dsh plugin --profile web add dsh-plugin-hooks",
       "added": "2026-08-14"
     },
@@ -17493,7 +18067,7 @@
       },
       "npm": "dsh-ci-plugin",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 4,
       "install": "dsh plugin --profile web add dsh-ci-plugin",
       "added": "2026-08-16"
     },
@@ -17530,6 +18104,22 @@
       "added": "2026-08-15"
     },
     {
+      "name": "dsh-tool-generate-image",
+      "owner": "zclDragon",
+      "url": "https://github.com/zclDragon/dsh-tool-generate-image",
+      "page": "https://awesome-dsh-plugin.com/p/zclDragon/dsh-tool-generate-image/",
+      "category": "workflow",
+      "description": {
+        "en": "Model-facing `generate_image` tool for text-only models: the model asks for a picture in natural language, Gemini draws it via the Antigravity CLI, the image is saved to a configurable output directory, and the tool returns the file paths for the model to use in its work.",
+        "zh": "给纯文本模型的 `generate_image` 工具：模型用自然语言要一张图，经 Antigravity CLI 让 Gemini 画出，保存到可配置输出目录并返回文件路径，供模型在任务中使用。"
+      },
+      "npm": "dsh-tool-generate-image",
+      "stars": 1,
+      "downloads": 100,
+      "install": "dsh plugin --profile web add dsh-tool-generate-image",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-subagent-agy",
       "owner": "ZEM17",
       "url": "https://github.com/ZEM17/dsh-subagent-agy",
@@ -17557,7 +18147,7 @@
       },
       "npm": "dsh-sync",
       "stars": 0,
-      "downloads": 134,
+      "downloads": 665,
       "install": "dsh plugin --profile web add dsh-sync",
       "added": "2026-08-15"
     },
@@ -17660,7 +18250,7 @@
       },
       "npm": "dsh-user-experience",
       "stars": 19,
-      "downloads": 0,
+      "downloads": 219,
       "install": "dsh plugin --profile web add dsh-user-experience",
       "added": "2026-08-14"
     },
@@ -17676,7 +18266,7 @@
       },
       "npm": "github-explore",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 11,
       "install": "dsh plugin --profile web add github-explore",
       "added": "2026-08-16"
     },
@@ -17772,7 +18362,7 @@
       },
       "npm": "dsh-github",
       "stars": 5,
-      "downloads": 63,
+      "downloads": 185,
       "install": "dsh plugin --profile web add dsh-github",
       "added": "2026-08-17",
       "screenshots": [
@@ -17974,7 +18564,7 @@
       },
       "npm": "dsh-github-skills",
       "stars": 3,
-      "downloads": 352,
+      "downloads": 773,
       "install": "dsh plugin --profile web add dsh-github-skills",
       "added": "2026-08-15"
     },
@@ -17990,7 +18580,7 @@
       },
       "npm": "dsh-session-review",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 142,
       "install": "dsh plugin --profile web add dsh-session-review",
       "added": "2026-08-18"
     },
@@ -18038,7 +18628,7 @@
       },
       "npm": "dsh-plugin-git-workflow",
       "stars": 2,
-      "downloads": 78,
+      "downloads": 370,
       "install": "dsh plugin --profile web add dsh-plugin-git-workflow",
       "added": "2026-08-14"
     },
@@ -18070,7 +18660,7 @@
       },
       "npm": "dsh-review",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 386,
       "install": "dsh plugin --profile web add dsh-review",
       "added": "2026-08-18"
     },
@@ -18102,7 +18692,7 @@
       },
       "npm": "dsh-git-worktree",
       "stars": 1,
-      "downloads": 459,
+      "downloads": 1101,
       "install": "dsh plugin --profile web add dsh-git-worktree",
       "added": "2026-08-15",
       "screenshots": [
@@ -18283,7 +18873,7 @@
       },
       "npm": "dsh-msg-hub",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 1267,
       "install": "dsh plugin --profile web add dsh-msg-hub",
       "added": "2026-08-16"
     },
@@ -18299,7 +18889,7 @@
       },
       "npm": "@open-pets/dsh",
       "stars": 1079,
-      "downloads": 0,
+      "downloads": 32,
       "install": "dsh plugin --profile web add @open-pets/dsh",
       "added": "2026-08-17"
     },
@@ -18508,7 +19098,7 @@
       },
       "npm": "dsh-open-with",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 166,
       "install": "dsh plugin --profile web add dsh-open-with",
       "added": "2026-08-15"
     },
@@ -18556,7 +19146,7 @@
       },
       "npm": "dsh-mobile-remote",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 178,
       "install": "dsh plugin --profile web add dsh-mobile-remote",
       "added": "2026-08-16"
     },
@@ -18572,7 +19162,7 @@
       },
       "npm": "dsh-acp-enhanced",
       "stars": 2,
-      "downloads": 390,
+      "downloads": 962,
       "install": "dsh plugin --profile web add dsh-acp-enhanced",
       "added": "2026-08-16"
     },
@@ -18588,7 +19178,7 @@
       },
       "npm": "dsh-web-launcher",
       "stars": 1,
-      "downloads": 651,
+      "downloads": 753,
       "install": "dsh plugin --profile web add dsh-web-launcher",
       "added": "2026-08-15"
     },
@@ -18708,7 +19298,7 @@
       },
       "npm": "dsh-chatgpt-bridge",
       "stars": 9,
-      "downloads": 179,
+      "downloads": 260,
       "install": "dsh plugin --profile web add dsh-chatgpt-bridge",
       "added": "2026-08-15",
       "screenshots": [
@@ -18763,7 +19353,7 @@
       },
       "npm": "dsh-complete-notify",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 970,
       "install": "dsh plugin --profile web add dsh-complete-notify",
       "added": "2026-08-16"
     },
@@ -18859,7 +19449,7 @@
       },
       "npm": "dsh-sound-lab",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 249,
       "install": "dsh plugin --profile web add dsh-sound-lab",
       "added": "2026-08-18"
     },
@@ -18891,7 +19481,7 @@
       },
       "npm": "dsh-peak-cost-mode",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 402,
       "install": "dsh plugin --profile web add dsh-peak-cost-mode",
       "added": "2026-08-18"
     },
@@ -18939,7 +19529,7 @@
       },
       "npm": "dsh-lark-channel",
       "stars": 34,
-      "downloads": 532,
+      "downloads": 1124,
       "install": "dsh plugin --profile web add dsh-lark-channel",
       "added": "2026-08-15"
     },
@@ -19003,7 +19593,7 @@
       },
       "npm": "dsh-notify-skill",
       "stars": 0,
-      "downloads": 123,
+      "downloads": 180,
       "install": "dsh plugin --profile web add dsh-notify-skill",
       "added": "2026-08-15"
     },
@@ -19051,7 +19641,7 @@
       },
       "npm": "dsh-hooks",
       "stars": 2,
-      "downloads": 320,
+      "downloads": 690,
       "install": "dsh plugin --profile web add dsh-hooks",
       "added": "2026-08-15",
       "screenshots": [
@@ -19073,6 +19663,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:PGZXB/dsh-feishu",
       "added": "2026-08-17"
+    },
+    {
+      "name": "dsh-imessage",
+      "owner": "photon-hq",
+      "url": "https://github.com/photon-hq/dsh-imessage",
+      "page": "https://awesome-dsh-plugin.com/p/photon-hq/dsh-imessage/",
+      "category": "notify",
+      "description": {
+        "en": "Two-way iMessage channel for DeepSeek Harness over Photon: sender allowlisting, session commands, in-chat approvals and questions, and a Settings page for device authorization and hosted-line setup.",
+        "zh": "通过 Photon 接入 DeepSeek Harness 的双向 iMessage 通道：按发件人白名单路由，支持会话命令、聊天内审批与提问，并提供用于设备授权和托管号码设置的 Settings 页面。"
+      },
+      "npm": "dsh-imessage",
+      "stars": 1,
+      "downloads": 552,
+      "install": "dsh plugin --profile web add dsh-imessage",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-notify-on-complete",
@@ -19102,7 +19708,7 @@
       },
       "npm": "dsh-lark-bot",
       "stars": 21,
-      "downloads": 3640,
+      "downloads": 7122,
       "install": "dsh plugin --profile web add dsh-lark-bot",
       "added": "2026-08-18"
     },
@@ -19118,7 +19724,7 @@
       },
       "npm": "dsh-feishu-chat",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 137,
       "install": "dsh plugin --profile web add dsh-feishu-chat",
       "added": "2026-08-16"
     },
@@ -19134,7 +19740,7 @@
       },
       "npm": "dsh-obvious-grid",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 654,
       "install": "dsh plugin --profile web add dsh-obvious-grid",
       "added": "2026-08-18"
     },
@@ -19150,7 +19756,7 @@
       },
       "npm": "dsh-pocket",
       "stars": 173,
-      "downloads": 4381,
+      "downloads": 10411,
       "install": "dsh plugin --profile web add dsh-pocket",
       "added": "2026-08-15"
     },
@@ -19187,6 +19793,22 @@
       "added": "2026-08-16"
     },
     {
+      "name": "dsh-finreport",
+      "owner": "SkyloveQiu",
+      "url": "https://github.com/SkyloveQiu/dsh-finreport",
+      "page": "https://awesome-dsh-plugin.com/p/SkyloveQiu/dsh-finreport/",
+      "category": "notify",
+      "description": {
+        "en": "Scheduled bilingual financial reports for DSH: market quotes, news and macro calendar, with per-target timezones and delivery through eight dsh-im channels.",
+        "zh": "DSH 定时双语财经日报：包含行情、新闻与宏观日历，支持每个目标独立配置时区，并通过 dsh-im 的八种通道投递。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:SkyloveQiu/dsh-finreport",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-dingtalk",
       "owner": "STARDUSTLC666",
       "url": "https://github.com/STARDUSTLC666/dsh-dingtalk",
@@ -19198,7 +19820,7 @@
       },
       "npm": "dsh-dingtalk",
       "stars": 3,
-      "downloads": 11,
+      "downloads": 289,
       "install": "dsh plugin --profile web add dsh-dingtalk",
       "added": "2026-08-15"
     },
@@ -19214,7 +19836,7 @@
       },
       "npm": "dsh-email",
       "stars": 5,
-      "downloads": 1709,
+      "downloads": 1975,
       "install": "dsh plugin --profile web add dsh-email",
       "added": "2026-08-15"
     },
@@ -19230,7 +19852,7 @@
       },
       "npm": "dsh-slack",
       "stars": 4,
-      "downloads": 438,
+      "downloads": 615,
       "install": "dsh plugin --profile web add dsh-slack",
       "added": "2026-08-15"
     },
@@ -19246,7 +19868,7 @@
       },
       "npm": "dsh-update-notifier",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 637,
       "install": "dsh plugin --profile web add dsh-update-notifier",
       "added": "2026-08-17"
     },
@@ -19278,7 +19900,7 @@
       },
       "npm": "dsh-notifier",
       "stars": 43,
-      "downloads": 425,
+      "downloads": 6677,
       "install": "dsh plugin --profile web add dsh-notifier",
       "added": "2026-08-15"
     },
@@ -19294,7 +19916,7 @@
       },
       "npm": "dsh-im-hub",
       "stars": 3,
-      "downloads": 231,
+      "downloads": 370,
       "install": "dsh plugin --profile web add dsh-im-hub",
       "added": "2026-08-15"
     },
@@ -19310,7 +19932,7 @@
       },
       "npm": "dsh-dingtalk-channel",
       "stars": 0,
-      "downloads": 147,
+      "downloads": 277,
       "install": "dsh plugin --profile web add dsh-dingtalk-channel",
       "added": "2026-08-16"
     },
@@ -19555,9 +20177,25 @@
       },
       "npm": "dsh-ticktick",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 576,
       "install": "dsh plugin --profile web add dsh-ticktick",
       "added": "2026-08-16"
+    },
+    {
+      "name": "dsh-capybara-notify",
+      "owner": "zzx-dear",
+      "url": "https://github.com/zzx-dear/dsh-capybara-notify",
+      "page": "https://awesome-dsh-plugin.com/p/zzx-dear/dsh-capybara-notify/",
+      "category": "notify",
+      "description": {
+        "en": "Capybara secretary for DSH: desktop pet notifications with ding sound, alert inbox API, session-aware alerts (turn done / approval needed / turn blocked), check scripts, and daily high-star plugin recommendations.",
+        "zh": "水豚秘书：桌面宠物气泡+叮咚通知、告警收件箱 API、会话智能提醒（任务完成/需要确认/阻塞）、磁盘/HTTP/进程巡检脚本，以及每日高口碑插件推荐，另附 API 冒烟测试。"
+      },
+      "npm": null,
+      "stars": 0,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:zzx-dear/dsh-capybara-notify",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-web-restart",
@@ -19670,7 +20308,7 @@
       },
       "npm": "dsh-update-checker",
       "stars": 8,
-      "downloads": 2237,
+      "downloads": 3156,
       "install": "dsh plugin --profile web add dsh-update-checker",
       "added": "2026-08-15",
       "screenshots": [
@@ -19709,7 +20347,7 @@
       },
       "npm": "dsh-python-env",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 194,
       "install": "dsh plugin --profile web add dsh-python-env",
       "added": "2026-08-18"
     },
@@ -19725,7 +20363,7 @@
       },
       "npm": "dsh-graphlint",
       "stars": 5,
-      "downloads": 167,
+      "downloads": 517,
       "install": "dsh plugin --profile web add dsh-graphlint",
       "added": "2026-08-16"
     },
@@ -19741,7 +20379,7 @@
       },
       "npm": "dsh-restart",
       "stars": 4,
-      "downloads": 88,
+      "downloads": 357,
       "install": "dsh plugin --profile web add dsh-restart",
       "added": "2026-08-14"
     },
@@ -19757,7 +20395,7 @@
       },
       "npm": "dsh-startup-guard",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 13,
       "install": "dsh plugin --profile web add dsh-startup-guard",
       "added": "2026-08-16"
     },
@@ -19773,7 +20411,7 @@
       },
       "npm": "dsh-fail-logger",
       "stars": 8,
-      "downloads": 191,
+      "downloads": 485,
       "install": "dsh plugin --profile web add dsh-fail-logger",
       "added": "2026-08-14"
     },
@@ -19837,7 +20475,7 @@
       },
       "npm": "dsh-global-rules",
       "stars": 9,
-      "downloads": 225,
+      "downloads": 389,
       "install": "dsh plugin --profile web add dsh-global-rules",
       "added": "2026-08-15"
     },
@@ -20013,7 +20651,7 @@
       },
       "npm": "@chenkai114/dsh-daemon",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 1614,
       "install": "dsh plugin --profile web add @chenkai114/dsh-daemon",
       "added": "2026-08-18"
     },
@@ -20136,6 +20774,22 @@
       "added": "2026-08-14"
     },
     {
+      "name": "dsh-harness-ops#dsh-restart-recover",
+      "owner": "fakechris",
+      "url": "https://github.com/fakechris/dsh-harness-ops/tree/main/plugins/dsh-restart-recover",
+      "page": "https://awesome-dsh-plugin.com/p/fakechris/dsh-harness-ops--plugins-dsh-restart-recover/",
+      "category": "dev",
+      "description": {
+        "en": "Restart recovery for DeepSeek Harness web: after a crash or restart, an interrupted agent turn continues automatically (host-side agent/created listener, no browser timing races).",
+        "zh": "DeepSeek Harness web 重启恢复：崩溃或重启后，被打断的 agent 回合自动继续（host 侧 agent/created 监听，无浏览器时序竞态）。"
+      },
+      "npm": null,
+      "stars": 11,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:fakechris/dsh-harness-ops#path:/plugins/dsh-restart-recover",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-mattpocock-skills-deck#package",
       "owner": "FeatherHunter",
       "url": "https://github.com/FeatherHunter/dsh-mattpocock-skills-deck/tree/main/package",
@@ -20147,7 +20801,7 @@
       },
       "npm": "dsh-mattpocock-skills-deck",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 113,
       "install": "dsh plugin --profile web add dsh-mattpocock-skills-deck",
       "added": "2026-08-18"
     },
@@ -20163,7 +20817,7 @@
       },
       "npm": "dsh-rlm-mode",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 689,
       "install": "dsh plugin --profile web add dsh-rlm-mode",
       "added": "2026-08-18"
     },
@@ -20227,7 +20881,7 @@
       },
       "npm": "dsh-desktop-shortcut",
       "stars": 2,
-      "downloads": 706,
+      "downloads": 1319,
       "install": "dsh plugin --profile web add dsh-desktop-shortcut",
       "added": "2026-08-15",
       "screenshots": [
@@ -20310,7 +20964,7 @@
       },
       "npm": "dsh-update-copilot",
       "stars": 0,
-      "downloads": 253,
+      "downloads": 907,
       "install": "dsh plugin --profile web add dsh-update-copilot",
       "added": "2026-08-15"
     },
@@ -20342,7 +20996,7 @@
       },
       "npm": "dsh-check-update",
       "stars": 0,
-      "downloads": 453,
+      "downloads": 518,
       "install": "dsh plugin --profile web add dsh-check-update",
       "added": "2026-08-15"
     },
@@ -20390,7 +21044,7 @@
       },
       "npm": "dsh-testkit",
       "stars": 1,
-      "downloads": 1027,
+      "downloads": 1922,
       "install": "dsh plugin --profile web add dsh-testkit",
       "added": "2026-08-15",
       "screenshots": [
@@ -20409,7 +21063,7 @@
       },
       "npm": "dsh-devtools",
       "stars": 1,
-      "downloads": 309,
+      "downloads": 475,
       "install": "dsh plugin --profile web add dsh-devtools",
       "added": "2026-08-15"
     },
@@ -20425,7 +21079,7 @@
       },
       "npm": "dsh-continual-harness",
       "stars": 4,
-      "downloads": 0,
+      "downloads": 536,
       "install": "dsh plugin --profile web add dsh-continual-harness",
       "added": "2026-08-18"
     },
@@ -20458,7 +21112,7 @@
       "npm": "dsh-evolution-lab",
       "tarball": "https://github.com/JayDong9130/dsh-evolution-lab/releases/download/v0.2.0/dsh-evolution-lab-0.2.0.tgz",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 36,
       "install": "dsh plugin --profile web add dsh-evolution-lab",
       "added": "2026-08-17"
     },
@@ -20474,7 +21128,7 @@
       },
       "npm": "dsh-web-shell",
       "stars": 1,
-      "downloads": 284,
+      "downloads": 395,
       "install": "dsh plugin --profile web add dsh-web-shell",
       "added": "2026-08-15"
     },
@@ -20527,6 +21181,22 @@
       "added": "2026-08-16"
     },
     {
+      "name": "dsh-mcphub",
+      "owner": "jinhongxun",
+      "url": "https://github.com/jinhongxun/dsh-mcphub",
+      "page": "https://awesome-dsh-plugin.com/p/jinhongxun/dsh-mcphub/",
+      "category": "dev",
+      "description": {
+        "en": "MCP management panel for DeepSeek Harness — live connection status per server (green dot), one-click pip/npx upgrades for local stdio servers with Windows file-lock handling, pause/resume/delete, an add-server form writing cordis.patch.yml, real initialize-handshake probes, and beginner-friendly usage help.",
+        "zh": "DSH 的 MCP 管理面板：每个服务器实时连接状态（绿点）、本地 stdio 服务器一键升级（pip/npx，自动处理 Windows 文件锁）、暂停/恢复/删除、添加表单直写 cordis.patch.yml、真实 initialize 握手探测与小白友好的使用说明。"
+      },
+      "npm": null,
+      "stars": 1,
+      "downloads": null,
+      "install": "dsh plugin --profile web add github:jinhongxun/dsh-mcphub",
+      "added": "2026-08-19"
+    },
+    {
       "name": "hooks-adapter",
       "owner": "JohnXu22786",
       "url": "https://github.com/JohnXu22786/hooks-adapter",
@@ -20570,7 +21240,7 @@
       },
       "npm": "@jorinyang/dsh-doctor",
       "stars": 1,
-      "downloads": 358,
+      "downloads": 610,
       "install": "dsh plugin --profile web add @jorinyang/dsh-doctor",
       "added": "2026-08-15"
     },
@@ -20647,7 +21317,7 @@
       },
       "npm": "dsh-mcp-lens",
       "stars": 5,
-      "downloads": 119,
+      "downloads": 429,
       "install": "dsh plugin --profile web add dsh-mcp-lens",
       "added": "2026-08-15",
       "screenshots": [
@@ -20772,7 +21442,7 @@
       },
       "npm": "dsh-cursor-acp",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 144,
       "install": "dsh plugin --profile web add dsh-cursor-acp",
       "added": "2026-08-17"
     },
@@ -20916,7 +21586,7 @@
       },
       "npm": "dsh-agent-skills",
       "stars": 5,
-      "downloads": 0,
+      "downloads": 1289,
       "install": "dsh plugin --profile web add dsh-agent-skills",
       "added": "2026-08-18",
       "screenshots": [
@@ -20983,7 +21653,7 @@
       },
       "npm": "harmonyos-dev-mcp-for-dsh",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 135,
       "install": "dsh plugin --profile web add harmonyos-dev-mcp-for-dsh",
       "added": "2026-08-19"
     },
@@ -21063,7 +21733,7 @@
       },
       "npm": "dsh-mcp-panel",
       "stars": 10,
-      "downloads": 265,
+      "downloads": 864,
       "install": "dsh plugin --profile web add dsh-mcp-panel",
       "added": "2026-08-14"
     },
@@ -21079,7 +21749,7 @@
       },
       "npm": "dsh-observe",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 181,
       "install": "dsh plugin --profile web add dsh-observe",
       "added": "2026-08-18"
     },
@@ -21095,7 +21765,7 @@
       },
       "npm": "dsh-output-styles",
       "stars": 3,
-      "downloads": 455,
+      "downloads": 796,
       "install": "dsh plugin --profile web add dsh-output-styles",
       "added": "2026-08-15"
     },
@@ -21111,7 +21781,7 @@
       },
       "npm": "dsh-test-drive",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 310,
       "install": "dsh plugin --profile web add dsh-test-drive",
       "added": "2026-08-18"
     },
@@ -21160,7 +21830,7 @@
       },
       "npm": "dsh-myrules",
       "stars": 7,
-      "downloads": 135,
+      "downloads": 505,
       "install": "dsh plugin --profile web add dsh-myrules",
       "added": "2026-08-16"
     },
@@ -21208,7 +21878,7 @@
       },
       "npm": "dsh-boot-guard",
       "stars": 4,
-      "downloads": 408,
+      "downloads": 528,
       "install": "dsh plugin --profile web add dsh-boot-guard",
       "added": "2026-08-14"
     },
@@ -21240,7 +21910,7 @@
       },
       "npm": "dsh-movein",
       "stars": 7,
-      "downloads": 897,
+      "downloads": 1635,
       "install": "dsh plugin --profile web add dsh-movein",
       "added": "2026-08-15",
       "screenshots": [
@@ -21261,7 +21931,7 @@
       },
       "npm": "dsh-win32",
       "stars": 11,
-      "downloads": 1535,
+      "downloads": 5967,
       "install": "dsh plugin --profile web add dsh-win32",
       "added": "2026-08-15",
       "screenshots": [
@@ -21298,7 +21968,7 @@
       },
       "npm": "dsh-flakefinder",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 633,
       "install": "dsh plugin --profile web add dsh-flakefinder",
       "added": "2026-08-17"
     },
@@ -21314,7 +21984,7 @@
       },
       "npm": "dsh-builtin-toggles",
       "stars": 7,
-      "downloads": 306,
+      "downloads": 682,
       "install": "dsh plugin --profile web add dsh-builtin-toggles",
       "added": "2026-08-14"
     },
@@ -21346,7 +22016,7 @@
       },
       "npm": "dsh-hot-reload",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 1184,
       "install": "dsh plugin --profile web add dsh-hot-reload",
       "added": "2026-08-17"
     },
@@ -21554,7 +22224,7 @@
       },
       "npm": "dsh-auto-exit",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 417,
       "install": "dsh plugin --profile web add dsh-auto-exit",
       "added": "2026-08-18"
     },
@@ -21586,7 +22256,7 @@
       },
       "npm": "dsh-prometheus",
       "stars": 1,
-      "downloads": 145,
+      "downloads": 270,
       "install": "dsh plugin --profile web add dsh-prometheus",
       "added": "2026-08-15"
     },
@@ -21634,7 +22304,7 @@
       },
       "npm": "dsh-start",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 391,
       "install": "dsh plugin --profile web add dsh-start",
       "added": "2026-08-18"
     },
@@ -21666,7 +22336,7 @@
       },
       "npm": "dsh-continual-evolve",
       "stars": 12,
-      "downloads": 304,
+      "downloads": 1054,
       "install": "dsh plugin --profile web add dsh-continual-evolve",
       "added": "2026-08-14"
     },
@@ -21714,7 +22384,7 @@
       },
       "npm": "dsh-telemetry-redactor",
       "stars": 3,
-      "downloads": 36,
+      "downloads": 247,
       "install": "dsh plugin --profile web add dsh-telemetry-redactor",
       "added": "2026-08-14"
     },
@@ -21730,7 +22400,7 @@
       },
       "npm": "dsh-verification-receipt",
       "stars": 5,
-      "downloads": 47,
+      "downloads": 204,
       "install": "dsh plugin --profile web add dsh-verification-receipt",
       "added": "2026-08-14"
     },
@@ -21746,7 +22416,7 @@
       },
       "npm": "qiushi-dsh-evidence-audit",
       "stars": 5,
-      "downloads": 133,
+      "downloads": 163,
       "install": "dsh plugin --profile web add qiushi-dsh-evidence-audit",
       "added": "2026-08-14",
       "screenshots": [
@@ -21853,7 +22523,7 @@
       },
       "npm": "dsh-security-guard",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 574,
       "install": "dsh plugin --profile web add dsh-security-guard",
       "added": "2026-08-16"
     },
@@ -21949,7 +22619,7 @@
       },
       "npm": "dsh-provenance",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 191,
       "install": "dsh plugin --profile web add dsh-provenance",
       "added": "2026-08-19"
     },
@@ -21965,7 +22635,7 @@
       },
       "npm": "dsh-auth",
       "stars": 1,
-      "downloads": 423,
+      "downloads": 1088,
       "install": "dsh plugin --profile web add dsh-auth",
       "added": "2026-08-19",
       "screenshots": [
@@ -21985,7 +22655,7 @@
       },
       "npm": "dsh-tool-approval",
       "stars": 1,
-      "downloads": 36,
+      "downloads": 180,
       "install": "dsh plugin --profile web add dsh-tool-approval",
       "added": "2026-08-13"
     },
@@ -22001,7 +22671,7 @@
       },
       "npm": "dsh-auto-approve",
       "stars": 6,
-      "downloads": 420,
+      "downloads": 927,
       "install": "dsh plugin --profile web add dsh-auto-approve",
       "added": "2026-08-15"
     },
@@ -22017,7 +22687,7 @@
       },
       "npm": "dsh-rule-engine",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 288,
       "install": "dsh plugin --profile web add dsh-rule-engine",
       "added": "2026-08-18"
     },
@@ -22081,7 +22751,7 @@
       },
       "npm": "dsh-approval-llm",
       "stars": 6,
-      "downloads": 65,
+      "downloads": 399,
       "install": "dsh plugin --profile web add dsh-approval-llm",
       "added": "2026-08-14"
     },
@@ -22113,7 +22783,7 @@
       },
       "npm": "upstream-radar",
       "stars": 5,
-      "downloads": 6416,
+      "downloads": 9808,
       "install": "dsh plugin --profile web add upstream-radar",
       "added": "2026-08-15"
     },
@@ -22124,12 +22794,12 @@
       "page": "https://awesome-dsh-plugin.com/p/moon09300731/dsh-approval-gate/",
       "category": "security",
       "description": {
-        "en": "Risk-gated approval automation for DeepSeek Harness: flash pre-classifies whether a write/command is irreversible — safe operations are auto-approved, dangerous ones are escalated to human approval (fail-safe).",
-        "zh": "DeepSeek Harness 自动审批门控：Flash 预判写入/命令是否不可回补，安全操作自动批准、危险操作转人工（fail-safe）。"
+        "en": "Risk-gated approval automation for DeepSeek Harness: flash pre-classifies whether a write/command is irreversible — safe operations are auto-approved, dangerous ones are escalated to human approval (fail-safe). File-diff review with one-click revert and session-scoped snapshots (v0.5.1: precise snapshots via tool-call parameter tracing, incl. human-approval cases).",
+        "zh": "DeepSeek Harness 自动审批门控：Flash 预判写入/命令是否不可回补，安全操作自动批准、危险操作转人工（fail-safe）。另含文件改动对比（unified diff）与一键撤销、按会话隔离的快照管理（v0.5.1：通过工具调用参数回溯精确保存快照，覆盖人工审批场景）。"
       },
       "npm": "dsh-approval-gate",
       "stars": 2,
-      "downloads": 23,
+      "downloads": 372,
       "install": "dsh plugin --profile web add dsh-approval-gate",
       "added": "2026-08-17"
     },
@@ -22225,7 +22895,7 @@
       },
       "npm": "dsh-auto-classifier",
       "stars": 0,
-      "downloads": 521,
+      "downloads": 2386,
       "install": "dsh plugin --profile web add dsh-auto-classifier",
       "added": "2026-08-15"
     },
@@ -22241,7 +22911,7 @@
       },
       "npm": "dsh-plugin-judge",
       "stars": 0,
-      "downloads": 278,
+      "downloads": 338,
       "install": "dsh plugin --profile web add dsh-plugin-judge",
       "added": "2026-08-15"
     },
@@ -22257,7 +22927,7 @@
       },
       "npm": "dsh-auto-review",
       "stars": 39,
-      "downloads": 156,
+      "downloads": 909,
       "install": "dsh plugin --profile web add dsh-auto-review",
       "added": "2026-08-15"
     },
@@ -22273,7 +22943,7 @@
       },
       "npm": "dsh-permission-rules",
       "stars": 11,
-      "downloads": 530,
+      "downloads": 982,
       "install": "dsh plugin --profile web add dsh-permission-rules",
       "added": "2026-08-15"
     },
@@ -22337,7 +23007,7 @@
       },
       "npm": "dsh-yolo-mode",
       "stars": 3,
-      "downloads": 15,
+      "downloads": 60,
       "install": "dsh plugin --profile web add dsh-yolo-mode",
       "added": "2026-08-17"
     },
@@ -22353,7 +23023,7 @@
       },
       "npm": "dsh-risk-guard",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 576,
       "install": "dsh plugin --profile web add dsh-risk-guard",
       "added": "2026-08-18"
     },
@@ -22385,7 +23055,7 @@
       },
       "npm": "dsh-movein-permissions",
       "stars": 7,
-      "downloads": 567,
+      "downloads": 635,
       "install": "dsh plugin --profile web add dsh-movein-permissions",
       "added": "2026-08-15"
     },
@@ -22401,7 +23071,7 @@
       },
       "npm": "dsh-passwords",
       "stars": 11,
-      "downloads": 528,
+      "downloads": 2201,
       "install": "dsh plugin --profile web add dsh-passwords",
       "added": "2026-08-14",
       "screenshots": [
@@ -22426,7 +23096,7 @@
       },
       "npm": "dsh-code-security",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 422,
       "install": "dsh plugin --profile web add dsh-code-security",
       "added": "2026-08-17"
     },
@@ -22506,7 +23176,7 @@
       },
       "npm": "dsh-auth-gate",
       "stars": 2,
-      "downloads": 1086,
+      "downloads": 2642,
       "install": "dsh plugin --profile web add dsh-auth-gate",
       "added": "2026-08-16"
     },
@@ -22538,7 +23208,7 @@
       },
       "npm": "dsh-plugin-vetting",
       "stars": 4,
-      "downloads": 819,
+      "downloads": 2354,
       "install": "dsh plugin --profile web add dsh-plugin-vetting",
       "added": "2026-08-15",
       "screenshots": [
@@ -22575,7 +23245,7 @@
       },
       "npm": "dsh-lan-pass",
       "stars": 0,
-      "downloads": 62,
+      "downloads": 110,
       "install": "dsh plugin --profile web add dsh-lan-pass",
       "added": "2026-08-15"
     },
@@ -22663,7 +23333,7 @@
       },
       "npm": "dsh-poison-guard",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 234,
       "install": "dsh plugin --profile web add dsh-poison-guard",
       "added": "2026-08-17"
     },
@@ -22702,7 +23372,7 @@
       },
       "npm": "dsh-web-lan-access",
       "stars": 21,
-      "downloads": 90,
+      "downloads": 598,
       "install": "dsh plugin --profile web add dsh-web-lan-access",
       "added": "2026-08-14",
       "screenshots": [
@@ -22724,6 +23394,22 @@
       "downloads": null,
       "install": "dsh plugin --profile web add github:ai-eks/dsh-auth-tunnel",
       "added": "2026-08-17"
+    },
+    {
+      "name": "dsh-weave",
+      "owner": "baixianger",
+      "url": "https://github.com/baixianger/dsh-weave",
+      "page": "https://awesome-dsh-plugin.com/p/baixianger/dsh-weave/",
+      "category": "remote",
+      "description": {
+        "en": "Trusted Iroh mesh networking for DSH hosts, with encrypted peer discovery, remote session delivery, and reachability status.",
+        "zh": "基于 Iroh 的可信 DSH 主机网状网络：提供加密的节点发现、远程会话投递与连通状态。"
+      },
+      "npm": "dsh-weave",
+      "stars": 0,
+      "downloads": 905,
+      "install": "dsh plugin --profile web add dsh-weave",
+      "added": "2026-08-19"
     },
     {
       "name": "dsh-mobile-gate",
@@ -22753,7 +23439,7 @@
       },
       "npm": "dsh-remote-plugin",
       "stars": 10,
-      "downloads": 389,
+      "downloads": 2939,
       "install": "dsh plugin --profile web add dsh-remote-plugin",
       "added": "2026-08-15",
       "screenshots": [
@@ -22848,6 +23534,22 @@
       "added": "2026-08-15"
     },
     {
+      "name": "dsh-wsl-expose",
+      "owner": "jack-ranbo",
+      "url": "https://github.com/jack-ranbo/dsh-wsl-expose",
+      "page": "https://awesome-dsh-plugin.com/p/jack-ranbo/dsh-wsl-expose/",
+      "category": "remote",
+      "description": {
+        "en": "Expose the DSH Web GUI over IPv6 or IPv4 from WSL2 through a reverse proxy (Lucky): /wan up sets up the socat relay, Windows portproxy, firewall, and trusted-host fence, with a Settings card plus commands to configure the domain and ports.",
+        "zh": "从 WSL2 走 IPv6/IPv4 经反向代理（Lucky）把 DSH Web GUI 暴露到公网：/wan up 一键建立 socat 中继、Windows portproxy、防火墙与 trusted-host 白名单；域名与端口可在设置卡片或命令中配置。"
+      },
+      "npm": "dsh-wsl-expose",
+      "stars": 0,
+      "downloads": 127,
+      "install": "dsh plugin --profile web add dsh-wsl-expose",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-full-remote",
       "owner": "JUANWANG-BUAA",
       "url": "https://github.com/JUANWANG-BUAA/dsh-full-remote",
@@ -22859,7 +23561,7 @@
       },
       "npm": "dsh-full-remote",
       "stars": 15,
-      "downloads": 422,
+      "downloads": 1986,
       "install": "dsh plugin --profile web add dsh-full-remote",
       "added": "2026-08-15"
     },
@@ -22875,7 +23577,7 @@
       },
       "npm": "dsh-zen-remote",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 406,
       "install": "dsh plugin --profile web add dsh-zen-remote",
       "added": "2026-08-19"
     },
@@ -22891,7 +23593,7 @@
       },
       "npm": "dsh-lan-access",
       "stars": 8,
-      "downloads": 267,
+      "downloads": 667,
       "install": "dsh plugin --profile web add dsh-lan-access",
       "added": "2026-08-14"
     },
@@ -22923,7 +23625,7 @@
       },
       "npm": "dsh-remote-tunnel",
       "stars": 3,
-      "downloads": 284,
+      "downloads": 352,
       "install": "dsh plugin --profile web add dsh-remote-tunnel",
       "added": "2026-08-16"
     },
@@ -23019,7 +23721,7 @@
       },
       "npm": "dsh-webgate",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 604,
       "install": "dsh plugin --profile web add dsh-webgate",
       "added": "2026-08-16"
     },
@@ -23035,7 +23737,7 @@
       },
       "npm": "dsh-mobile",
       "stars": 33,
-      "downloads": 935,
+      "downloads": 5301,
       "install": "dsh plugin --profile web add dsh-mobile",
       "added": "2026-08-19"
     },
@@ -23111,6 +23813,22 @@
       "added": "2026-08-18"
     },
     {
+      "name": "dsh-streaming-mcp-bridge",
+      "owner": "yabolee-kkk",
+      "url": "https://github.com/yabolee-kkk/dsh-streaming-mcp-bridge",
+      "page": "https://awesome-dsh-plugin.com/p/yabolee-kkk/dsh-streaming-mcp-bridge/",
+      "category": "remote",
+      "description": {
+        "en": "DeepSeek Harness streaming MCP bridge: live session events as MCP progress, plus ACP adapter for cc-connect/Feishu.",
+        "zh": "DeepSeek Harness 流式 MCP 桥接：将实时会话事件作为 MCP 进度输出，并提供 cc-connect/飞书 ACP 适配器。"
+      },
+      "npm": "dsh-streaming-mcp-bridge",
+      "stars": 0,
+      "downloads": 256,
+      "install": "dsh plugin --profile web add dsh-streaming-mcp-bridge",
+      "added": "2026-08-19"
+    },
+    {
       "name": "dsh-mobile-hanui",
       "owner": "Z-6354",
       "url": "https://github.com/Z-6354/dsh-mobile-hanui",
@@ -23122,7 +23840,7 @@
       },
       "npm": "dsh-mobile-hanui",
       "stars": 4,
-      "downloads": 235,
+      "downloads": 1443,
       "install": "dsh plugin --profile web add dsh-mobile-hanui",
       "added": "2026-08-16"
     },
@@ -23160,7 +23878,7 @@
       },
       "npm": "dsh-mobile-pwa",
       "stars": 0,
-      "downloads": 125,
+      "downloads": 220,
       "install": "dsh plugin --profile web add dsh-mobile-pwa",
       "added": "2026-08-15"
     },
@@ -23176,7 +23894,7 @@
       },
       "npm": "@1e0zj/dsh-plugin-mall",
       "stars": 2,
-      "downloads": 735,
+      "downloads": 3208,
       "install": "dsh plugin --profile web add @1e0zj/dsh-plugin-mall",
       "added": "2026-08-16"
     },
@@ -23227,7 +23945,7 @@
       },
       "npm": "dsh-insight",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 168,
       "install": "dsh plugin --profile web add dsh-insight",
       "added": "2026-08-17"
     },
@@ -23323,7 +24041,7 @@
       },
       "npm": "dsh-plugin-console",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 154,
       "install": "dsh plugin --profile web add dsh-plugin-console",
       "added": "2026-08-19"
     },
@@ -23339,7 +24057,7 @@
       },
       "npm": "dsh-find-plugin",
       "stars": 58,
-      "downloads": 1198,
+      "downloads": 5892,
       "install": "dsh plugin --profile web add dsh-find-plugin",
       "added": "2026-08-14"
     },
@@ -23483,7 +24201,7 @@
       },
       "npm": "dshmarket",
       "stars": 1086,
-      "downloads": 11862,
+      "downloads": 82491,
       "install": "dsh plugin --profile web add dshmarket",
       "added": "2026-08-14",
       "screenshots": [
@@ -23503,7 +24221,7 @@
       },
       "npm": "dsh-research",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 1280,
       "install": "dsh plugin --profile web add dsh-research",
       "added": "2026-08-18"
     },
@@ -23519,7 +24237,7 @@
       },
       "npm": "dshmarketplace-plugin",
       "stars": 2,
-      "downloads": 0,
+      "downloads": 766,
       "install": "dsh plugin --profile web add dshmarketplace-plugin",
       "added": "2026-08-18"
     },
@@ -23551,7 +24269,7 @@
       },
       "npm": "dsh-store",
       "stars": 4,
-      "downloads": 433,
+      "downloads": 1082,
       "install": "dsh plugin --profile web add dsh-store",
       "added": "2026-08-14",
       "screenshots": [
@@ -23698,7 +24416,7 @@
       },
       "npm": "dsh-mcp-market",
       "stars": 1,
-      "downloads": 476,
+      "downloads": 687,
       "install": "dsh plugin --profile web add dsh-mcp-market",
       "added": "2026-08-15",
       "screenshots": [
@@ -23765,7 +24483,7 @@
       },
       "npm": "dsh-plugin-manager-pro",
       "stars": 3,
-      "downloads": 0,
+      "downloads": 180,
       "install": "dsh plugin --profile web add dsh-plugin-manager-pro",
       "added": "2026-08-17"
     },
@@ -23800,7 +24518,7 @@
       },
       "npm": "dsh-extension-hub",
       "stars": 7,
-      "downloads": 1083,
+      "downloads": 3440,
       "install": "dsh plugin --profile web add dsh-extension-hub",
       "added": "2026-08-16"
     },
@@ -23965,7 +24683,7 @@
       },
       "npm": "dsh-subscribe",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 153,
       "install": "dsh plugin --profile web add dsh-subscribe",
       "added": "2026-08-15"
     },
@@ -23997,7 +24715,7 @@
       },
       "npm": "@a9i5k4/dsh-draw-gacha",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 924,
       "install": "dsh plugin --profile web add @a9i5k4/dsh-draw-gacha",
       "added": "2026-08-18"
     },
@@ -24151,7 +24869,7 @@
       },
       "npm": "dsh-roleplay",
       "stars": 0,
-      "downloads": 474,
+      "downloads": 944,
       "install": "dsh plugin --profile web add dsh-roleplay",
       "added": "2026-08-18",
       "screenshots": [
@@ -24186,7 +24904,7 @@
       },
       "npm": "dsh-live2d-pets",
       "stars": 7,
-      "downloads": 230,
+      "downloads": 785,
       "install": "dsh plugin --profile web add dsh-live2d-pets",
       "added": "2026-08-19"
     },
@@ -24218,7 +24936,7 @@
       },
       "npm": "dsh-ikun-pet",
       "stars": 8,
-      "downloads": 129,
+      "downloads": 249,
       "install": "dsh plugin --profile web add dsh-ikun-pet",
       "added": "2026-08-16"
     },
@@ -24270,7 +24988,7 @@
       },
       "npm": "dsh-emoji",
       "stars": 25,
-      "downloads": 512,
+      "downloads": 960,
       "install": "dsh plugin --profile web add dsh-emoji",
       "added": "2026-08-13"
     },
@@ -24302,7 +25020,7 @@
       },
       "npm": "@hellosz/dsh-pets",
       "stars": 5,
-      "downloads": 680,
+      "downloads": 822,
       "install": "dsh plugin --profile web add @hellosz/dsh-pets",
       "added": "2026-08-15"
     },
@@ -24334,7 +25052,7 @@
       },
       "npm": "dsh-whale-galgame",
       "stars": 6,
-      "downloads": 0,
+      "downloads": 199,
       "install": "dsh plugin --profile web add dsh-whale-galgame",
       "added": "2026-08-16"
     },
@@ -24350,7 +25068,7 @@
       },
       "npm": "dsh-whale-arcade",
       "stars": 2,
-      "downloads": 150,
+      "downloads": 221,
       "install": "dsh plugin --profile web add dsh-whale-arcade",
       "added": "2026-08-15",
       "screenshots": [
@@ -24373,7 +25091,7 @@
       },
       "npm": "dsh-music-player",
       "stars": 0,
-      "downloads": 0,
+      "downloads": 461,
       "install": "dsh plugin --profile web add dsh-music-player",
       "added": "2026-08-18",
       "screenshots": [
@@ -24426,7 +25144,7 @@
       },
       "npm": "dsh-devquest",
       "stars": 3,
-      "downloads": 0,
+      "downloads": 1909,
       "install": "dsh plugin --profile web add dsh-devquest",
       "added": "2026-08-15"
     },
@@ -24559,7 +25277,7 @@
       },
       "npm": "pet-whale",
       "stars": 2,
-      "downloads": 270,
+      "downloads": 1064,
       "install": "dsh plugin --profile web add pet-whale",
       "added": "2026-08-16",
       "screenshots": [
@@ -24631,7 +25349,7 @@
       },
       "npm": "dsh-pet",
       "stars": 158,
-      "downloads": 571,
+      "downloads": 2151,
       "install": "dsh plugin --profile web add dsh-pet",
       "added": "2026-08-14",
       "screenshots": [
@@ -24721,7 +25439,7 @@
       },
       "npm": "dsh-client-deep-sneak",
       "stars": 1,
-      "downloads": 100,
+      "downloads": 150,
       "install": "dsh plugin --profile web add dsh-client-deep-sneak",
       "added": "2026-08-16"
     },
@@ -24774,7 +25492,7 @@
       },
       "npm": "dsh-clippy",
       "stars": 0,
-      "downloads": 452,
+      "downloads": 500,
       "install": "dsh plugin --profile web add dsh-clippy",
       "added": "2026-08-15"
     },
@@ -24790,7 +25508,7 @@
       },
       "npm": "dsh-running-liang",
       "stars": 2,
-      "downloads": 686,
+      "downloads": 880,
       "install": "dsh plugin --profile web add dsh-running-liang",
       "added": "2026-08-15"
     },
@@ -24806,7 +25524,7 @@
       },
       "npm": "dsh-codex-pet",
       "stars": 5,
-      "downloads": 74,
+      "downloads": 329,
       "install": "dsh plugin --profile web add dsh-codex-pet",
       "added": "2026-08-15"
     },
@@ -24870,7 +25588,7 @@
       },
       "npm": "dsh-coyote",
       "stars": 1,
-      "downloads": 266,
+      "downloads": 349,
       "install": "dsh plugin --profile web add dsh-coyote",
       "added": "2026-08-15"
     },
@@ -24988,7 +25706,7 @@
       },
       "npm": "dsh-lazeword",
       "stars": 1,
-      "downloads": 0,
+      "downloads": 192,
       "install": "dsh plugin --profile web add dsh-lazeword",
       "added": "2026-08-15"
     },
@@ -25036,7 +25754,7 @@
       },
       "npm": "dsh-homepage-skin",
       "stars": 1,
-      "downloads": 118,
+      "downloads": 170,
       "install": "dsh plugin --profile web add dsh-homepage-skin",
       "added": "2026-08-15"
     },
@@ -25052,7 +25770,7 @@
       },
       "npm": "dsh-meme",
       "stars": 5,
-      "downloads": 0,
+      "downloads": 1363,
       "install": "dsh plugin --profile web add dsh-meme",
       "added": "2026-08-14"
     },
