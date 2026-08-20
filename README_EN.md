@@ -30,19 +30,6 @@ Download the latest Windows x64 version from the [Releases page](https://github.
 4. When you click the close button in the window corner, the app **minimizes to the tray by default**: it keeps running in the background, and clicking the tray icon reopens the window — the app does not quit.
 5. You can change this behavior in **Settings → General** — it defaults to "Minimize to tray"; you can also choose "Ask each time" (a prompt appears when you click the close button) or "Quit the app" (closing quits the app and its background service).
 
-## Plugin store: add new features to the workbench
-
-Like an app store on your phone, Desktop includes its own **plugin store** for adding capabilities such as memory and tools. Desktop owns the store while the Harness kernel remains the unmodified official release.
-
-How to open it: right-click the DeepSeek Harness system tray icon and select **Plugin store**.
-
-- **Browse and search**: Filter by category, or use the search box to find plugins by name, author, or description.
-- **Install a plugin**: Click **Install** on a plugin, check the box acknowledging it's a third-party plugin (meaning it isn't made by the official team — make sure you trust it), then click **Confirm install**.
-- **Restart to activate**: After installation, restart the app so the new plugin can load.
-- **Works offline**: The installer includes a catalog snapshot. When online, Desktop prefers the latest catalog maintained in this repository and automatically falls back to the bundled snapshot if it cannot be reached.
-
-> Note: Most plugins in the store are made by community developers. Before installing, read the description, check the source, and make sure you trust it.
-
 ## About automatic updates
 
 - The app checks for updates quietly in the background. Once an update is downloaded and verified, it takes effect on **the next launch** — no reinstallation needed.

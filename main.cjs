@@ -5,7 +5,6 @@ const { createServer } = require('node:net')
 const { delimiter, dirname, join, resolve } = require('node:path')
 const { KernelStore } = require('./kernel-store.cjs')
 const { KernelUpdater } = require('./kernel-updater.cjs')
-const { findPlugin, installSpec, installedBundles, isHttpUrl, loadCatalog } = require('./plugin-store.cjs')
 
 const APP_NAME = 'DeepSeek Harness'
 const READY_TIMEOUT_MS = 90_000
@@ -16,7 +15,6 @@ const CLOSE_BEHAVIORS = Object.freeze(['ask', 'minimize', 'exit'])
 const DEFAULT_DESKTOP_SETTINGS = Object.freeze({ closeBehavior: 'minimize' })
 
 let mainWindow
-let pluginStoreWindow
 let backend
 let backendStopping = false
 let booting = false
@@ -26,9 +24,6 @@ let updateChecksStarted = false
 let quitting = false
 let tray
 let trayHintShown = false
-let currentTarget
-let catalogCache
-let pluginInstallInProgress = false
 
 app.setName(APP_NAME)
 
@@ -331,91 +326,11 @@ function createTray() {
   tray.setToolTip(APP_NAME)
   tray.setContextMenu(Menu.buildFromTemplate([
     { label: '显示主窗口', click: showMainWindow },
-    { label: '插件商店', click: showPluginStore },
     { type: 'separator' },
     { label: '退出', click: quitApp }
   ]))
   tray.on('click', showMainWindow)
   return tray
-}
-
-function pluginCatalogConfig() {
-  try {
-    const config = JSON.parse(readFileSync(join(__dirname, 'plugin-store-config.json'), 'utf8'))
-    return {
-      remoteUrl: process.env.DSH_PLUGIN_CATALOG_URL || config.catalogUrl,
-      timeoutMs: Math.max(1000, Number(config.timeoutMs) || 8000)
-    }
-  } catch (error) {
-    logDesktop(`Ignoring invalid plugin-store-config.json: ${error.message}`)
-    return { remoteUrl: process.env.DSH_PLUGIN_CATALOG_URL, timeoutMs: 8000 }
-  }
-}
-
-async function pluginCatalog() {
-  if (catalogCache && Date.now() - catalogCache.loadedAt < 10 * 60 * 1000) return catalogCache
-  const config = pluginCatalogConfig()
-  const loaded = await loadCatalog({
-    bundledFile: join(__dirname, 'plugin-catalog.json'),
-    ...config,
-    log: logDesktop
-  })
-  catalogCache = { ...loaded, loadedAt: Date.now() }
-  return catalogCache
-}
-
-function showPluginStore() {
-  if (pluginStoreWindow && !pluginStoreWindow.isDestroyed()) {
-    pluginStoreWindow.show()
-    pluginStoreWindow.focus()
-    return
-  }
-  pluginStoreWindow = new BrowserWindow({
-    width: 1180,
-    height: 820,
-    minWidth: 860,
-    minHeight: 600,
-    show: false,
-    autoHideMenuBar: true,
-    title: '插件商店 - DeepSeek Harness',
-    backgroundColor: '#0d0e12',
-    icon: join(__dirname, 'build', 'icon.png'),
-    webPreferences: {
-      preload: join(__dirname, 'plugin-store-preload.cjs'),
-      contextIsolation: true,
-      nodeIntegration: false,
-      sandbox: true
-    }
-  })
-  pluginStoreWindow.webContents.setWindowOpenHandler(({ url }) => {
-    if (isHttpUrl(url)) shell.openExternal(url)
-    return { action: 'deny' }
-  })
-  pluginStoreWindow.loadFile(join(__dirname, 'plugin-store.html'))
-  pluginStoreWindow.once('ready-to-show', () => pluginStoreWindow?.show())
-  pluginStoreWindow.on('closed', () => { pluginStoreWindow = undefined })
-}
-
-function runPluginInstall(target, spec) {
-  return new Promise((resolveInstall, reject) => {
-    const child = spawn(nodeExecutable(), [
-      ...target.args, 'plugin', '--profile', 'web', 'add', spec
-    ], {
-      cwd: target.cwd,
-      env: harnessEnvironment(),
-      windowsHide: true,
-      stdio: ['ignore', 'pipe', 'pipe']
-    })
-    let output = ''
-    const append = chunk => { output = (output + chunk.toString()).slice(-MAX_ERROR_OUTPUT) }
-    child.stdout.on('data', append)
-    child.stderr.on('data', append)
-    child.once('error', reject)
-    child.once('exit', code => {
-      if (code === 0) resolveInstall(output.trim())
-      else reject(new Error(`插件安装失败（退出码 ${code}）\n${output.trim()}`))
-    })
-  })
 }
 
 function createWindow(onShown) {
@@ -509,7 +424,6 @@ async function launchHarness() {
   let retryAfterRollback = false
   try {
     target = launchTarget()
-    currentTarget = target
     patchLayoutStartup(target.cwd)
     const port = await reservePort()
     const url = `http://127.0.0.1:${port}`
@@ -572,55 +486,17 @@ ipcMain.handle('desktop:retry', () => launchHarness())
 ipcMain.handle('desktop:open-logs', () => shell.openPath(userDataPath('logs')))
 ipcMain.handle('desktop:get-close-behavior', () => readDesktopSettings().closeBehavior)
 ipcMain.handle('desktop:set-close-behavior', (_event, behavior) => setCloseBehavior(behavior))
-ipcMain.handle('desktop:plugin-store:list', async () => {
-  const { catalog, source } = await pluginCatalog()
-  return {
-    catalog,
-    source,
-    installed: installedBundles(userDataPath('harness-home-v2'))
-  }
-})
-ipcMain.handle('desktop:plugin-store:install', async (_event, identity) => {
-  if (typeof identity !== 'string' || identity.length > 300) throw new Error('插件标识无效')
-  if (pluginInstallInProgress) throw new Error('已有插件正在安装，请等待完成后再试')
-  const { catalog } = await pluginCatalog()
-  const plugin = findPlugin(catalog, identity)
-  const spec = installSpec(plugin)
-  const target = currentTarget || launchTarget()
-  logDesktop(`Installing plugin identity=${identity} spec=${spec} target=${target.label}`)
-  pluginInstallInProgress = true
-  try {
-    const output = await runPluginInstall(target, spec)
-    logDesktop(`Plugin installed identity=${identity}`)
-    return { installed: installedBundles(userDataPath('harness-home-v2')), output }
-  } finally {
-    pluginInstallInProgress = false
-  }
-})
-ipcMain.handle('desktop:plugin-store:restart', async () => {
-  pluginStoreWindow?.close()
-  showMainWindow()
-  await launchHarness()
-})
-ipcMain.handle('desktop:plugin-store:open-external', (_event, url) => {
-  if (!isHttpUrl(url)) throw new Error('只能打开 HTTP(S) 链接')
-  return shell.openExternal(url)
-})
 
 const lock = app.requestSingleInstanceLock()
 if (!lock) {
   app.quit()
 } else {
-  app.on('second-instance', (_event, commandLine) => {
-    if (commandLine.includes('--plugin-store')) showPluginStore()
-    else showMainWindow()
-  })
+  app.on('second-instance', showMainWindow)
   app.whenReady().then(() => {
     kernelStore = new KernelStore({ root: kernelStorageRoot(), ...bootstrapKernelLocation() })
     const updateConfig = readUpdateConfig()
     createWindow(() => launchHarness())
     createTray()
-    if (process.argv.includes('--plugin-store')) showPluginStore()
     runtimeNodeMajor().then(nodeMajor => {
       kernelUpdater = new KernelUpdater({
         store: kernelStore,
